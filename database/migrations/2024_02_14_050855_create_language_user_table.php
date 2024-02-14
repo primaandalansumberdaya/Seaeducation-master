@@ -16,7 +16,7 @@ return new class extends Migration
             $table
                 ->foreignId('detail_user_id')
                 ->references('id')
-                ->on('detail_users')
+                ->on('detailUsers')
                 ->onDelete('cascade');
             $table->string('name');
             $table->string('level');

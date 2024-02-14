@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('programPayments', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('regist_id')->constrained('register_program')->references('id')->onDelete('cascade');
+            $table->foreignId('register_id')->constrained('registerPrograms')->references('id')->onDelete('cascade');
             $table->string('external_id');
             $table->string('email');
             $table->string('payment_url')->nullable();

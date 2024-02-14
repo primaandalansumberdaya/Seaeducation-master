@@ -18,7 +18,7 @@ return new class extends Migration
                 ->references('id')
                 ->on('users')
                 ->onDelete('cascade');
-            $table->string('category')->nullable();
+            $table->string('name')->nullable();
             $table->string('description')->nullable();
             $table->timestamps();
         });

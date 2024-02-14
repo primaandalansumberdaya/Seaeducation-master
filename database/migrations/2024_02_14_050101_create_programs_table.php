@@ -23,7 +23,6 @@ return new class extends Migration
             $table->string('slug');
             $table->longText('description')->nullable();
             $table->string('type')->nullable();
-            $table->string('user_id')->nullable();
             $table->string('duration');
             $table->string('price');
             $table
