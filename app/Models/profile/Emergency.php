@@ -11,10 +11,10 @@ class Emergency extends Model
     use HasFactory;
     use SoftDeletes;
 
-    public $table = 'emergencies_user';
+    public $table = 'emergency_contact_user';
 
     protected $fillable = [
-        'family_name',
+        'name',
         'relations',
         'detail_user_id',
         'contact1',
@@ -24,8 +24,7 @@ class Emergency extends Model
         'city',
         'province',
         'country',
-        'zip_code',
-        'certificate',
+        'zipCode',
     ];
 
     protected $casts = [
