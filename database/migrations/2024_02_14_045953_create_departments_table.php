@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('slug');
             $table->string('description')->nullable();
             $table->boolean('is_active')->default(true);
+            $table->string('thumbnail')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Models\Department;
+namespace App\Models\Program;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\softDeletes;
 
-class Department extends Model
+class ProgramThumbnail extends Model
 {
     use HasFactory;
     use SoftDeletes;
 
-    public $table = 'departments';
+    public $table = 'program_thumbnails';
 
-    protected $fillable = ['name', 'user_id', 'slug', 'description', 'is_active', 'thumbnail'];
+    protected $fillable = ['program_id', 'thumbnail'];
 
     protected $casts = [
         'created_at' => 'datetime::d-m-Y H:m:s',
@@ -23,8 +23,8 @@ class Department extends Model
 
     protected $hidden = ['deleted_at', 'created_at', 'updated_at'];
 
-    public function positions()
+    public function Programs()
     {
-        return $this->hasMany(Position::class);
+        return $this->belongsTo(Program::class);
     }
 }

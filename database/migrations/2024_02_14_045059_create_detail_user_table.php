@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('detailUsers', function (Blueprint $table) {
+        Schema::create('detail_users', function (Blueprint $table) {
             $table->id();
             $table->string('photo')->nullable();
             $table

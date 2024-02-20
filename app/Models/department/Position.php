@@ -19,7 +19,8 @@ class Position extends Model
         'name',
         'slug',
         'description',
-        'is_active'
+        'is_active',
+        'thumbnail'
     ];
 
     protected $casts = [
@@ -33,10 +34,5 @@ class Position extends Model
     public function department()
     {
         return $this->belongsTo(Department::class);
-    }
-
-    public function positionThumbnails()
-    {
-        return $this->hasMany(PositionThumbnail::class);
     }
 }

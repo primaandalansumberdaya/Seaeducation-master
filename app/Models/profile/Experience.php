@@ -14,21 +14,21 @@ class Experience extends Model
     public $table = 'experiences_user';
 
     protected $fillable = [
-        'work_institution_name',
+        'companyName',
         'base',
         'detail_user_id',
         'position',
-        'job_title',
-        'start_date',
-        'end_date',
+        'jobTitle',
+        'startDate',
+        'endDate',
         'address',
         'city',
         'province',
         'country',
-        'zip_code',
-        'spv_name',
-        'institution_phone',
-        'job_descriptions',
+        'zipCode',
+        'spvName',
+        'companyPhone',
+        'jobDescriptions',
         'certificate',
     ];
 

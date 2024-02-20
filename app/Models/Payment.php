@@ -9,7 +9,7 @@ class Payment extends Model
 {
     use HasFactory;
 
-    public $table = 'payment_program';
+    public $table = 'programpayments';
 
     protected $fillable = [
         'regist_id',

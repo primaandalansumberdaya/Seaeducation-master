@@ -11,16 +11,16 @@ class Education extends Model
     use HasFactory;
     use SoftDeletes;
 
-    public $table = 'educations_user';
+    public $table = 'education_user';
 
     protected $fillable = [
-        'edu_institution_name',
+        'schoolName',
         'slug',
         'detail_user_id',
         'course',
         'degree',
-        'start_date',
-        'graduate_date',
+        'startDate',
+        'graduateDate',
         'address',
         'city',
         'province',

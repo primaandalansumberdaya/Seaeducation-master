@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('socialMediaUser', function (Blueprint $table) {
+        Schema::create('social_media', function (Blueprint $table) {
             $table->id();
             $table
                 ->foreignId('detail_user_id')
                 ->references('id')
-                ->on('detailUsers')
+                ->on('detail_users')
                 ->onDelete('cascade');
             $table->string('name')->nullable();
             $table->timestamps();

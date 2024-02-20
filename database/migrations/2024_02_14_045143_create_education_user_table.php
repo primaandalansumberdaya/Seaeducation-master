@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('educationUser', function (Blueprint $table) {
+        Schema::create('education_user', function (Blueprint $table) {
             $table->id();
             $table->string('schoolName')->nullable();
             $table->string('slug')->nullable();
             $table
                 ->foreignId('detail_user_id')
                 ->references('id')
-                ->on('detailUsers')
+                ->on('detail_users')
                 ->onDelete('cascade');
             $table->string('course')->nullable();
             $table->string('degree')->nullable();

@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('experienceUser', function (Blueprint $table) {
+        Schema::create('experience_user', function (Blueprint $table) {
             $table->id();
             $table->string('companyName');
             $table->string('base')->nullable();
             $table
                 ->foreignId('detail_user_id')
                 ->references('id')
-                ->on('detailUsers')
+                ->on('detail_users')
                 ->onDelete('cascade');
             $table->string('position')->nullable();
             $table->string('jobTitle')->nullable();

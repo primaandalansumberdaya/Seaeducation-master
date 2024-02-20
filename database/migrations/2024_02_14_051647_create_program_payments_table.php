@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('programPayments', function (Blueprint $table) {
+        Schema::create('program_payments', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('register_id')->constrained('registerPrograms')->references('id')->onDelete('cascade');
+            $table->foreignId('register_id')->constrained('register_programs')->references('id')->onDelete('cascade');
             $table->string('external_id');
             $table->string('email');
             $table->string('payment_url')->nullable();

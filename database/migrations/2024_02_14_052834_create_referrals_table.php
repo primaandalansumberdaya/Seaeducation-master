@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('referals', function (Blueprint $table) {
+        Schema::create('referrals', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('referalNumber');
