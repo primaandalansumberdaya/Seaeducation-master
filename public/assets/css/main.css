@@ -15,8 +15,8 @@
 }
 
 
-@layer components{
-    .accordion-header{
+@layer components {
+    .accordion-header {
         @apply py-4 px-6 cursor-pointer
     }
 
@@ -25,23 +25,23 @@
         transform: rotateX(180deg)
     }
 
-    .accordion-body{
+    .accordion-body {
         @apply max-h-0 overflow-hidden transition-all duration-200 ease-out
     }
 
-    .card{
+    .card {
         @apply bg-white relative p-6 rounded-[26px] flex flex-col gap-y-4 md:max-w-[500px]
     }
 
-    .input-field{
-        @apply placeholder:text-gray-70 text-black py-[11px] px-6 rounded-[100px] outline outline-[1.4px]  outline-gray-70 focus:outline-primary-blue
+    .input-field {
+        @apply placeholder:text-gray-70 text-black py-[11px] px-6 rounded-[100px] outline outline-[1.4px] outline-gray-70 focus:outline-primary-blue
     }
 
-    .btn{
+    .btn {
         @apply rounded-full py-[11px] px-9 font-semibold text-center capitalize
     }
 
-    .btn-primary{
+    .btn-primary {
         @apply bg-primary-blue text-white
     }
 }

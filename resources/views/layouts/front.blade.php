@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
 
-        @include('includes.landing.meta')
+<head>
 
-        <title>@yield('title') | SERV</title>
+    @include('includes.landing.meta')
 
-        @stack('before-style')
+    <title>@yield('title') | Seaeducation</title>
 
-        @include('includes.landing.style')
+    @stack('before-style')
 
-        @stack('after-style')
+    @include('includes.landing.style')
 
-    </head>
+    @stack('after-style')
 
-    <body class="antialiased">
-        <div class="relative">
+</head>
 
-            @include('includes.landing.header')
+<body class="antialiased">
+    <div class="relative">
 
-                @include('sweetalert::alert')
+        @include('includes.landing.header')
 
-                @yield('content')
+        @include('sweetalert::alert')
 
-            @include('includes.landing.footer')
+        @yield('content')
 
-            @stack('before-script')
+        @include('includes.landing.footer')
 
-            @include('includes.landing.script')
+        @stack('before-script')
 
-            @stack('after-script')
+        @include('includes.landing.script')
 
-            {{-- modals --}}
-            @include('components.modal.login')
-            @include('components.modal.register')
-            @include('components.modal.register-success')
+        @stack('after-script')
 
-        </div>
-    </body>
+        {{-- modals --}}
+        {{-- @include('components.modal.login')
+        @include('components.modal.register')
+        @include('components.modal.register-success') --}}
+
+    </div>
+</body>
+
 </html>

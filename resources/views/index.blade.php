@@ -1,13 +1,9 @@
-<html lang="en">
+@extends('layouts.front')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+@section('title', ' Home')
 
-<body>
+@section('content')
+
     <!-- Why working in cruise ship -->
     <section id="why-cruise-ship" class="relative flex items-center justify-between">
 
@@ -189,8 +185,8 @@
                 <!-- right column -->
                 <div class="self-center w-full px-4 lg:w-1/2">
                     <div class="relative mt-10 ml-2">
-                        <img src="/assets/images/banner2.png" class="max-w-full mx-auto" width="500px"
-                            alt="hero-banner" srcset="">
+                        <img src="/assets/images/banner2.png" class="max-w-full mx-auto" width="500px" alt="hero-banner"
+                            srcset="">
                     </div>
                 </div>
 
@@ -235,8 +231,7 @@
                         <div class="flex flex-col p-4">
                             <div class="flex items-center mb-2">
                                 <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                    <img src="/assets/svgs/mentor.svg" class="items-center w-10 h-10"
-                                        alt="mentor" />
+                                    <img src="/assets/svgs/mentor.svg" class="items-center w-10 h-10" alt="mentor" />
                                 </div>
                                 <div className="flex flex-col">
                                     <p class="mb-1 font-bold text-gray-100 text-heading-3 font-label">
@@ -313,8 +308,7 @@
                         <div class="flex flex-col p-4">
                             <div class="flex items-center mb-2">
                                 <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                    <img src="/assets/svgs/training.svg" class="items-center w-10 h-10"
-                                        alt="career" />
+                                    <img src="/assets/svgs/training.svg" class="items-center w-10 h-10" alt="career" />
                                 </div>
                                 <div className="flex flex-col">
                                     <p class="mb-1 font-bold text-gray-100 text-heading-3 font-label">
@@ -339,8 +333,7 @@
                         <div class="flex flex-col p-4">
                             <div class="flex items-center mb-2">
                                 <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                    <img src="/assets/svgs/lowest.svg" class="items-center w-10 h-10"
-                                        alt="affordable" />
+                                    <img src="/assets/svgs/lowest.svg" class="items-center w-10 h-10" alt="affordable" />
                                 </div>
                                 <div className="flex flex-col">
                                     <p class="mb-1 font-bold text-gray-100 text-heading-3 font-label">
@@ -364,8 +357,7 @@
                         <div class="flex flex-col p-4">
                             <div class="flex items-center mb-2">
                                 <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                    <img src="/assets/svgs/support.svg" class="items-center w-10 h-10"
-                                        alt="support" />
+                                    <img src="/assets/svgs/support.svg" class="items-center w-10 h-10" alt="support" />
                                 </div>
                                 <div className="flex flex-col">
                                     <p class="mb-1 font-bold text-gray-100 text-heading-3 font-label">
@@ -429,8 +421,7 @@
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
                         <a href="detail.html">
                             <div class="m-4 overflow-hidden rounded-xl">
-                                <img alt="Placeholder" class="block w-full h-auto"
-                                    src="/assets/images/program1.jpg" />
+                                <img alt="Placeholder" class="block w-full h-auto" src="/assets/images/program1.jpg" />
                             </div>
                         </a>
 
@@ -484,8 +475,7 @@
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
                         <a href="details.html">
                             <div class="m-4 overflow-hidden rounded-xl">
-                                <img alt="Placeholder" class="block w-full h-auto"
-                                    src="/assets/images/program1.jpg" />
+                                <img alt="Placeholder" class="block w-full h-auto" src="/assets/images/program1.jpg" />
                             </div>
                         </a>
 
@@ -541,8 +531,7 @@
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
                         <a href="details.html">
                             <div class="m-4 overflow-hidden rounded-xl">
-                                <img alt="Placeholder" class="block w-full h-auto"
-                                    src="/assets/images/program1.jpg" />
+                                <img alt="Placeholder" class="block w-full h-auto" src="/assets/images/program1.jpg" />
                             </div>
                         </a>
 
@@ -601,8 +590,7 @@
             <div class="flex flex-wrap items-center justify-between mx-auto">
                 <!-- left column -->
                 <div class="self-center w-full lg:w-1/2">
-                    <p
-                        class="mb-3 font-bold text-center text-white lg:text-heading-2 text-heading-3 lg:text-left lg:pr-4">
+                    <p class="mb-3 font-bold text-center text-white lg:text-heading-2 text-heading-3 lg:text-left lg:pr-4">
                         Bekerjasama
                         dengan perusahaan
                         terbaik di
@@ -655,8 +643,7 @@
 
                         <!-- Card -->
                         <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/Speedy.svg" class="items-center" alt="logo-partner"
-                                layout="fill" />
+                            <img src="/assets/logo/Speedy.svg" class="items-center" alt="logo-partner" layout="fill" />
                         </div>
                         <!-- End Card -->
 
@@ -677,23 +664,20 @@
 
                         <!-- Card -->
                         <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/dpbiz.svg" class="items-center" alt="logo-partner"
-                                layout="fill" />
+                            <img src="/assets/logo/dpbiz.svg" class="items-center" alt="logo-partner" layout="fill" />
                         </div>
                         <!-- End Card -->
 
                         <!-- Card -->
                         <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/grsm.svg" class="items-center" alt="logo-partner"
-                                layout="fill" />
+                            <img src="/assets/logo/grsm.svg" class="items-center" alt="logo-partner" layout="fill" />
                         </div>
                         <!-- End Card -->
 
 
                         <!-- Card -->
                         <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/rhmc.svg" class="items-center" alt="logo-partner"
-                                layout="fill" />
+                            <img src="/assets/logo/rhmc.svg" class="items-center" alt="logo-partner" layout="fill" />
                         </div>
                         <!-- End Card -->
 
@@ -714,12 +698,10 @@
                 300+ lulusan bekerja di perusahaan ini
             </h1>
 
-            <div
-                class="grid items-center justify-between grid-flow-row grid-cols-3 gap-4 mx-auto lg:grid-cols-5 lg:-mx-4">
+            <div class="grid items-center justify-between grid-flow-row grid-cols-3 gap-4 mx-auto lg:grid-cols-5 lg:-mx-4">
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4 ">
-                    <img src="/assets/logo/royal-caribbean.svg" class="items-center lg" alt="Profile"
-                        layout="fill" />
+                    <img src="/assets/logo/royal-caribbean.svg" class="items-center lg" alt="Profile" layout="fill" />
                 </div>
                 <!-- End Card -->
 
@@ -1145,16 +1127,16 @@
                 <div class="flex gap-4 group">
                     <span
                         class="flex items-center justify-center w-8 h-8 border rounded-full cursor-pointer border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white scroll-left">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
                         </svg>
                     </span>
                     <span
                         class="flex items-center justify-center w-8 h-8 border rounded-full cursor-pointer border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white scroll-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                         </svg>
@@ -1169,8 +1151,8 @@
                         <div class="flex flex-col p-4 bg-white">
                             <div class="flex mb-4">
                                 <div class="relative w-16 h-16 mr-3 overflow-hidden rounded-full">
-                                    <img src="/public/images/ester.png" alt="Profile" layout="fill"
-                                        objectFit="cover" objectPosition="center" />
+                                    <img src="/public/images/ester.png" alt="Profile" layout="fill" objectFit="cover"
+                                        objectPosition="center" />
                                 </div>
                                 <div className="flex flex-col">
                                     <p class="mb-1 font-bold text-gray-100 text-heading-4 font-label">
@@ -1564,6 +1546,4 @@
     </section>
     <!-- EndFrequently Asked Question -->
 
-</body>
-
-</html>
+@endsection

@@ -1,4 +1,5 @@
-<a href="{{ route('detail.landing', $item->id) }}" class="block">
+{{-- <a href="{{ route('detail.landing', $item->id) }}" class="block"> --}}
+<a href="" class="block">
     <div class="w-auto h-auto overflow-hidden md:p-5 p-4 bg-white rounded-2xl inline-block">
         <div class="flex items-center space-x-2 mb-6">
             <!--Author's profile photo-->
