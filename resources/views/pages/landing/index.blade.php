@@ -1546,4 +1546,29 @@
     </section>
     <!-- EndFrequently Asked Question -->
 
+
+    <script lang="ts" setup>
+        import {
+            Swiper,
+            SwiperSlide
+        } from 'swiper/vue';
+
+        // Import Swiper styles
+        import 'swiper/css';
+
+        const images = [{
+                id: 1,
+                imageUrl: '/assets/images/bg-1.jpg'
+            },
+            {
+                id: 2,
+                imageUrl: '/assets/images/bg-1.jpg'
+            },
+            {
+                id: 3,
+                imageUrl: '/assets/images/bg-1.jpg'
+            },
+            // Add more items as needed
+        ];
+    </script>
 @endsection

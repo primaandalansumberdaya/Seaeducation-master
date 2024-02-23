@@ -3,7 +3,7 @@
         <div class="flex flex-row flex-wrap items-center justify-between mx-auto ">
 
             {{-- <a href="{{ route('index') }}" class="flex items-center text-3xl font-bold"> --}}
-            <a href="" class="flex items-center text-3xl font-bold">
+            <a href="" class="flex items-center text-3xl font-bold text-blue-900">
                 SEA EDUCATION
             </a>
 
@@ -20,16 +20,24 @@
             <div class="flex-wrap items-center justify-center hidden w-full text-base lg:flex lg:items-center lg:w-auto lg:ml-auto lg:mr-auto"
                 id="menu">
                 <nav
-                    class="items-center justify-between pt-8 space-x-0 space-y-6 text-base lg:space-x-12 lg:flex lg:pt-0 lg:space-y-0">
+                    class="items-center justify-between pt-8 space-x-0 space-y-6 text-base lg:space-x-12 lg:flex lg:pt-0 lg:space-y-0 ">
                     {{-- <a href="{{ route('index') }}" --}}
-                    <a href=""
-                        class="block {{ request()->is('/') ? 'nav-link active font-medium' : 'nav-link text-serv-text' }}">Home</a>
+                    <a href="{{ route('index') }}"
+                        class="block {{ request()->is('/') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Home</a>
                     {{-- <a href="{{ route('explore.landing') }}" --}}
                     <a href=""
-                        class="block {{ request()->is('explore') ? 'nav-link active font-medium' : 'nav-link text-serv-text' }}">Explore</a>
-                    <a href="#" class="block nav-link text-serv-text">How It Works</a>
-                    <a href="#" class="block nav-link text-serv-text">Stories</a>
-                    <a href="#" class="block nav-link text-serv-text">Tips</a>
+                        class="block {{ request()->is('program') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Program</a>
+                    <a href="{{ route('about-us') }}"
+                        class="{{ request()->is('about-us') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">About
+                        Us</a>
+                    <a href="#"
+                        class="block {{ request()->is('career') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Karir</a>
+                    <a href="{{ route('partnership') }}"
+                        class="block {{ request()->is('partnership') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Parnership</a>
+                    <a href="{{ route('affiliate') }}"
+                        class="block {{ request()->is('affiliate') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Affiliate</a>
+                    <a href="{{ route('blog') }}"
+                        class="block {{ request()->is('blog') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Blog</a>
 
                 </nav>
             </div>
@@ -37,8 +45,8 @@
             @auth
                 <hr class="block lg:hidden">
                 <a href="{{ route('member.dashboard.index') }}"
-                    class="block lg:hidden nav-link text-serv-text">Dashboard</a>
-                <a href="{{ route('logout') }}" class="block lg:hidden nav-link text-serv-text"
+                    class="block lg:hidden nav-link text-blue-900">Dashboard</a>
+                <a href="{{ route('logout') }}" class="block lg:hidden nav-link text-blue-900"
                     onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">Logout
 
@@ -112,7 +120,8 @@
                                 onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">Logout
 
-                                <form action="{{ route('logout') }}" id="logout-form" method="POST" style="display: none;">
+                                <form action="{{ route('logout') }}" id="logout-form" method="POST"
+                                    style="display: none;">
                                     @csrf
                                 </form>
 

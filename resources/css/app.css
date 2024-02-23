@@ -1,7 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-[x-cloak] {
-    display: none;
+
+.navbar-1-1 #menu-toggle:checked+#menu,
+.navbar-1-1 #menu-toggle:checked+#menu+#menu {
+    display: block;
+}
+
+.align-sub {
+    vertical-align: sub;
+}
+
+
+@layer components {
+    .accordion-header {
+        @apply py-4 px-6 cursor-pointer
+    }
+
+    .accordion-header.active i {
+        @apply transition-all ease-in-out duration-500;
+        transform: rotateX(180deg)
+    }
+
+    .accordion-body {
+        @apply max-h-0 overflow-hidden transition-all duration-200 ease-out
+    }
+
+    .card {
+        @apply bg-white relative p-6 rounded-[26px] flex flex-col gap-y-4 md:max-w-[500px]
+    }
+
+    .input-field {
+        @apply placeholder:text-gray-70 text-black py-[11px] px-6 rounded-[100px] outline outline-[1.4px] outline-gray-70 focus:outline-primary-blue
+    }
+
+    .btn {
+        @apply rounded-full py-[11px] px-9 font-semibold text-center capitalize
+    }
+
+    .btn-primary {
+        @apply bg-primary-blue text-white
+    }
 }
