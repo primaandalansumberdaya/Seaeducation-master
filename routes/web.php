@@ -21,18 +21,11 @@ Route::get('about-us', [LandingController::class, 'about'])->name('about-us');
 Route::get('affiliate', [LandingController::class, 'affiliate'])->name('affiliate');
 Route::get('partnership', [LandingController::class, 'partnership'])->name('partnership');
 Route::get('blog', [LandingController::class, 'blog'])->name('blog');
+Route::get('programs', [LandingController::class, 'program'])->name('programs');
+Route::get('sign-in', [LandingController::class, 'signin'])->name('auth/sign-in');
+Route::get('sign-up', [LandingController::class, 'signup'])->name('auth/sign-up');
 
 
-
-// Route::get('/welcome', function () {
-//     return view('welcome');
-// });
-// Route::get('/', function () {
-//     return view('pages/landing/index');
-// });
-// Route::get('/about-us', function () {
-//     return view('pages/landing/about-us');
-// });
 
 // Route::middleware([
 //     'auth:sanctum',

@@ -83,4 +83,18 @@ class LandingController extends Controller
     {
         return view('pages.landing.blog');
     }
+
+    public function program()
+    {
+        return view('pages.landing.program');
+    }
+
+    public function signin()
+    {
+        return view('pages.auth.login');
+    }
+    public function signup()
+    {
+        return view('pages.auth.register');
+    }
 }

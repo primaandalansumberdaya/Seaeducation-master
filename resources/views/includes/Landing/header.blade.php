@@ -23,21 +23,21 @@
                     class="items-center justify-between pt-8 space-x-0 space-y-6 text-base lg:space-x-12 lg:flex lg:pt-0 lg:space-y-0 ">
                     {{-- <a href="{{ route('index') }}" --}}
                     <a href="{{ route('index') }}"
-                        class="block {{ request()->is('/') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Home</a>
+                        class="block {{ request()->is('/') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-2 nav-link text-blue-900' }}">Home</a>
                     {{-- <a href="{{ route('explore.landing') }}" --}}
-                    <a href=""
-                        class="block {{ request()->is('program') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Program</a>
+                    <a href="{{ route('programs') }}"
+                        class="block {{ request()->is('programs') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-2 nav-link text-blue-900' }}">Program</a>
                     <a href="{{ route('about-us') }}"
-                        class="{{ request()->is('about-us') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">About
+                        class="{{ request()->is('about-us') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-2 nav-link text-blue-900' }}">About
                         Us</a>
                     <a href="#"
-                        class="block {{ request()->is('career') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Karir</a>
+                        class="block {{ request()->is('career') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-2 nav-link text-blue-900' }}">Karir</a>
                     <a href="{{ route('partnership') }}"
-                        class="block {{ request()->is('partnership') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Parnership</a>
+                        class="block {{ request()->is('partnership') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-2 nav-link text-blue-900' }}">Parnership</a>
                     <a href="{{ route('affiliate') }}"
-                        class="block {{ request()->is('affiliate') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Affiliate</a>
+                        class="block {{ request()->is('affiliate') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-2 nav-link text-blue-900' }}">Affiliate</a>
                     <a href="{{ route('blog') }}"
-                        class="block {{ request()->is('blog') ? 'nav-link active font-medium' : 'nav-link text-blue-900' }}">Blog</a>
+                        class="block {{ request()->is('blog') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-2 nav-link text-blue-900' }}">Blog</a>
 
                 </nav>
             </div>
@@ -60,14 +60,14 @@
 
             @guest
                 <div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="menu">
-                    <button onclick="toggleModal('loginModal')"
-                        class="items-center block mt-6 text-base font-medium border-0 text-serv-login-text lg:inline-block lg:py-3 lg:px-10 focus:outline-none rounded-2xl lg:mt-0">
-                        Log In
+                    <button
+                        class="items-center block mt-6 font-medium border-0 text-sans lg:inline-block lg:py-3 lg:px-10 focus:outline-none rounded-2xl lg:mt-0">
+                        <a href="{{ route('auth/sign-in') }}">Sign In</a>
                     </button>
 
-                    <button onclick="toggleModal('registerModal')"
-                        class="items-center block mt-6 text-base font-medium border-0 lg:bg-serv-services-bg text-serv-login-text lg:inline-block lg:py-3 lg:px-10 focus:outline-none rounded-2xl lg:mt-0">
-                        Sign Up
+                    <button
+                        class="items-center block mt-6 font-medium border-0 lg:bg-primary-shineblue hover:bg-primary-blue text-white lg:inline-block lg:py-3 lg:px-10 focus:outline-none rounded-2xl lg:mt-0">
+                        <a href="{{ route('auth/sign-up') }}">Sign Up</a>
                     </button>
                 </div>
             @endguest
