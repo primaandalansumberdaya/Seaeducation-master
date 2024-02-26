@@ -44,4 +44,156 @@
     .btn-primary {
         @apply bg-primary-blue text-white
     }
+
+    .text-head-company {
+        @apply font-normal font-base text-heading-3 md:text-heading-2;
+    }
+
+    .text-desc-company {
+        @apply font-base text-heading-5 md:text-heading-4 mt-4 mb-4;
+    }
+
+    .text-attr-company {
+        @apply font-base text-heading-5 md:text-heading-4;
+    }
+
+    .test-btn {
+        @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+    }
+
+    .text-detail-base {
+        @apply text-[8px] md:text-heading-6 lg:text-sm-1 bg-blue-200 text-blue-500 font-base font-bold w-max rounded-lg
+    }
+
+    .tem-details-flex-img {
+        @apply flex-none shrink-0 md:max-w-sm mx-auto rounded-lg overflow-hidden
+    }
+
+    .profile-state-support {
+        @apply hidden md:flex
+    }
+
+    .set-li-details {
+        @apply pl-0 transition-all
+    }
+
+    .set-li-details, .set-li-details a {
+        @apply text-[14px] md:text-heading-5 lg:text-[1rem] my-3 w-full block
+    }
+
+    .set-li-details.active {
+        @apply pl-2 border-s-2 border-s-primary-blue transition-all text-primary-blue
+    }
+
+    * {
+        scroll-behavior: smooth;
+    }
+
+    a.active {
+        @apply text-blue-500
+    }
+
+    .cust-1::-webkit-scrollbar {
+        display: none;
+    }
+
+    .title-detail {
+        @apply text-[16px] md:text-heading-5 font-bold mb-2
+    }
+
+    .desc-detail {
+        @apply text-[14px] md:text-heading-6 lg:text-sm
+    }
+
+    .side-dash-nav {
+        @apply flex p-4 px-12 w-full transition-all
+    }
+
+    .side-dash-nav.side-active {
+        @apply text-base font-bold text-black w-full rounded-xl transition-all
+    }
+
+    li.li_prodit {
+        @apply block mb-1 transition-all
+    }
+
+    li.li_prodit:hover {
+        @apply bg-blue-500 text-white rounded-md transition-all
+    }
+
+    li.li_prodit.active {
+        @apply bg-blue-500 text-white rounded-md transition-all
+    }
+
+    li.li_prodit a {
+        @apply block py-2 px-4 w-full
+    }
+
+    html {
+        @apply text-base
+    }
+
+    .edt-label {
+        @apply mb-2 text-[14px] md:text-heading-5 lg:text-heading-6 2xl:text-sm
+    }
+
+    .edt-inp {
+        @apply leading-normal px-[12px] py-[8px] w-full text-[14px] md:text-heading-5 lg:text-sm-1 placeholder:text-gray-30 rounded-md border-2 border-gray-300 focus:border-primary-blue transition-all
+    }
+
+    .inputSupport {
+        @apply text-[14px] px-[12px] py-[4px] md:px-2 md:py-0 md:text-heading-4 lg:text-sm placeholder:text-gray-50 border border-gray-70 focus:border-primary-blue transition-all
+    }
+
+    .btn-add {
+        @apply py-2 w-full flex border text-green-500 border-green-500 hover:bg-green-500 hover:text-white cursor-pointer transition-all justify-center text-[14px] md:text-heading-5 lg:text-sm
+    }
+
+    .btn-plus {
+        @apply py-2 w-full flex text-white bg-green-500 cursor-pointer transition-all justify-center text-[14px] md:text-heading-5 lg:text-sm
+    }
+
+    .btn-remove {
+        @apply py-2 w-full flex text-white bg-red-500 cursor-pointer transition-all justify-center text-[14px] md:text-heading-5 lg:text-sm
+    }
+
+    .disabled-btn {
+        @apply py-2 w-full flex text-gray-200 bg-gray-30 cursor-default transition-all justify-center text-[14px] md:text-heading-5 lg:text-sm
+    }
+
+    .inps {
+        @apply transition-all duration-300 flex flex-col
+    }
+
+    .customized-btn {
+        @apply py-2 px-4 text-[14px] md:text-heading-5 lg:text-sm bg-blue-500 text-white rounded-md transition-all
+    }
+
+    .titlesz {
+        @apply text-[16px] md:text-heading-6 font-bold pb-6 mb-6 border-b-2
+    }
+
+    .support-titlesz {
+        @apply flex justify-between items-center
+    }
+
+    .edit-inside-1 {
+        @apply flex flex-col md:flex-row w-full mb-4
+    }
+
+    .edit-inside-2 {
+        @apply flex flex-1 flex-col mb-4 md:mb-0 md:pr-4
+    }
+
+    .edit-inside-3 {
+        @apply flex flex-1 flex-col mb-4 md:mb-0 md:pl-4
+    }
+
+    .coll-active {
+        @apply mt-[4px] md:mt-2 border-red-500 text-red-500 hover:text-white hover:bg-red-500
+    }
+
+    .btn-submit {
+        @apply w-full py-2 text-[14px] md:text-heading-5 lg:text-sm bg-blue-500 text-white
+    }
 }

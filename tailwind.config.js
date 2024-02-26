@@ -15,7 +15,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Poppins', 'sans-serif'],
+                base: 'Poppins, sans-serif',
+                label: 'Montserrat, sans-serif',
             },
             fontSize: {
                 'heading-1': '48px',

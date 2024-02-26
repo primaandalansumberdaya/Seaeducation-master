@@ -12,7 +12,7 @@
                 <div class="w-full grid-cols-1 gap-4 p-10 lg:grid lg:grid-cols-2">
                     <!-- Konten layar pertama -->
                     <div class="items-center justify-center hidden lg:block">
-                        <img src="/assets/images/banner2.png" alt="Logo Sea Education" class="p-16" />
+                        <img src="/assets/images/banner2.png" alt="Logo-Sea-Education" class="p-16" />
                     </div>
 
                     <!-- Konten layar kedua -->
