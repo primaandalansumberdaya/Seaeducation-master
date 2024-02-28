@@ -146,6 +146,7 @@
                 </div>
             </section>
 
+            {{-- experience --}}
             <section class="flex flex-col p-4">
                 <div class="bg-white shadow-md rounded-lg">
 
@@ -187,6 +188,50 @@
 
                     </div>
 
+                </div>
+            </section>
+
+            <!-- Organisasi -->
+            <section class="flex flex-col p-4">
+
+                <div class="bg-white shadow-md rounded-lg">
+
+                    <div class="p-4">
+
+                        <div class="py-2 flex justify-between border-b-2 border-gray-20">
+                            <!-- Updated class here -->
+                            <h5 class="mb-0 text-lg font-bold">Pengalaman Organisasi / lainnya</h5>
+
+                            <button class="flex items-center p-1 px-2 text-orange border-transparent font-bold">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
+                                    class="text-secondary-yellow">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg>
+                                <p class="my-0 ml-2 font-medium text-secondary-yellow">
+                                    <b>Tambah</b>
+                                </p>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 py-2">
+
+                        <div class="flex justify-between">
+                            <!-- Updated class here -->
+                            <h5 class="mb-0 text-base text-heading-4 font-medium">Organisasi 1</h5>
+                            <p class="flex items-center px-2 text-base font-medium">
+                                19 Februari 2023
+                            </p>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <p class="flex items-center text-base">Posisi
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
@@ -262,50 +307,6 @@
                 </div>
             </section>
 
-            <!-- Organisasi -->
-            <section class="flex flex-col p-4">
-
-                <div class="bg-white shadow-md rounded-lg">
-
-                    <div class="p-4">
-
-                        <div class="py-2 flex justify-between border-b-2 border-gray-20">
-                            <!-- Updated class here -->
-                            <h5 class="mb-0 text-lg font-bold">Pengalaman Organisasi / lainnya</h5>
-
-                            <button class="flex items-center p-1 px-2 text-orange border-transparent font-bold">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
-                                    class="text-secondary-yellow">
-                                    <path
-                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-                                </svg>
-                                <p class="my-0 ml-2 font-medium text-secondary-yellow">
-                                    <b>Tambah</b>
-                                </p>
-                            </button>
-                        </div>
-
-                    </div>
-
-                    <div class="p-4 py-2">
-
-                        <div class="flex justify-between">
-                            <!-- Updated class here -->
-                            <h5 class="mb-0 text-base text-heading-4 font-medium">Organisasi 1</h5>
-                            <p class="flex items-center px-2 text-base font-medium">
-                                19 Februari 2023
-                            </p>
-                        </div>
-
-                        <div class="flex justify-between">
-                            <p class="flex items-center text-base">Posisi
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
             <!-- Prestasi -->
             <section class="flex flex-col p-4">
 
@@ -353,7 +354,5 @@
         </section>
 
     </section>
-
-
 
 @endsection

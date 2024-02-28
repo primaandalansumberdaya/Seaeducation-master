@@ -33,6 +33,7 @@ Route::get('sign-up', [LandingController::class, 'signup'])->name('auth/sign-up'
 
 // Profile Controller
 Route::resource('profile', ProfileController::class);
+Route::get('edit-profile', [ProfileController::class, 'edit'])->name('edit-profile');
 
 
 // Route::middleware([

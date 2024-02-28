@@ -7,7 +7,7 @@
     <!-- Why working in cruise ship -->
     <section id="why-cruise-ship" class="relative flex items-center justify-between">
 
-        <div class="relative h-[40vh] w-full">
+        <div class="relative h-[60vh] w-full">
             <img class="object-cover w-full h-[600px]" src="/assets/images/RCCL.jpg" alt="">
         </div>
 
@@ -26,7 +26,7 @@
                                     <div class="flex mb-4">
                                         <div className="flex flex-col">
                                             <p
-                                                class="font-bold text-center text-white lg:text-heading-3 text-heading-4 lg:text-left font-label">
+                                                class="font-bold text-center text-white lg:text-heading-2 text-heading-4 lg:text-left font-label">
                                                 Kenapa kerja dikapal pesiar atau hotel Internasional?
                                             </p>
                                         </div>

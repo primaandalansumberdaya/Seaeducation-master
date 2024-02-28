@@ -1,8 +1,8 @@
 <!-- Sidebar -->
 <section class="flex">
 
-    <aside class="bg-white text-slate-500 h-screen fixed flex flex-col justify-between px-12">
-        <div class="w-full">
+    <aside class="bg-white text-slate-500 h-screen fixed flex flex-col justify-between px-8">
+        <div class="w-auto">
 
             <div class="flex justify-center">
                 <!-- Ubah value href agar pindah ke home page -->
@@ -12,9 +12,9 @@
                 </a>
             </div>
 
-            <nav class="pt-10">
+            <nav class="pt-3">
                 <ul class="">
-                    <li class="w-full">
+                    <li class="side-dash-nav">
                         <a href="" class="side-dash-nav">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                 class="text-xl pr-5" fill="#64748b">
@@ -23,16 +23,16 @@
                             </svg>
                             Dashboard</a>
                     </li>
-                    <li class="w-full">
-                        <a href="" class="side-dash-nav side-active">
+                    <li class="side-dash-nav">
+                        <a href="" class="side-dash-nav side-active ">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
                                 class="text-xl pr-5" fill="#64748b">
                                 <path class="text-white"
                                     d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
                             </svg>
-                            Profile</a>
+                            My Profile</a>
                     </li>
-                    <li class="w-full">
+                    <li class="side-dash-nav">
                         <a href="" class="side-dash-nav">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"
                                 class="pr-5 text-xl hover:text-white" fill="#64748b">
@@ -41,7 +41,7 @@
                             </svg>
                             My Program</a>
                     </li>
-                    <li class="w-full">
+                    <li class="side-dash-nav">
                         <a href="" class="side-dash-nav">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                 class="text-xl pr-5" fill="#64748b">
@@ -55,7 +55,7 @@
         </div>
 
         <div class="flex justify-center pb-5">
-            <button class="bg-red-70 hover:bg-red-100 text-white font-semibold py-2 px-4 rounded-xl w-4/5 h-12"
+            <button class="bg-red-70 hover:bg-red-100 text-white font-semibold py-2 px-4 rounded-xl w-full h-12"
                 id="btn">
                 Logout
             </button>

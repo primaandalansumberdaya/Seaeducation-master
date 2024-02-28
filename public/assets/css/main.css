@@ -106,11 +106,11 @@
     }
 
     .side-dash-nav {
-        @apply flex p-4 px-12 w-full transition-all
+        @apply flex p-3 w-full transition-all w-60 relative relative
     }
 
     .side-dash-nav.side-active {
-        @apply text-base font-bold text-black w-full rounded-xl transition-all
+        @apply text-base text-primary-shineblue font-bold bg-blue-5 rounded-lg border-l-0 lg:border-l-4 border-b-4 lg:border-b-0 border-primary-shineblue transition-all
     }
 
     li.li_prodit {

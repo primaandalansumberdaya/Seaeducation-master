@@ -25,6 +25,11 @@ export default {
                 'heading-4': '18px',
                 'heading-5': '14px',
                 'heading-6': '12px',
+                'base': '1vw',
+                'sm-1': '0.8rem',
+                'sm-2': '0.6rem',
+                'sm-3': '0.4rem',
+                'sm-4': '0.2rem',
             },
             colors: {
                 primary: {
@@ -83,5 +88,6 @@ export default {
         },
     },
 
-    plugins: [forms, typography],
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+    darkMode: "class"
 };
