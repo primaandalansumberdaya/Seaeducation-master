@@ -7,7 +7,9 @@
     <section class="bg-blue-5 flex justify-center py-8">
         <!-- profile biodata -->
         <section class="flex flex-col">
+
             <div class="bg-white p-12 rounded-lg shadow-md text-center w-64">
+
                 <img src="../../assets/images/banner2.png" alt="Profile-Image"
                     class="w-28 h-28 rounded-full mx-auto mb-4 border-2 border-slate-300" />
 
@@ -84,7 +86,8 @@
 
 
         {{-- Profile detail --}}
-        <section class="flex flex-col w-auto min-h-screen">
+        <section class="flex-col w-auto min-h-screen ">
+
             {{-- top --}}
             <div class="flex p-4 justify-between w-full">
 

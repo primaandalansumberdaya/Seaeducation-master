@@ -1,7 +1,7 @@
 <!-- Sidebar -->
 <section class="flex">
 
-    <aside class="bg-white text-slate-500 h-screen fixed flex flex-col justify-between px-8">
+    <aside class="bg-white text-slate-500 h-screen fixed flex flex-col justify-between px-6">
         <div class="w-auto">
 
             <div class="flex justify-center">

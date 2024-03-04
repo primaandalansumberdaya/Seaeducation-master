@@ -1312,7 +1312,7 @@
     <!-- Frequently Asked Question -->
     <section id="frequently-asking-question"
         class="items-center w-full h-full px-6 py-2 pt-16 pb-16 bg-primary-blue lg:px-16 md:px-20">
-        <div class="mx-auto max-w-8xl">
+        <div class="mx-auto max-w-6xl">
             <h1 class="mb-3 font-bold text-center text-white text-heading-2">
                 Pertanyaan Yang Sering Ditanyakan
             </h1>
@@ -1320,7 +1320,7 @@
             <div class="flex flex-wrap justify-between mx-auto lg:-mx-4">
                 <!-- accordion -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4">
-                    <div class="bg-white border-2 rounded-xl">
+                    <div class="bg-white border-2 rounded-lg">
                         <div class="flex items-center justify-between accordion-header">
                             <!-- FAQ -->
                             <span class="font-semibold text-slate-700 text-heading-4">
@@ -1347,7 +1347,7 @@
 
                 <!-- accordion -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4">
-                    <div class="bg-white border-2 rounded-xl">
+                    <div class="bg-white border-2 rounded-lg">
                         <div class="flex items-center justify-between accordion-header">
                             <!-- FAQ -->
                             <span class="font-semibold text-slate-700 text-heading-4">
@@ -1375,7 +1375,7 @@
 
                 <!-- accordion -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4">
-                    <div class="bg-white border-2 rounded-xl">
+                    <div class="bg-white border-2 rounded-lg">
                         <div class="flex items-center justify-between accordion-header">
                             <!-- FAQ -->
                             <span class="font-semibold text-slate-700 text-heading-4">
@@ -1402,7 +1402,7 @@
 
                 <!-- accordion -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4">
-                    <div class="bg-white border-2 rounded-xl">
+                    <div class="bg-white border-2 rounded-lg">
                         <div class="flex items-center justify-between accordion-header">
                             <!-- FAQ -->
                             <span class="font-semibold text-slate-700 text-heading-4">
@@ -1429,7 +1429,7 @@
 
                 <!-- accordion -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4">
-                    <div class="bg-white border-2 rounded-xl">
+                    <div class="bg-white border-2 rounded-lg">
                         <div class="flex items-center justify-between accordion-header">
                             <!-- FAQ -->
                             <span class="font-semibold text-slate-700 text-heading-4">
@@ -1457,7 +1457,7 @@
 
                 <!-- accordion -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4">
-                    <div class="bg-white border-2 rounded-xl">
+                    <div class="bg-white border-2 rounded-lg">
                         <div class="flex items-center justify-between accordion-header">
                             <!-- FAQ -->
                             <span class="font-semibold text-slate-700 text-heading-4">
@@ -1488,7 +1488,7 @@
 
                 <!-- accordion -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4">
-                    <div class="bg-white border-2 rounded-xl">
+                    <div class="bg-white border-2 rounded-lg">
                         <div class="flex items-center justify-between accordion-header">
                             <!-- FAQ -->
                             <span class="font-semibold text-slate-700 text-heading-4">
@@ -1514,7 +1514,7 @@
 
                 <!-- accordion -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4">
-                    <div class="bg-white border-2 rounded-xl">
+                    <div class="bg-white border-2 rounded-lg">
                         <div class="flex items-center justify-between accordion-header">
                             <!-- FAQ -->
                             <span class="font-semibold text-slate-700 text-heading-4">
@@ -1546,29 +1546,4 @@
     </section>
     <!-- EndFrequently Asked Question -->
 
-
-    <script lang="ts" setup>
-        import {
-            Swiper,
-            SwiperSlide
-        } from 'swiper/vue';
-
-        // Import Swiper styles
-        import 'swiper/css';
-
-        const images = [{
-                id: 1,
-                imageUrl: '/assets/images/bg-1.jpg'
-            },
-            {
-                id: 2,
-                imageUrl: '/assets/images/bg-1.jpg'
-            },
-            {
-                id: 3,
-                imageUrl: '/assets/images/bg-1.jpg'
-            },
-            // Add more items as needed
-        ];
-    </script>
 @endsection

@@ -4,9 +4,9 @@
 
 @section('content')
 
-    <section class="bg-blue-5 flex justify-center py-8">
-        <!-- profile biodata -->
-        <section class="flex flex-col">
+    <section class="bg-blue-5 flex justify-center py-8 ">
+        <!-- photo biodata -->
+        <section class="flex flex-col md:max-w-fit h-fit sticky top-8 profile-state-support">
 
             <div class="bg-white p-12 rounded-lg shadow-md text-center w-64">
 
@@ -31,23 +31,23 @@
 
             </div>
 
-            <div class="box-border py-4 px-8 mt-5 border bg-white rounded-lg shadow-md">
+            <div class="box-border py-3 px-8 mt-5 border bg-white rounded-lg shadow-md">
 
                 <div class="flex flex-col">
 
                     <div class="flex-1">
 
                         <p
-                            class="text-[16px] md:text-heading-5 xl:text-heading-6 2xl:text-sm font-semibold pb-4 mb-4 border-b-2 px-4">
+                            class="text-[16px] md:text-heading-5 xl:text-heading-6 2xl:text-sm font-semibold pb-3 mb-3 border-b-2 px-3">
                             Detail
                         </p>
 
                         <ul class="text-[14px] md:text-heading-5 xl:text-heading-6 2xl:text-sm">
-                            <li class="li_prodit active"><a class="" href="#personal">Personal Info</a></li>
-                            <li class="li_prodit"><a class="" href="#edu">Education History</a></li>
-                            <li class="li_prodit"><a class="" href="#exp">Experiences</a></li>
-                            <li class="li_prodit"><a class="" href="#skills">Skills</a></li>
-                            <li class="li_prodit"><a class="" href="#idlanguage">Languages</a></li>
+                            <li class="NavSection active"><a class="" href="#personal">Personal Info</a></li>
+                            <li class="NavSection"><a class="" href="#education">Education History</a></li>
+                            <li class="NavSection"><a class="" href="#experience">Experiences</a></li>
+                            <li class="NavSection"><a class="" href="#skill">Skills</a></li>
+                            <li class="NavSection"><a class="" href="#language">Languages</a></li>
                         </ul>
 
                     </div>
@@ -59,432 +59,1050 @@
         </section>
 
         {{-- biodata section --}}
-        <section class="flex flex-col w-auto min-h-screen ">
+        <section class="flex flex-col w-auto min-h-screen px-4">
+            <form action="" class="flex flex-col">
 
-            <div class="flex flex-1 px-4">
+                <!-- Form Edit Profile -->
+                <section id="personal" class="rounded-lg shadow-md bg-white p-8 border mb-5 content-profile">
 
-                <div class="flex flex-col w-full ">
+                    <div class="md:text-heading-3 font-bold mb-2">Personal Information</div>
+                    <div class=" font-bold mb-6 border-b-2"></div>
 
-                    <!-- Form Edit Profile -->
-                    <section id="personal" class="rounded-lg shadow-md bg-white p-8 border mb-8 content-profile ">
-                        <div class="text-[16px] md:text-heading-4 font-bold pb-6 mb-6 border-b-2">Personal Information</div>
+                    {{-- Form Name --}}
+                    <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
-                        <div>
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">First Name</label>
+                            <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
 
-                            <form action="" class="flex flex-col">
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
 
-                                <div class="edit-inside-1">
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Last Name</label>
+                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
 
-                                    <div class="edit-inside-2">
-                                        <label for="fullName" class="edt-label">Full name</label>
-                                        <input id="fullName" type="text" class="edt-inp"
-                                            placeholder="Input Your Full Name">
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                    </div>
+
+                    {{-- form about me --}}
+                    <div class="flex w-full flex-col mb-4">
+                        <label for="title" class="block mb-1 text-heading-4">About Me</label>
+                        <textarea name="desc" id="desc"
+                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                            rows="5"></textarea>
+                    </div>
+
+                    {{-- Form Birtplace and date --}}
+                    <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Birth Place</label>
+                            <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Birth Date</label>
+                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                    </div>
+
+                    {{-- Form Gender and Marital --}}
+                    <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Gender</label>
+                            <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Marital Status</label>
+                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                    </div>
+
+                    {{-- Form Contact --}}
+                    <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Phone Number</label>
+                            <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Whatsapp Number</label>
+                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                    </div>
+
+
+                    {{-- Email Contact --}}
+                    <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Email</label>
+                            <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Social Media</label>
+                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                    </div>
+
+                    {{-- Address --}}
+                    <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Address</label>
+                            <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">City</label>
+                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Province</label>
+                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                    </div>
+
+                    {{-- Province and Country --}}
+                    <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Country</label>
+                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                        <div class="w-full">
+                            <label for="title" class="block mb-1 text-heading-4">Zip Code</label>
+                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                autocomplete="title"
+                                class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                value="{{ old('title') }}" required>
+
+                            @if ($errors->has('title'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @endif
+                        </div>
+
+                </section>
+
+                <!-- Form Edit education -->
+                <section id="education" class="rounded-lg shadow-md bg-white p-8 border mb-8 content-profile">
+
+                    <div class="md:text-heading-3 font-bold mb-2">Education</div>
+                    <div class=" font-bold mb-6 border-b-2"></div>
+
+                    <div class="input-profile input-card hidden">
+
+                        <div id="parentInputSchool">
+
+                            <div id="FormInputSchool">
+
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">School Name</label>
+                                        <input placeholder="School Name" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
                                     </div>
 
-                                    <div class="edit-inside-3">
-                                        <label for="skill" class="edt-label">Expertise</label>
-                                        <input id="skill" type="text" class="edt-inp"
-                                            placeholder="You are expert at..">
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">Program or Major</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
                                     </div>
 
                                 </div>
 
-                                <div class="flex w-full flex-col mb-4">
-                                    <label for="desc" class="edt-label">Bio</label>
-                                    <textarea name="desc" id="desc" class="edt-inp" rows="5"
-                                        style="resize: none; line-height: 1; padding: 8px 12px;"></textarea>
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                                    <div class="w-full">
+
+                                        <label for="title" class="block mb-1 text-heading-4">Enters School date</label>
+                                        <input placeholder="Nama Belakang" type="date" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
+                                    </div>
+
+                                    <div class="w-full">
+
+                                        <label for="title" class="block mb-1 text-heading-4">Graduate date</label>
+                                        <input placeholder="Nama Belakang" type="date" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
+                                    </div>
+
                                 </div>
 
-                                <div class="edit-inside-1">
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
-                                    <div class="edit-inside-2">
-                                        <label for="email-acc" class="edt-label">Email Acc</label>
-                                        <input id="email-acc" type="email" class="edt-inp" placeholder="your@example.com">
-                                    </div>
+                                    <div class="w-full">
 
-                                    <div class="edit-inside-3">
-                                        <label for="email-cont" class="edt-label">Contact Email</label>
-                                        <input id="email-cont" type="email" class="edt-inp"
-                                            placeholder="your@example.com">
-                                    </div>
-
-                                </div>
-
-                                <div class="edit-inside-1">
-
-                                    <div class="edit-inside-2">
-                                        <label for="phone" class="edt-label">Phone Number</label>
-                                        <input id="phone" type="number" class="edt-inp" placeholder="081234567890">
-                                    </div>
-
-                                    <div class="edit-inside-3">
-                                        <label for="social" class="edt-label">Social Acc</label>
-                                        <input id="social" type="email" class="edt-inp"
-                                            placeholder="e.g. Linkedin link, Github, or etc.">
-                                    </div>
-
-                                </div>
-
-                                <div class="edit-inside-1">
-
-                                    <div class="edit-inside-2">
-                                        <label for="pronoun" class="edt-label">Gender</label>
-
-                                        <select name="pronoun" class="edt-inp h-full" id="pronoun"
-                                            style="line-height: normal;">
-                                            <option value="" selected disabled>Choose your gender</option>
-                                            <option value="pria">Male</option>
-                                            <option value="wanita">Female</option>
+                                        <label for="title" class="block mb-1 text-heading-4">School's Degree</label>
+                                        <select id="whatDegree" name="degreeOptions"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm">
+                                            <option value="" selected disabled>Which is your degree in this
+                                                school</option>
+                                            <option value="junior">Junior High School</option>
+                                            <option value="senior">Senior High School</option>
+                                            <option value="diploma">Diploma</option>
+                                            <option value="bachelor">Bachelor</option>
+                                            <option value="master">Master</option>
                                         </select>
 
                                     </div>
 
-                                    <div class="edit-inside-3">
-                                        <label for="dob" class="edt-label">Birth Date</label>
-                                        <input id="dob" type="date" class="edt-inp">
+                                    <div class="w-full">
+
+                                        <label for="title" class="block mb-1 text-heading-4">School Address</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
                                     </div>
 
                                 </div>
 
-                                <div class="flex w-full mb-4">
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
-                                    <div class="flex flex-1 flex-col mb-4 md:mb-0 pr-4">
-                                        <label for="address" class="edt-label">Address</label>
-                                        <input id="address" type="text" class="edt-inp"
-                                            placeholder="Your home address">
+                                    <div class="w-full">
+
+                                        <label for="title" class="block mb-1 text-heading-4">City</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
                                     </div>
 
-                                    <div class="flex flex-1 flex-col mb-4 md:mb-0 pl-4">
-                                        <label for="hobby" class="edt-label">Hobby</label>
-                                        <input id="hobby" type="email" class="edt-inp"
-                                            placeholder="Write your hobby or you can leave it behind...">
+                                    <div class="w-full">
+
+                                        <label for="title" class="block mb-1 text-heading-4">Province</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
+                                    </div>
+
+                                    <div class="w-full">
+
+                                        <label for="title" class="block mb-1 text-heading-4">Country</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">Zip Code</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
+                                    </div>
+
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">Certificate</label>
+                                        <input id="actualInpCert"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            type="file">
+                                        </input>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <button id="btnRemoveInpSch" type="button" class="btn-remove mb-1">Remove</button> -->
+                        <div class="flex flex-row gap-3">
+                            <button id="btnRemSch" type="button" class="btn-remove">Remove -</button>
+                            <button id="btnAddInpSch" type="button" class="btn-plus">Add +</button>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="btn-add collapses">Tambah +</button>
+
+                </section>
+
+                <!-- Form Edit experience -->
+                <section id="experience" class="rounded-lg shadow-md bg-white p-8 border mb-8 content-profile">
+
+                    <div class="md:text-heading-3 font-bold mb-2">Experience</div>
+                    <div class=" font-bold mb-6 border-b-2"></div>
+
+                    <div class="input-profile input-card hidden">
+
+                        <div id="parentInputExperience">
+                            <div id="FormInputExperience">
+
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                                    <div class="w-full">
+
+                                        <label for="title" class="block mb-1 text-heading-4">Company Name</label>
+                                        <input placeholder="School Name" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
+                                    </div>
+
+                                    <div class="w-full">
+
+                                        <label for="title" class="block mb-1 text-heading-4">Work Based on</label>
+                                        <select id="experienceBase" name="baseOptions"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm">>
+                                            <option value="" selected disabled>Choose one</option>
+                                            <option value="hotel">Hotel</option>
+                                            <option value="cruise">Cruise Ship</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">Department</label>
+                                        <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+                                    </div>
+
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">Job Title or
+                                            Position</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
                                     </div>
 
                                 </div>
 
-                            </form>
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">Start Date</label>
+                                        <input placeholder="Nama Depan" type="date" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+                                    </div>
+
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">End of Contract</label>
+                                        <input placeholder="Nama Belakang" type="date" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+                                    </div>
+
+                                </div>
+
+                                {{-- form about me --}}
+                                <div class="flex w-full flex-col mb-4">
+                                    <label for="title" class="block mb-1 text-heading-4">Job Description</label>
+                                    <textarea name="desc" id="desc"
+                                        class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                        rows="5"></textarea>
+                                </div>
+
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">Address</label>
+                                        <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+                                    </div>
+
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">City</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+                                    </div>
+
+                                </div>
+
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                                    <div class="w-full">
+
+                                        <label for="title" class="block mb-1 text-heading-4">City</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
+                                    </div>
+
+                                    <div class="w-full">
+
+                                        <label for="title" class="block mb-1 text-heading-4">Province</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
+                                    </div>
+
+                                    <div class="w-full">
+
+                                        <label for="title" class="block mb-1 text-heading-4">Country</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">Zip Code</label>
+                                        <input placeholder="Nama Belakang" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+
+                                    </div>
+
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">Certificate</label>
+                                        <input id="actualInpCert"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            type="file">
+                                        </input>
+                                    </div>
+                                </div>
+
+                            </div>
 
                         </div>
 
-                    </section>
-
-                    <!-- Form Edit education -->
-                    <section id="edu" class="rounded-lg shadow-md bg-white p-8 border mb-8 content-profile">
-
-                        <div class="titlesz md:text-heading-4">Education</div>
-
-                        <div class="inp-profile inps hidden">
-
-                            <form id="formInpSch" action="">
-
-                                <div id="parentInpSch">
-
-                                    <div id="inpSch-1">
-
-                                        <div class="edit-inside-1">
-                                            <div class="edit-inside-2">
-                                                <label for="schoolName" class="edt-label">School Name</label>
-                                                <input id="schoolName" type="text" class="edt-inp"
-                                                    placeholder="Your School name">
-                                            </div>
-                                            <div class="edit-inside-3">
-                                                <label for="majorName" class="edt-label">Program/Major</label>
-                                                <input id="majorName" type="text" class="edt-inp"
-                                                    placeholder="What major did you pick in the school">
-                                            </div>
-                                        </div>
-
-                                        <div class="edit-inside-1">
-
-                                            <div class="edit-inside-2">
-
-                                                <label for="whatDegree" class="edt-label">School's Degree</label>
-                                                <select id="whatDegree" name="degreeOptions"
-                                                    class="edt-inp h-full leading-normal">
-                                                    <option value="" selected disabled>Which is your degree in this
-                                                        school</option>
-                                                    <option value="junior">Junior High School</option>
-                                                    <option value="senior">Senior High School</option>
-                                                    <option value="diploma">Diploma</option>
-                                                    <option value="bachelor">Bachelor</option>
-                                                    <option value="master">Master</option>
-                                                </select>
-
-                                            </div>
-
-                                            <div class="edit-inside-3">
-
-                                                <label for="stSchool" class="edt-label">Enters School date</label>
-                                                <input id="stSchool" type="date" class="edt-inp">
-
-                                            </div>
-
-                                        </div>
-
-                                        <div class="edit-inside-1">
-
-                                            <div class="edit-inside-2">
-
-                                                <label for="adSchool" class="edt-label">School Address</label>
-                                                <input id="adSchool" type="text" class="edt-inp"
-                                                    placeholder="Your school address">
-
-                                            </div>
-                                            <div class="edit-inside-3">
-
-                                                <label for="grSchool" class="edt-label">Graduate date</label>
-                                                <input id="grSchool" type="date" class="edt-inp">
-
-                                            </div>
-                                        </div>
-
-                                        <div class="edit-inside-1">
-                                            <div class="edit-inside-2">
-                                                <label for="citySch" class="edt-label">City</label>
-                                                <input id="citySch" class="edt-inp" type="text"
-                                                    placeholder="School's City name">
-                                            </div>
-                                            <div class="edit-inside-3">
-                                                <label for="provSch" class="edt-label">Province</label>
-                                                <input id="provSch" class="edt-inp" type="text"
-                                                    placeholder="School's Province name">
-                                            </div>
-                                        </div>
-
-                                        <div class="edit-inside-1">
-                                            <div class="edit-inside-2">
-                                                <label for="zipSch" class="edt-label">Zipcode</label>
-                                                <input id="zipSch" class="edt-inp" type="number"
-                                                    placeholder="Zipcode">
-                                            </div>
-
-                                            <div class="edit-inside-3">
-                                                <label for="actualInpCert" class="edt-label">School's diploma</label>
-                                                <div
-                                                    class="flex h-full items-center leading-normal text-[14px] md:text-heading-5 lg:text-sm-1 cursor-pointer">
-                                                    <input id="actualInpCert"
-                                                        class="flex bg-blue-500 text-white h-full w-full px-[10px] py-[6px] text-center items-center rounded mr-[8px] cursor-pointer"
-                                                        type="file">
-                                                    <!-- <input id="actualInpCert" type="file" hidden> -->
-                                                    <!-- <label id="certSch"
-                                                                                                                                                                                                                                                                              class="flex font-bold bg-blue-500 text-white h-full w-fit px-[10px] py-[6px] text-center items-center rounded mr-[8px] cursor-pointer"
-                                                                                                                                                                                                                                                                              for="actualInpCert">Choose file</label>
-                                                                                                                                                                                                                                                                              <span id="fileName" class="sup-filename text-[14px] md:text-heading-5 lg:text-sm-1">No File Chosen</span> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- <button id="btnRemoveInpSch" type="button" class="btn-remove mb-1">Remove</button> -->
-                                <div class="flex flex-row">
-                                    <button id="btnRemSch" type="button" class="btn-remove">Remove -</button>
-                                    <button id="btnAddInpSch" type="button" class="btn-plus mx-2">Add +</button>
-                                    <button id="btnSubmitSch" type="submit" class="btn-submit">Submit</button>
-                                </div>
-
-                            </form>
-
+                        <div class="flex flex-row gap-3">
+                            <button id="btnRemExp" type="button" class="btn-remove">Remove -</button>
+                            <button id="btnAddInpExp" type="button" class="btn-plus">Add +</button>
                         </div>
 
-                        <button type="button" class="btn-add collapses">Tambah +</button>
+                    </div>
 
-                    </section>
+                    <button type="button" class="btn-add collapses">Tambah +</button>
 
-                    <!-- Form Edit experience -->
-                    <section id="exp" class="rounded-lg shadow-md bg-white p-8 border mb-8 content-profile">
+                </section>
 
-                        <div class="titlesz md:text-heading-4">Experience</div>
+                <!-- Form Edit skill -->
+                <section id="skills" class="rounded-lg shadow-md bg-white p-8 border mb-8 content-profile">
+                    <div class="md:text-heading-3 font-bold mb-2">Skills</div>
+                    <div class=" font-bold mb-6 border-b-2"></div>
 
-                        <div class="inp-exp inps hidden">
+                    <div class="input-skill input-card">
 
-                            <form id="formInpExp" action="">
+                        <div id="parentInputSkill">
+                            <div id="FormInputSkill">
 
-                                <div id="parentInpExp">
-                                    <div id="inpExp-1">
-                                        <div class="edit-inside-1">
-                                            <div class="edit-inside-2">
-                                                <label for="institName" class="edt-label">Company name</label>
-                                                <input id="institName" type="text" class="edt-inp"
-                                                    placeholder="Input the name here...">
-                                            </div>
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
-                                            <div class="edit-inside-3">
-                                                <label for="expBase" class="edt-label">Work Based on</label>
-                                                <select id="expBase" name="baseOptions"
-                                                    class="edt-inp h-full leading-normal">
-                                                    <option value="" selected disabled>Choose one</option>
-                                                    <option value="hotel">Hotel</option>
-                                                    <option value="cruise">Cruise Ship</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                    <div class="w-full">
+                                        <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                    focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
 
-                                        <div class="edit-inside-1">
-                                            <div class="edit-inside-2">
-                                                <label for="expPos" class="edt-label">Position</label>
-                                                <input type="text" id="expPos" class="edt-inp"
-                                                    placeholder="Your job position">
-                                            </div>
-
-                                            <div class="edit-inside-3">
-                                                <label for="expJobTitle" class="edt-label">Job Title</label>
-                                                <input type="text" id="expJobTitle" class="edt-inp"
-                                                    placeholder="The job title">
-                                            </div>
-                                        </div>
-
-                                        <div class="edit-inside-1">
-
-                                            <div class="edit-inside-2">
-                                                <label for="expJobDesc" class="edt-label">Job Description</label>
-                                                <input type="text" id="expJobDesc" class="edt-inp"
-                                                    placeholder="The job description">
-                                            </div>
-                                            <div class="edit-inside-3">
-                                                <label for="expStart" class="edt-label">Start job</label>
-                                                <input type="date" id="expStart" class="edt-inp" placeholder="">
-                                            </div>
-
-                                        </div>
-
-                                        <div class="edit-inside-1">
-
-                                            <div class="edit-inside-2">
-                                                <label for="expEnd" class="edt-label">End job</label>
-                                                <input type="date" id="expEnd" class="edt-inp" placeholder="">
-                                            </div>
-                                            <div class="edit-inside-3">
-                                                <label for="expAddress" class="edt-label">Address</label>
-                                                <input type="text" id="expAddress" class="edt-inp"
-                                                    placeholder="Company address">
-                                            </div>
-
-                                        </div>
-
-                                        <div class="edit-inside-1">
-                                            <div class="edit-inside-2">
-                                                <label for="expCity" class="edt-label">City</label>
-                                                <input type="text" id="expCity" class="edt-inp"
-                                                    placeholder="City name">
-                                            </div>
-
-                                            <div class="edit-inside-3">
-                                                <label for="expProvince" class="edt-label">Provinsi</label>
-                                                <input type="text" id="expProvince" class="edt-inp"
-                                                    placeholder="Province name">
-                                            </div>
-
-                                        </div>
-
-                                        <div class="edit-inside-1">
-                                            <div class="edit-inside-2">
-                                                <label for="expCountry" class="edt-label">Country</label>
-                                                <input type="text" id="expCountry" class="edt-inp"
-                                                    placeholder="Company's country">
-                                            </div>
-
-                                            <div class="edit-inside-3">
-                                                <label for="expZip" class="edt-label">Zip Code</label>
-                                                <input type="number" id="expZip" class="edt-inp"
-                                                    placeholder="Zip Code">
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="flex flex-row">
-                                    <button id="btnRemExp" type="button" class="btn-remove">Remove -</button>
-                                    <button id="btnAddInpExp" type="button" class="btn-plus mx-2">Add +</button>
-                                    <button id="btnSubmitExp" type="submit" class="btn-submit">Submit</button>
-                                </div>
-
-                            </form>
-
-                        </div>
-
-                        <button type="button" class="btn-add collapses">Tambah +</button>
-
-                    </section>
-
-                    <!-- Form Edit skill -->
-                    <section id="skills" class="rounded-lg shadow-md bg-white p-8 border mb-8 content-profile">
-
-                        <div class="titlesz md:text-heading-4">Skills</div>
-
-                        <div class="inp-skill inps">
-
-                            <form id="formInpSkill" action="">
-
-                                <div id="parentInpSkill">
-
-                                    <div id="inpSkill-1">
-                                        <div class="edit-inside-1">
-                                            <div class="flex flex-1 flex-col mb-4 md:mb-0">
-                                                <label for="addInputSkill" class="edt-label"></label>
-                                                <input id="addInputSkill" type="text" class="edt-inp"
-                                                    placeholder="Add your skill...">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="flex flex-row">
-
-                                    <button id="btnRemSkill" type="button" class="btn-remove">Remove -</button>
-                                    <button id="btnAddInpSkill" type="button" class="btn-plus mx-2">Add +</button>
-                                    <button id="btnSubmitSkill" type="submit" class="btn-submit">Submit</button>
-
-                                </div>
-
-                            </form>
-                        </div>
-                        <!-- <button type="button" class="btn-add collapses">Tambah +</button> -->
-                    </section>
-
-                    <!-- Form Edit langguange -->
-                    <section id="idlanguage" class="rounded-lg shadow-md bg-white p-8 border mb-8 content-profile">
-
-                        <div class="titlesz md:text-heading-4">Languages</div>
-
-                        <div class="inp-langs inps">
-
-                            <form id="formInpLangs" action="">
-
-                                <div id="parentInpLang">
-                                    <div id="inpLang-1">
-                                        <div class="edit-inside-1">
-                                            <div class="flex flex-1 flex-col mb-4 md:mb-0">
-                                                <label for="addInputLang" class="edt-label"></label>
-                                                <input id="addInputLang" type="text" class="edt-inp"
-                                                    placeholder="Add your Language...">
-                                            </div>
-                                        </div>
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
                                     </div>
                                 </div>
-
-                                <div class="flex flex-row">
-                                    <button id="btnRemLang" type="button" class="btn-remove">Remove -</button>
-                                    <button id="btnAddInpLang" type="button" class="btn-plus mx-2">Add +</button>
-                                    <button id="btnSubmitLang" type="submit" class="btn-submit">Submit</button>
-                                </div>
-
-                            </form>
+                            </div>
                         </div>
-                        <!-- <button type="button" class="btn-add collapses">Tambah +</button> -->
-                    </section>
-
-                </div>
+                        <div class="flex flex-row">
+                            <button id="btnRemSkill" type="button" class="btn-remove">Remove -</button>
+                            <button id="btnAddInpSkill" type="button" class="btn-plus mx-2">Add +</button>
+                        </div>
+            </form>
             </div>
-
+            <!-- <button type="button" class="btn-add collapses">Tambah +</button> -->
         </section>
 
+        <!-- Form Edit languange -->
+        <section id="language" class="rounded-lg shadow-md bg-white p-8 border mb-8 content-profile">
+
+            <div class="md:text-heading-3 font-bold mb-2">Languange</div>
+            <div class=" font-bold mb-6 border-b-2"></div>
+
+            <div class="input-language input-card">
+
+                <div id="parentInputLanguage">
+                    <div id="formInputLanguage">
+
+                        <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+
+                            <div class="w-full">
+                                <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                    autocomplete="title"
+                                    class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                    value="{{ old('title') }}" required>
+
+                                @if ($errors->has('title'))
+                                    <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                @endif
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-3">
+                    <button id="btnRemLang" type="button" class="btn-remove">Remove -</button>
+                    <button id="btnAddInpLang" type="button" class="btn-plus">Add +</button>
+                </div>
+
+            </div>
+            <!-- <button type="button" class="btn-add collapses">Tambah +</button> -->
+        </section>
+
+        </form>
+    </section>
     </section>
 
-
-
 @endsection
+
+@push('after-script')
+    <script>
+        // Collapse
+        var coll = document.getElementsByClassName("collapses");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("coll-active");
+                if (this.innerHTML === "Tambah +") {
+                    this.innerHTML = "Hide";
+                } else {
+                    this.innerHTML = "Tambah +";
+                }
+                var content = this.previousElementSibling;
+                if (content.classList.contains("hidden")) {
+                    content.classList.remove("hidden");
+                } else {
+                    content.classList.add("hidden");
+                }
+            });
+        };
+
+        // School Inputs
+
+        // Get all variables needed
+        // const formInpSch = document.getElementById('formInpSch');
+        // const btnRemove = document.querySelector('.btn-remove');
+        const parentInputSchool = document.getElementById('parentInputSchool');
+        const inpSch = document.getElementById('FormInputSchool');
+        const btnAddInpSch = document.getElementById('btnAddInpSch');
+        const btnRemSch = document.getElementById('btnRemSch');
+        let counterSch = 1;
+
+        const parentInputExperience = document.getElementById('parentInputExperience');
+        const inpExp = document.getElementById('FormInputExperience');
+        const btnAddInpExp = document.getElementById('btnAddInpExp');
+        const btnRemExp = document.getElementById('btnRemExp');
+        let counterExp = 1;
+
+        const parentInputSkill = document.getElementById('parentInputSkill');
+        const inpSkill = document.getElementById('FormInputSkill');
+        const btnAddInpSkill = document.getElementById('btnAddInpSkill');
+        const btnRemSkill = document.getElementById('btnRemSkill');
+        let counterSkill = 1;
+
+        const parentInputLanguage = document.getElementById('parentInputLanguage');
+        const inpLang = document.getElementById('formInputLanguage');
+        const btnAddInpLang = document.getElementById('btnAddInpLang');
+        const btnRemLang = document.getElementById('btnRemLang');
+        let counterLang = 1;
+
+        // Function to clone the element
+        function cloneElement(cloneInp, parentInp, counterInp) {
+            const clone = cloneInp.cloneNode(true);
+            const cloneID = cloneInp.id;
+            const cloneSplitID = cloneID.split('-', 1);
+            clone.id = `${cloneSplitID}-${counterInp}`;
+            // Let's try to change all inputs inside the cloned element with randomized dynamic IDs
+            const inpCloneChild = clone.querySelectorAll('input');
+            const inpCloneChildSelect = clone.querySelectorAll('select');
+            const inpCloneLables = clone.querySelectorAll('label.edit-label');
+            // Update all labels
+            inpCloneLables.forEach((labels) => {
+                var lbl = labels.getAttribute('for');
+                labels.setAttribute('for', `${lbl}-${counterInp}`);
+            });
+            inpCloneChild.forEach((inp) => {
+                inp.id = `${inp.id}-${counterInp}`;
+                inp.textContent = '';
+            });
+            // Let's try to change all selects inside the cloned element with randomized dynamic IDs
+            inpCloneChildSelect.forEach((inp) => {
+                inp.id = `${inp.id}-${counterInp}`;
+                inp.textContent = '';
+            });
+
+            parentInp.appendChild(clone);
+            if (counterInp != 1) {
+                // const certFilename = clone.querySelectorAll('.sup-filename');
+                // certFilename.forEach((filename) => {
+                //   filename.id = `${filename.id}-${counterSch}`;
+                // });
+                // const certSch = clone.querySelectorAll('#certSch');
+                // certSch.forEach((cert) => {
+                //   cert.id = `${cert.id}-${counterSch}`;
+                // });
+
+                if (cloneInp === inpSch) {
+                    const actualInpCert = clone.querySelectorAll('#actualInpCert');
+                    actualInpCert.forEach((inp) => {
+                        inp.id = `${inp.id}-${counterInp}`;
+                    });
+                };
+
+                // // Remove button
+                // const btnCreateRemove = document.createElement('button');
+                // btnCreateRemove.classList.add('btn-remove', `btn-removal-${cloneSplitID}`);
+                // // btnCreateRemove.setAttribute('id', `remove-${cloneSplitID}-${counterInp}`)
+                // btnCreateRemove.type = 'button';
+                // btnCreateRemove.textContent = 'Remove';
+                // btnCreateRemove.addEventListener('click', () => {
+                //   removeSchElement();
+                // });
+
+                // Title
+                const title = document.createElement('h1');
+                title.classList.add('text-[16px]', 'md:text-heading-6', 'font-bold');
+                if (cloneInp === inpSch) {
+                    title.textContent = `Education ${counterInp}`;
+                } else if (cloneInp === inpExp) {
+                    title.textContent = `Experience ${counterInp}`;
+                } else {
+                    console.warn('Other Method');
+                }
+
+                // Create a div for the title and remove button as flex\
+                const divTitle = document.createElement('div');
+                divTitle.classList.add('title-contents', 'support-title-contents');
+                divTitle.appendChild(title);
+                // divTitle.appendChild(btnCreateRemove);
+                // Put the div before the first child
+                clone.insertBefore(divTitle, clone.firstElementChild);
+
+                // clone.insertBefore(title, clone.firstElementChild);
+                // Put the remove button after the title
+                // clone.insertBefore(btnCreateRemove, clone.firstElementChild.nextElementSibling);
+                // clone.appendChild(btnCreateRemove);
+            } else {
+                console.log("ain't gonna happen lol")
+            };
+            console.log(counterInp);
+        };
+
+        // Alternate Remove button
+        // const btnCreateRemove = document.createElement('button');
+        // btnCreateRemove.classList.add('btn-remove');
+        // // btnCreateRemove.setAttribute('id', `remove-${cloneSplitID}-${counterInp}`)
+        // btnCreateRemove.type = 'button';
+        // btnCreateRemove.textContent = 'Remove';
+        // btnCreateRemove.addEventListener('click', () => {
+        //   removeSchElement();
+        // });
+
+        // Function to remove the element
+
+        btnRemSch.addEventListener('click', () => {
+            const lastChild = parentInputSchool.lastChild
+            if (counterSch != 1) {
+                parentInputSchool.removeChild(lastChild);
+                counterSch--;
+            } else {
+                console.log("Sch : Nuh uh")
+            };
+            console.log(counterSch);
+            console.log('Counter for sch: ' + counterSch);
+        });
+
+        btnRemExp.addEventListener('click', () => {
+            const lastChild = parentInputExperience.lastChild
+            if (counterExp != 1) {
+                parentInputExperience.removeChild(lastChild);
+                counterExp--;
+            } else {
+                console.log('Exp : Nuh uh');
+            }
+        });
+
+        btnRemSkill.addEventListener('click', () => {
+            const lastChild = parentInputSkill.lastChild
+            if (counterSkill != 1) {
+                parentInputSkill.removeChild(lastChild);
+                counterSkill--;
+            } else {
+                console.log('Skill : Nuh uh');
+            }
+        });
+
+        btnRemLang.addEventListener('click', () => {
+            const lastChild = parentInputLanguage.lastChild
+            if (counterLang != 1) {
+                parentInputLanguage.removeChild(lastChild);
+                counterLang--;
+            } else {
+                console.log('Lang : Nuh uh');
+            }
+        });
+
+        // Adds
+
+        btnAddInpSch.addEventListener('click', () => {
+            // Make a condition if this button is already clicked 4 times, then it will be disabled
+            counterSch++;
+            cloneElement(inpSch, parentInputSchool, counterSch);
+            btnAddInpSch.classList.remove('hidden');
+            console.log('Counter for sch: ' + counterSch);
+        });
+
+        btnAddInpExp.addEventListener('click', () => {
+            counterExp++;
+            cloneElement(inpExp, parentInputExperience, counterExp);
+            btnAddInpExp.classList.remove('hidden')
+            console.log('Counter for Exp: ' + counterExp);
+        });
+
+        btnAddInpSkill.addEventListener('click', () => {
+            counterSkill++;
+            cloneElement(inpSkill, parentInputSkill, counterSkill);
+            btnAddInpSkill.classList.remove('hidden')
+            console.log('Counter for Skill: ' + counterSkill);
+        });
+
+        btnAddInpLang.addEventListener('click', () => {
+            counterLang++;
+            cloneElement(inpLang, parentInputLanguage, counterLang);
+            btnAddInpLang.classList.remove('hidden')
+            console.log('Counter for Lang: ' + counterLang);
+        });
+
+        // Do a time loop to check if the counterSch is below 4, then the button will be enabled again
+        setInterval(() => {
+            // Schs
+            if (counterSch < 4 || counterSch <= 1) {
+                btnAddInpSch.classList.remove('disabled-btn');
+                btnRemSch.classList.add('disabled-btn')
+                // console.warn('warn remove hidden: ' + counterSch)
+            } else {
+                btnAddInpSch.classList.add('disabled-btn');
+                // console.warn('warn added hidden: ' + counterSch)
+            };
+            if (counterSch > 4) {
+                window.location.reload();
+            } else if (counterSch === 4) {
+                btnAddInpSch.setAttribute('disabled', '');
+            } else {
+                btnAddInpSch.removeAttribute('disabled');
+            }
+            if (counterSch > 1) {
+                btnRemSch.classList.remove('disabled-btn')
+            }
+
+            // Exps
+            if (counterExp < 4 || counterExp <= 1) {
+                btnAddInpExp.classList.remove('disabled-btn');
+                btnRemExp.classList.add('disabled-btn')
+                // console.warn('warn remove hidden: ' + counterSch)
+            } else {
+                btnAddInpExp.classList.add('disabled-btn');
+                // console.warn('warn added hidden: ' + counterSch)
+            };
+            if (counterExp > 4) {
+                window.location.reload();
+            } else if (counterExp === 4) {
+                btnAddInpExp.setAttribute('disabled', '');
+            } else {
+                btnAddInpExp.removeAttribute('disabled');
+            }
+            if (counterExp > 1) {
+                btnRemExp.classList.remove('disabled-btn')
+            }
+
+            // Skills
+            if (counterSkill < 4 || counterSkill <= 1) {
+                btnAddInpSkill.classList.remove('disabled-btn');
+                btnRemSkill.classList.add('disabled-btn')
+                // console.warn('warn remove hidden: ' + counterSch)
+            };
+            if (counterSkill > 1) {
+                btnRemSkill.classList.remove('disabled-btn')
+            };
+
+            // Language
+            if (counterLang < 4 || counterLang <= 1) {
+                btnAddInpLang.classList.remove('disabled-btn');
+                btnRemLang.classList.add('disabled-btn')
+                // console.warn('warn remove hidden: ' + counterSch)
+            };
+            if (counterLang > 1) {
+                btnRemLang.classList.remove('disabled-btn')
+            };
+        }, 100);
+
+
+        function initializePage() {
+            makeNavLinksSmooth();
+            spyScrolling();
+        }
+    </script>
+@endpush

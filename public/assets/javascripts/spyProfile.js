@@ -1,4 +1,4 @@
-export const makeNavLinksSmooth = () => {
+function makeNavLinksSmooth() {
     const navLinks = document.querySelectorAll('.nav-links');
 
     for (let n in navLinks) {
@@ -14,7 +14,7 @@ export const makeNavLinksSmooth = () => {
     }
 }
 
-export const spyScrolling = (offset = 0) => {
+function spyScrolling(offset = 0) {
     const sections = document.querySelectorAll('.content-profile');
 
     window.onscroll = () => {
@@ -28,3 +28,5 @@ export const spyScrolling = (offset = 0) => {
             }
     }
 }
+
+spyScrolling(50);
