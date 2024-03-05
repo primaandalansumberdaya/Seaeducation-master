@@ -32,10 +32,14 @@ Route::get('sign-in', [LandingController::class, 'signin'])->name('auth/sign-in'
 Route::get('sign-up', [LandingController::class, 'signup'])->name('auth/sign-up');
 
 // Profile Controller
-Route::resource('profile', ProfileController::class);
-Route::get('edit-profile', [ProfileController::class, 'edit'])->name('edit-profile');
 
-
+Route::Group(
+    ['prefix' => 'profile', 'as' => 'profile.'],
+    function () {
+        Route::resource('about', ProfileController::class);
+        // Route::get('edit-profile', [ProfileController::class, 'edit'])->name('edit-profile');
+    }
+);
 // Route::middleware([
 //     'auth:sanctum',
 //     config('jetstream.auth_session'),

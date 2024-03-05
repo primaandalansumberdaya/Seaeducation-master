@@ -10,7 +10,7 @@
 
             <div class="bg-white p-12 rounded-lg shadow-md text-center w-64">
 
-                <img src="../../assets/images/banner2.png" alt="Profile-Image"
+                <img src="" alt="Profile-Image"
                     class="w-28 h-28 rounded-full mx-auto mb-4 border-2 border-slate-300" />
 
                 <div class="flex flex-col">
@@ -59,8 +59,8 @@
         </section>
 
         {{-- biodata section --}}
-        <section class="flex flex-col w-auto min-h-screen px-4">
-            <form action="" class="flex flex-col">
+        <form action="" class="flex flex-col">
+            <section class="flex flex-col w-auto min-h-screen px-4">
 
                 <!-- Form Edit Profile -->
                 <section id="personal" class="rounded-lg shadow-md bg-white p-8 border mb-5 content-profile">
@@ -72,28 +72,28 @@
                     <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">First Name</label>
-                            <input placeholder="Nama Depan" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="firstName" class="block mb-1 text-heading-4">First Name</label>
+                            <input placeholder="Nama depan" type="text" name="firstName" id="firstName"
+                                autocomplete="firstName"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->firstName ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('firstName'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('firstName') }}</p>
                             @endif
                         </div>
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Last Name</label>
-                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="lastName" class="block mb-1 text-heading-4">Last Name</label>
+                            <input placeholder="Nama belakang" type="text" name="lastName" id="lastName"
+                                autocomplete="lastName"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->lastName ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('lastName'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('lastName') }}</p>
                             @endif
                         </div>
 
@@ -101,39 +101,39 @@
 
                     {{-- form about me --}}
                     <div class="flex w-full flex-col mb-4">
-                        <label for="title" class="block mb-1 text-heading-4">About Me</label>
-                        <textarea name="desc" id="desc"
+                        <label for="aboutMe" class="block mb-1 text-heading-4">About Me</label>
+                        <textarea name="aboutMe" id="aboutMe"
                             class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                            rows="5"></textarea>
+                            rows="5" value="{{ $user->detail_users->aboutMe ?? ' ' }}"></textarea>
                     </div>
 
                     {{-- Form Birtplace and date --}}
                     <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Birth Place</label>
-                            <input placeholder="Nama Depan" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="birthPlace" class="block mb-1 text-heading-4">Birth Place</label>
+                            <input placeholder="Tempat lahir" type="text" name="birthPlace" id="birthPlace"
+                                autocomplete="birthPlace"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->birthPlace ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('birthPlace'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('birthPlace') }}</p>
                             @endif
                         </div>
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Birth Date</label>
-                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="birthDate" class="block mb-1 text-heading-4">Birth Date</label>
+                            <input placeholder="Nama Belakang" type="date" name="birthDate" id="birthDate"
+                                autocomplete="birthDate"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->birthDate ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('birthDate'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('birthDate') }}</p>
                             @endif
                         </div>
 
@@ -143,28 +143,28 @@
                     <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Gender</label>
-                            <input placeholder="Nama Depan" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="gender" class="block mb-1 text-heading-4">Gender</label>
+                            <input placeholder="Jenis kelamin" type="text" name="gender" id="gender"
+                                autocomplete="gender"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->gender ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('gender'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('gender') }}</p>
                             @endif
                         </div>
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Marital Status</label>
-                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="marital" class="block mb-1 text-heading-4">Marital Status</label>
+                            <input placeholder="Status pernikahan" type="text" name="marital" id="marital"
+                                autocomplete="marital"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->marital ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('marital'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('marital') }}</p>
                             @endif
                         </div>
 
@@ -174,60 +174,59 @@
                     <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Phone Number</label>
-                            <input placeholder="Nama Depan" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="phoneNumber" class="block mb-1 text-heading-4">Phone Number</label>
+                            <input placeholder="Phone Number" type="number" name="phoneNumber" id="phoneNumber"
+                                autocomplete="phoneNumber"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->phoneNumber ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('phoneNumber'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('phoneNumber') }}</p>
                             @endif
                         </div>
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Whatsapp Number</label>
-                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="phoneNumber2" class="block mb-1 text-heading-4">Whatsapp Number</label>
+                            <input placeholder="Whatsapp Number" type="number" name="phoneNumber2" id="phoneNumber2"
+                                autocomplete="phoneNumber2"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->phoneNumber2 ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('phoneNumber2'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('phoneNumber2') }}</p>
                             @endif
                         </div>
 
                     </div>
 
-
                     {{-- Email Contact --}}
                     <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Email</label>
-                            <input placeholder="Nama Depan" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="email" class="block mb-1 text-heading-4">Email</label>
+                            <input placeholder="Nama Depan" type="text" name="email" id="email"
+                                autocomplete="email"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->email ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('email'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('email') }}</p>
                             @endif
                         </div>
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Social Media</label>
-                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="socmed" class="block mb-1 text-heading-4">Social Media</label>
+                            <input placeholder="Nama Belakang" type="text" name="socmed" id="socmed"
+                                autocomplete="socmed"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->social_media->socmed ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('socmed'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('socmed') }}</p>
                             @endif
                         </div>
 
@@ -237,41 +236,41 @@
                     <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Address</label>
-                            <input placeholder="Nama Depan" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="address" class="block mb-1 text-heading-4">Address</label>
+                            <input placeholder="Alamat" type="text" name="address" id="address"
+                                autocomplete="address"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->address ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('address'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('address') }}</p>
                             @endif
                         </div>
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">City</label>
-                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="regency" class="block mb-1 text-heading-4">City</label>
+                            <input placeholder="Kota" type="text" name="regency" id="regency"
+                                autocomplete="regency"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->regency ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('regency'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('regency') }}</p>
                             @endif
                         </div>
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Province</label>
-                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="province" class="block mb-1 text-heading-4">Province</label>
+                            <input placeholder="Provinsi" type="text" name="province" id="province"
+                                autocomplete="province"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->regency ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('province'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('province') }}</p>
                             @endif
                         </div>
 
@@ -281,30 +280,31 @@
                     <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Country</label>
-                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="country" class="block mb-1 text-heading-4">Country</label>
+                            <input placeholder="Negara Asal" type="text" name="country" id="country"
+                                autocomplete="country"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->country ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('country'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('country') }}</p>
                             @endif
                         </div>
 
                         <div class="w-full">
-                            <label for="title" class="block mb-1 text-heading-4">Zip Code</label>
-                            <input placeholder="Nama Belakang" type="text" name="title" id="title"
-                                autocomplete="title"
+                            <label for="zipCode" class="block mb-1 text-heading-4">Zip Code</label>
+                            <input placeholder="Kode Pos" type="text" name="zipCode" id="zipCode"
+                                autocomplete="zipCode"
                                 class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                value="{{ old('title') }}" required>
+                                value="{{ $user->detail_users->zipCode ?? ' ' }}" required>
 
-                            @if ($errors->has('title'))
-                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                            @if ($errors->has('zipCode'))
+                                <p class="mb-3 text-sm text-red-500">{{ $errors->first('zipCode') }}</p>
                             @endif
                         </div>
+
 
                 </section>
 
@@ -579,6 +579,20 @@
                                         @endif
                                     </div>
 
+                                    <div class="w-full">
+                                        <label for="title" class="block mb-1 text-heading-4">Supervisor
+                                            Name</label>
+                                        <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                                focus:border-primary-shineblue sm:text-sm"
+                                            value="{{ old('title') }}" required>
+
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+                                    </div>
+
                                 </div>
 
                                 <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
@@ -636,7 +650,8 @@
                                     </div>
 
                                     <div class="w-full">
-                                        <label for="title" class="block mb-1 text-heading-4">City</label>
+                                        <label for="title" class="block mb-1 text-heading-4">Company Telephone
+                                            Number</label>
                                         <input placeholder="Nama Belakang" type="text" name="title" id="title"
                                             autocomplete="title"
                                             class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
@@ -769,51 +784,49 @@
                             <button id="btnRemSkill" type="button" class="btn-remove">Remove -</button>
                             <button id="btnAddInpSkill" type="button" class="btn-plus mx-2">Add +</button>
                         </div>
-            </form>
-            </div>
-            <!-- <button type="button" class="btn-add collapses">Tambah +</button> -->
-        </section>
+                    </div>
+                </section>
 
-        <!-- Form Edit languange -->
-        <section id="language" class="rounded-lg shadow-md bg-white p-8 border mb-8 content-profile">
+                <!-- Form Edit languange -->
+                <section id="language" class="rounded-lg shadow-md bg-white p-8 border mb-8 content-profile">
 
-            <div class="md:text-heading-3 font-bold mb-2">Languange</div>
-            <div class=" font-bold mb-6 border-b-2"></div>
+                    <div class="md:text-heading-3 font-bold mb-2">Languange</div>
+                    <div class=" font-bold mb-6 border-b-2"></div>
 
-            <div class="input-language input-card">
+                    <div class="input-language input-card">
 
-                <div id="parentInputLanguage">
-                    <div id="formInputLanguage">
+                        <div id="parentInputLanguage">
+                            <div id="formInputLanguage">
 
-                        <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
+                                <div class="flex flex-col md:flex-row w-full mb-4 gap-3">
 
-                            <div class="w-full">
-                                <input placeholder="Nama Depan" type="text" name="title" id="title"
-                                    autocomplete="title"
-                                    class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
+                                    <div class="w-full">
+                                        <input placeholder="Nama Depan" type="text" name="title" id="title"
+                                            autocomplete="title"
+                                            class="block w-full py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-primary-shineblue
                                                 focus:border-primary-shineblue sm:text-sm"
-                                    value="{{ old('title') }}" required>
+                                            value="{{ old('title') }}" required>
 
-                                @if ($errors->has('title'))
-                                    <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
-                                @endif
+                                        @if ($errors->has('title'))
+                                            <p class="mb-3 text-sm text-red-500">{{ $errors->first('title') }}</p>
+                                        @endif
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
+                        <div class="flex flex-row gap-3">
+                            <button id="btnRemLang" type="button" class="btn-remove">Remove -</button>
+                            <button id="btnAddInpLang" type="button" class="btn-plus">Add +</button>
+                        </div>
+
                     </div>
-                </div>
+                    <!-- <button type="button" class="btn-add collapses">Tambah +</button> -->
+                </section>
 
-                <div class="flex flex-row gap-3">
-                    <button id="btnRemLang" type="button" class="btn-remove">Remove -</button>
-                    <button id="btnAddInpLang" type="button" class="btn-plus">Add +</button>
-                </div>
-
-            </div>
-            <!-- <button type="button" class="btn-add collapses">Tambah +</button> -->
-        </section>
-
+            </section>
         </form>
-    </section>
     </section>
 
 @endsection

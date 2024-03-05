@@ -1893,10 +1893,6 @@ html{
   margin-right: 1.5rem;
 }
 
-.mr-\[8px\]{
-  margin-right: 8px;
-}
-
 .ms-1{
   margin-inline-start: 0.25rem;
 }
@@ -2948,11 +2944,6 @@ html{
   padding-right: 2.25rem;
 }
 
-.px-\[10px\]{
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -2996,11 +2987,6 @@ html{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-\[6px\]{
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
 
 .pb-1{
@@ -4976,10 +4962,6 @@ html{
 
   .lg\:text-heading-4{
     font-size: 18px;
-  }
-
-  .lg\:text-sm-1{
-    font-size: 0.8rem;
   }
 
   .lg\:shadow-xl{

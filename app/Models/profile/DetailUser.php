@@ -25,7 +25,7 @@ class DetailUser extends Model
         'address',
         'regency',
         'province',
-        'zip_code',
+        'zipCode',
         'country'
     ];
 
