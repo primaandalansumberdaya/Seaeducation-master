@@ -2778,6 +2778,21 @@ html{
   background-color: rgb(253 245 232 / var(--tw-bg-opacity));
 }
 
+.bg-gray-70{
+  --tw-bg-opacity: 1;
+  background-color: rgb(80 85 93 / var(--tw-bg-opacity));
+}
+
+.bg-slate-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-blue-70{
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 134 204 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-25{
   --tw-bg-opacity: 0.25;
 }

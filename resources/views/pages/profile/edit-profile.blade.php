@@ -4,62 +4,84 @@
 
 @section('content')
 
-    <section class="bg-blue-5 flex justify-center py-8 ">
-        <!-- photo biodata -->
-        <section class="flex flex-col md:max-w-fit h-fit sticky top-8 profile-state-support">
+    <form action="" method="POST" enctype="multipart/form-data">
 
-            <div class="bg-white p-12 rounded-lg shadow-md text-center w-64">
+        @method('PUT')
 
-                <img src="" alt="Profile-Image"
-                    class="w-28 h-28 rounded-full mx-auto mb-4 border-2 border-slate-300" />
+        @csrf
 
-                <div class="flex flex-col">
-                    <label for="choose"
-                        class="px-3 py-2 text-sm font-medium leading-4 text-gray-100 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-                        Choose File
-                    </label>
+        <section class="bg-blue-5 flex justify-center py-8 ">
+            <!-- photo biodata -->
+            <section class="flex flex-col md:max-w-fit h-fit sticky top-8 profile-state-support">
 
-                    <input type="file" accept="image/*" id="choose" name="photo" hidden>
+                <div class="bg-white p-12 rounded-lg shadow-md text-center w-64">
 
-                    {{-- {{ route('member.delete.photo.profile') }} --}}
-                    <a href="#" type="button"
-                        class="px-3 py-2 text-sm font-medium leading-4 text-red-100 bg-transparent rounded-md hover:bg-gray-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
-                        onclick="return confirm( 'Are you sure want to delete your photo?' )">
-                        Delete
-                    </a>
+
+                    {{-- Image validation if profile image is null --}}
+                    {{-- @if (auth()->user()->detail_user()->first()->photo != null)
+                        <img src="{{ url(Storage::url(auth()->user()->detail_user()->first()->photo)) }}" alt="photo profile"
+                            srcset="" class="w-16 h-16 rounded-full">
+                    @else --}}
+                    <span class="inline-block w-28 h-28 mb-4 overflow-hidden rounded-full">
+                        <svg class="inline w-28 h-28 mr-3 rounded-full item center bg-blue-5" fill="#87A9DB"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z">
+                            </path>
+                        </svg>
+                    </span>
+                    {{-- @endif --}}
+
+                    {{-- <img src="" alt="Profile-Image"
+                        class="w-28 h-28 rounded-full mx-auto mb-4 border-2 border-slate-300" /> --}}
+
+                    <div class="flex flex-col">
+                        <label for="choose"
+                            class="px-3 py-2 text-sm font-medium leading-4 text-gray-100 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                            Choose File
+                        </label>
+
+                        <input type="file" accept="image/*" id="choose" name="photo" hidden>
+
+                        {{-- {{ route('member.delete.photo.profile') }} --}}
+                        <a href="#" type="button"
+                            class="px-3 py-2 text-sm font-medium leading-4 text-red-100 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                            onclick="return confirm( 'Are you sure want to delete your photo?' )">
+                            Delete
+                        </a>
+                    </div>
+
                 </div>
 
-            </div>
+                <div class="box-border py-3 px-8 mt-5 border bg-white rounded-lg shadow-md">
 
-            <div class="box-border py-3 px-8 mt-5 border bg-white rounded-lg shadow-md">
+                    <div class="flex flex-col">
 
-                <div class="flex flex-col">
+                        <div class="flex-1">
 
-                    <div class="flex-1">
+                            <p
+                                class="text-[16px] md:text-heading-5 xl:text-heading-6 2xl:text-sm font-semibold pb-3 mb-3 border-b-2 px-3">
+                                Detail
+                            </p>
 
-                        <p
-                            class="text-[16px] md:text-heading-5 xl:text-heading-6 2xl:text-sm font-semibold pb-3 mb-3 border-b-2 px-3">
-                            Detail
-                        </p>
+                            <ul class="text-[14px] md:text-heading-5 xl:text-heading-6 2xl:text-sm">
+                                <li class="NavSection active"><a class="" href="#personal">Personal Info</a></li>
+                                <li class="NavSection"><a class="" href="#education">Education History</a></li>
+                                <li class="NavSection"><a class="" href="#experience">Experiences</a></li>
+                                <li class="NavSection"><a class="" href="#skill">Skills</a></li>
+                                <li class="NavSection"><a class="" href="#language">Languages</a></li>
+                            </ul>
 
-                        <ul class="text-[14px] md:text-heading-5 xl:text-heading-6 2xl:text-sm">
-                            <li class="NavSection active"><a class="" href="#personal">Personal Info</a></li>
-                            <li class="NavSection"><a class="" href="#education">Education History</a></li>
-                            <li class="NavSection"><a class="" href="#experience">Experiences</a></li>
-                            <li class="NavSection"><a class="" href="#skill">Skills</a></li>
-                            <li class="NavSection"><a class="" href="#language">Languages</a></li>
-                        </ul>
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+            </section>
 
-        </section>
+            {{-- biodata section --}}
 
-        {{-- biodata section --}}
-        <form action="" class="flex flex-col">
             <section class="flex flex-col w-auto min-h-screen px-4">
 
                 <!-- Form Edit Profile -->
@@ -826,8 +848,8 @@
                 </section>
 
             </section>
-        </form>
-    </section>
+        </section>
+    </form>
 
 @endsection
 
@@ -853,11 +875,7 @@
             });
         };
 
-        // School Inputs
-
         // Get all variables needed
-        // const formInpSch = document.getElementById('formInpSch');
-        // const btnRemove = document.querySelector('.btn-remove');
         const parentInputSchool = document.getElementById('parentInputSchool');
         const inpSch = document.getElementById('FormInputSchool');
         const btnAddInpSch = document.getElementById('btnAddInpSch');
@@ -909,14 +927,6 @@
 
             parentInp.appendChild(clone);
             if (counterInp != 1) {
-                // const certFilename = clone.querySelectorAll('.sup-filename');
-                // certFilename.forEach((filename) => {
-                //   filename.id = `${filename.id}-${counterSch}`;
-                // });
-                // const certSch = clone.querySelectorAll('#certSch');
-                // certSch.forEach((cert) => {
-                //   cert.id = `${cert.id}-${counterSch}`;
-                // });
 
                 if (cloneInp === inpSch) {
                     const actualInpCert = clone.querySelectorAll('#actualInpCert');
@@ -925,19 +935,9 @@
                     });
                 };
 
-                // // Remove button
-                // const btnCreateRemove = document.createElement('button');
-                // btnCreateRemove.classList.add('btn-remove', `btn-removal-${cloneSplitID}`);
-                // // btnCreateRemove.setAttribute('id', `remove-${cloneSplitID}-${counterInp}`)
-                // btnCreateRemove.type = 'button';
-                // btnCreateRemove.textContent = 'Remove';
-                // btnCreateRemove.addEventListener('click', () => {
-                //   removeSchElement();
-                // });
-
                 // Title
                 const title = document.createElement('h1');
-                title.classList.add('text-[16px]', 'md:text-heading-6', 'font-bold');
+                title.classList.add('font-bold', 'md:text-heading-3', 'mb-2');
                 if (cloneInp === inpSch) {
                     title.textContent = `Education ${counterInp}`;
                 } else if (cloneInp === inpExp) {
@@ -950,42 +950,26 @@
                 const divTitle = document.createElement('div');
                 divTitle.classList.add('title-contents', 'support-title-contents');
                 divTitle.appendChild(title);
-                // divTitle.appendChild(btnCreateRemove);
-                // Put the div before the first child
+
                 clone.insertBefore(divTitle, clone.firstElementChild);
 
-                // clone.insertBefore(title, clone.firstElementChild);
-                // Put the remove button after the title
-                // clone.insertBefore(btnCreateRemove, clone.firstElementChild.nextElementSibling);
-                // clone.appendChild(btnCreateRemove);
             } else {
-                console.log("ain't gonna happen lol")
+                console.log("can't create more")
             };
             console.log(counterInp);
         };
 
-        // Alternate Remove button
-        // const btnCreateRemove = document.createElement('button');
-        // btnCreateRemove.classList.add('btn-remove');
-        // // btnCreateRemove.setAttribute('id', `remove-${cloneSplitID}-${counterInp}`)
-        // btnCreateRemove.type = 'button';
-        // btnCreateRemove.textContent = 'Remove';
-        // btnCreateRemove.addEventListener('click', () => {
-        //   removeSchElement();
-        // });
-
         // Function to remove the element
-
         btnRemSch.addEventListener('click', () => {
             const lastChild = parentInputSchool.lastChild
             if (counterSch != 1) {
                 parentInputSchool.removeChild(lastChild);
                 counterSch--;
             } else {
-                console.log("Sch : Nuh uh")
+                console.log("School : can not remove")
             };
             console.log(counterSch);
-            console.log('Counter for sch: ' + counterSch);
+            console.log('Counter for school: ' + counterSch);
         });
 
         btnRemExp.addEventListener('click', () => {
@@ -994,7 +978,7 @@
                 parentInputExperience.removeChild(lastChild);
                 counterExp--;
             } else {
-                console.log('Exp : Nuh uh');
+                console.log("Experience : can not remove");
             }
         });
 
@@ -1004,7 +988,7 @@
                 parentInputSkill.removeChild(lastChild);
                 counterSkill--;
             } else {
-                console.log('Skill : Nuh uh');
+                console.log('Skill : can not remove');
             }
         });
 
@@ -1014,7 +998,7 @@
                 parentInputLanguage.removeChild(lastChild);
                 counterLang--;
             } else {
-                console.log('Lang : Nuh uh');
+                console.log('Lang : can not remove');
             }
         });
 
@@ -1095,8 +1079,9 @@
             if (counterSkill < 4 || counterSkill <= 1) {
                 btnAddInpSkill.classList.remove('disabled-btn');
                 btnRemSkill.classList.add('disabled-btn')
-                // console.warn('warn remove hidden: ' + counterSch)
+
             };
+
             if (counterSkill > 1) {
                 btnRemSkill.classList.remove('disabled-btn')
             };
