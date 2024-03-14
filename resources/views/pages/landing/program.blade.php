@@ -10,9 +10,9 @@
                 <div class="flex flex-wrap justify-between mx-auto lg:-mx-4">
                     <!-- Card -->
                     <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
+                        <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                             <a href="detail.html">
-                                <div class="m-4 overflow-hidden rounded-lg">
+                                <div class=" overflow-hidden rounded-md">
                                     <img alt="Placeholder" class="block w-full h-auto" src="/assets/images/program1.jpg" />
                                 </div>
                             </a>
@@ -21,17 +21,18 @@
                                 <div class="flex">
                                     <span
                                         class="block p-2 my-2 font-semibold text-green-100 text-heading-6 bg-green-10 rounded-lg">
-                                        PENDAFTARAN DIBUKA
+                                        Pendaftaran dibuka
                                     </span>
                                 </div>
                                 <h1 class="mb-2 text-heading-3">
-                                    <a class="font-bold text-primary-darkblue" href="#">
+                                    <a class="font-bold text-primary-darkblue lg:text-heading-3 text-heading-4"
+                                        href="#">
                                         Regular Program
                                     </a>
                                 </h1>
 
-                                <div class="flex flex-row mb-2">
-                                    <p class="flex mr-6 text-xs text-gray-50">
+                                <div class="flex flex-row mb-2 items-center">
+                                    <p class="flex mr-6 text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -40,7 +41,7 @@
                                         </svg>
                                         Online
                                     </p>
-                                    <p class="flex text-xs text-gray-50">
+                                    <p class="flex text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -53,7 +54,7 @@
 
                                 <div class="flex">
                                     <p
-                                        class="items-center p-2 my-2 mb-5 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
+                                        class="items-center p-2 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
                                         Deadline Pendaftaran : 4 Desember 2022
                                     </p>
                                 </div>
@@ -64,9 +65,9 @@
 
                     <!-- Card -->
                     <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
+                        <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                             <a href="detail.html">
-                                <div class="m-4 overflow-hidden rounded-lg">
+                                <div class=" overflow-hidden rounded-md">
                                     <img alt="Placeholder" class="block w-full h-auto" src="/assets/images/program1.jpg" />
                                 </div>
                             </a>
@@ -75,17 +76,18 @@
                                 <div class="flex">
                                     <span
                                         class="block p-2 my-2 font-semibold text-green-100 text-heading-6 bg-green-10 rounded-lg">
-                                        PENDAFTARAN DIBUKA
+                                        Pendaftaran dibuka
                                     </span>
                                 </div>
                                 <h1 class="mb-2 text-heading-3">
-                                    <a class="font-bold text-primary-darkblue" href="#">
+                                    <a class="font-bold text-primary-darkblue lg:text-heading-3 text-heading-4"
+                                        href="#">
                                         Regular Program
                                     </a>
                                 </h1>
 
-                                <div class="flex flex-row mb-2">
-                                    <p class="flex mr-6 text-xs text-gray-50">
+                                <div class="flex flex-row mb-2 items-center">
+                                    <p class="flex mr-6 text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -94,7 +96,7 @@
                                         </svg>
                                         Online
                                     </p>
-                                    <p class="flex text-xs text-gray-50">
+                                    <p class="flex text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -107,7 +109,7 @@
 
                                 <div class="flex">
                                     <p
-                                        class="items-center p-2 my-2 mb-5 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
+                                        class="items-center p-2 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
                                         Deadline Pendaftaran : 4 Desember 2022
                                     </p>
                                 </div>
@@ -118,9 +120,9 @@
 
                     <!-- Card -->
                     <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
+                        <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                             <a href="detail.html">
-                                <div class="m-4 overflow-hidden rounded-lg">
+                                <div class=" overflow-hidden rounded-md">
                                     <img alt="Placeholder" class="block w-full h-auto" src="/assets/images/program1.jpg" />
                                 </div>
                             </a>
@@ -129,17 +131,18 @@
                                 <div class="flex">
                                     <span
                                         class="block p-2 my-2 font-semibold text-green-100 text-heading-6 bg-green-10 rounded-lg">
-                                        PENDAFTARAN DIBUKA
+                                        Pendaftaran dibuka
                                     </span>
                                 </div>
                                 <h1 class="mb-2 text-heading-3">
-                                    <a class="font-bold text-primary-darkblue" href="#">
+                                    <a class="font-bold text-primary-darkblue lg:text-heading-3 text-heading-4"
+                                        href="#">
                                         Regular Program
                                     </a>
                                 </h1>
 
-                                <div class="flex flex-row mb-2">
-                                    <p class="flex mr-6 text-xs text-gray-50">
+                                <div class="flex flex-row mb-2 items-center">
+                                    <p class="flex mr-6 text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -148,7 +151,7 @@
                                         </svg>
                                         Online
                                     </p>
-                                    <p class="flex text-xs text-gray-50">
+                                    <p class="flex text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -161,7 +164,7 @@
 
                                 <div class="flex">
                                     <p
-                                        class="items-center p-2 my-2 mb-5 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
+                                        class="items-center p-2 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
                                         Deadline Pendaftaran : 4 Desember 2022
                                     </p>
                                 </div>
@@ -172,9 +175,9 @@
 
                     <!-- Card -->
                     <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
+                        <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                             <a href="detail.html">
-                                <div class="m-4 overflow-hidden rounded-lg">
+                                <div class=" overflow-hidden rounded-md">
                                     <img alt="Placeholder" class="block w-full h-auto"
                                         src="/assets/images/program1.jpg" />
                                 </div>
@@ -184,17 +187,18 @@
                                 <div class="flex">
                                     <span
                                         class="block p-2 my-2 font-semibold text-green-100 text-heading-6 bg-green-10 rounded-lg">
-                                        PENDAFTARAN DIBUKA
+                                        Pendaftaran dibuka
                                     </span>
                                 </div>
                                 <h1 class="mb-2 text-heading-3">
-                                    <a class="font-bold text-primary-darkblue" href="#">
+                                    <a class="font-bold text-primary-darkblue lg:text-heading-3 text-heading-4"
+                                        href="#">
                                         Regular Program
                                     </a>
                                 </h1>
 
-                                <div class="flex flex-row mb-2">
-                                    <p class="flex mr-6 text-xs text-gray-50">
+                                <div class="flex flex-row mb-2 items-center">
+                                    <p class="flex mr-6 text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -203,7 +207,7 @@
                                         </svg>
                                         Online
                                     </p>
-                                    <p class="flex text-xs text-gray-50">
+                                    <p class="flex text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -216,7 +220,7 @@
 
                                 <div class="flex">
                                     <p
-                                        class="items-center p-2 my-2 mb-5 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
+                                        class="items-center p-2 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
                                         Deadline Pendaftaran : 4 Desember 2022
                                     </p>
                                 </div>
@@ -227,9 +231,9 @@
 
                     <!-- Card -->
                     <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
+                        <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                             <a href="detail.html">
-                                <div class="m-4 overflow-hidden rounded-lg">
+                                <div class=" overflow-hidden rounded-md">
                                     <img alt="Placeholder" class="block w-full h-auto"
                                         src="/assets/images/program1.jpg" />
                                 </div>
@@ -239,17 +243,18 @@
                                 <div class="flex">
                                     <span
                                         class="block p-2 my-2 font-semibold text-green-100 text-heading-6 bg-green-10 rounded-lg">
-                                        PENDAFTARAN DIBUKA
+                                        Pendaftaran dibuka
                                     </span>
                                 </div>
                                 <h1 class="mb-2 text-heading-3">
-                                    <a class="font-bold text-primary-darkblue" href="#">
+                                    <a class="font-bold text-primary-darkblue lg:text-heading-3 text-heading-4"
+                                        href="#">
                                         Regular Program
                                     </a>
                                 </h1>
 
-                                <div class="flex flex-row mb-2">
-                                    <p class="flex mr-6 text-xs text-gray-50">
+                                <div class="flex flex-row mb-2 items-center">
+                                    <p class="flex mr-6 text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -258,7 +263,7 @@
                                         </svg>
                                         Online
                                     </p>
-                                    <p class="flex text-xs text-gray-50">
+                                    <p class="flex text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -271,7 +276,7 @@
 
                                 <div class="flex">
                                     <p
-                                        class="items-center p-2 my-2 mb-5 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
+                                        class="items-center p-2 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
                                         Deadline Pendaftaran : 4 Desember 2022
                                     </p>
                                 </div>
@@ -282,9 +287,9 @@
 
                     <!-- Card -->
                     <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
+                        <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                             <a href="detail.html">
-                                <div class="m-4 overflow-hidden rounded-lg">
+                                <div class=" overflow-hidden rounded-md">
                                     <img alt="Placeholder" class="block w-full h-auto"
                                         src="/assets/images/program1.jpg" />
                                 </div>
@@ -294,17 +299,18 @@
                                 <div class="flex">
                                     <span
                                         class="block p-2 my-2 font-semibold text-green-100 text-heading-6 bg-green-10 rounded-lg">
-                                        PENDAFTARAN DIBUKA
+                                        Pendaftaran dibuka
                                     </span>
                                 </div>
                                 <h1 class="mb-2 text-heading-3">
-                                    <a class="font-bold text-primary-darkblue" href="#">
+                                    <a class="font-bold text-primary-darkblue lg:text-heading-3 text-heading-4"
+                                        href="#">
                                         Regular Program
                                     </a>
                                 </h1>
 
-                                <div class="flex flex-row mb-2">
-                                    <p class="flex mr-6 text-xs text-gray-50">
+                                <div class="flex flex-row mb-2 items-center">
+                                    <p class="flex mr-6 text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -313,7 +319,7 @@
                                         </svg>
                                         Online
                                     </p>
-                                    <p class="flex text-xs text-gray-50">
+                                    <p class="flex text-gray-50 lg:text-heading-5 text-heading-6">
                                         <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -326,7 +332,7 @@
 
                                 <div class="flex">
                                     <p
-                                        class="items-center p-2 my-2 mb-5 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
+                                        class="items-center p-2 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
                                         Deadline Pendaftaran : 4 Desember 2022
                                     </p>
                                 </div>

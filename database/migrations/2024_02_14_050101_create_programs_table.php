@@ -40,6 +40,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('programs');
+        if (Schema::hasTable('programs')) {
+            Schema::dropIfExists('programs');
+        }
     }
 };

@@ -3,7 +3,7 @@
         <div class="flex flex-row flex-wrap items-center justify-between mx-auto ">
 
             {{-- <a href="{{ route('index') }}" class="flex items-center text-3xl font-bold"> --}}
-            <a href="" class="flex items-center text-3xl font-bold text-blue-900">
+            <a href="{{ route('index') }}" class="flex items-center text-3xl font-bold text-blue-900">
                 SEA EDUCATION
             </a>
 
