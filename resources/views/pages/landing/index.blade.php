@@ -5,159 +5,173 @@
 @section('content')
 
     <!-- Why working in cruise ship -->
-    <section id="why-cruise-ship" class="relative flex items-center justify-between">
+    <section id="why-cruise-ship" class="relative flex items-center justify-between transition-all duration-500">
 
-        <div class="relative h-[45vh] w-full">
+        <div class="relative lg:h-[45vh] w-full">
             <img class="object-cover w-full h-[600px]" src="/assets/images/RCCL.jpg" alt="">
         </div>
 
-        <div class="absolute justify-between mx-auto h-[600px] w-full items-center bg-primary-blue bg-opacity-80">
+        <div
+            class="absolute top-0 left-0 justify-between mx-auto h-[600px] w-full items-center bg-primary-blue bg-opacity-80">
 
-            <div class="items-center max-w-6xl mx-auto lg:p-8 p-4">
+            <div class="items-center max-w-6xl mx-auto lg:px-0 md:px-20">
 
-                <div class="flex flex-wrap justify-between lg:-mx-4">
+                <div class=" px-4 py-2 pt-8 pb-8">
 
-                    <!-- Card -->
-                    <div class="w-full md:w-1/2 my-2 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden rounded-lg">
-                            <div class="flex flex-col p-4">
-                                <div class="flex mb-2">
-                                    <div className="flex flex-col">
-                                        <p
-                                            class="font-bold items-center text-center text-white lg:text-heading-2 text-heading-4 lg:text-left font-label">
-                                            Kenapa kerja di kapal pesiar atau hotel Internasional?
+                    <div class="flex flex-wrap justify-between lg:-mx-4">
+
+                        <!-- Card -->
+                        <div class="w-full md:w-1/2 my-2 lg:px-4 lg:w-1/3">
+                            <div class="overflow-hidden rounded-lg">
+                                <div class="flex flex-col p-4">
+                                    <div class="flex mb-2">
+                                        <div className="flex flex-col">
+                                            <p
+                                                class="font-bold items-center text-center text-white lg:text-heading-2 text-heading-4 lg:text-left font-label">
+                                                Kenapa kerja di kapal pesiar atau hotel Internasional?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                            <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
+                                <div class="flex flex-col p-6">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="items-center p-4 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
+                                            <img src="/assets/svgs/dollar.svg" class="items-center" alt="dollar"
+                                                width="30px">
+                                        </div>
+                                        <div className="flex flex-col">
+                                            <p
+                                                class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                                Bergaji Dollar
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class="text-gray-50 lg:text-heading-4 text-heading-5">
+                                            Dapatkan gaji dollar / euro dengan standar internasional + bonus
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Card -->
+                        <!-- End Card -->
 
-                    <!-- Card -->
-                    <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
-                            <div class="flex flex-col p-6">
-                                <div class="flex items-center mb-2">
-                                    <div class="items-center p-4 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                        <img src="/assets/svgs/dollar.svg" class="items-center" alt="dollar"
-                                            width="30px">
+                        <!-- Card -->
+                        <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                            <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
+                                <div class="flex flex-col p-6">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="items-center p-4 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
+                                            <img src="/assets/svgs/accomodation.svg" class="items-center" alt="accomodation"
+                                                width="30px">
+                                        </div>
+                                        <div className=" flex flex-col">
+                                            <p
+                                                class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                                Free Akomodasi
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div className="flex flex-col">
-                                        <p class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
-                                            Bergaji Dollar
+                                    <div class="flex">
+                                        <p class="text-gray-50 lg:text-heading-4 text-heading-5 ">
+                                            Tidak perlu lagi ongkos pulang dan pergi serta bayar biaya tinggal
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex flex-col">
-                                    <p class="text-gray-50 lg:text-heading-4 text-heading-5">
-                                        Dapatkan gaji dollar / euro dengan standar internasional + bonus
-                                    </p>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Card -->
+                        <!-- End Card -->
 
-                    <!-- Card -->
-                    <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
-                            <div class="flex flex-col p-6">
-                                <div class="flex items-center mb-2">
-                                    <div class="items-center p-4 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                        <img src="/assets/svgs/accomodation.svg" class="items-center" alt="accomodation"
-                                            width="30px">
+                        <!-- Card -->
+                        <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                            <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
+                                <div class="flex flex-col p-6">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
+                                            <img src="/assets/svgs/travel.svg" class="items-center " alt="travel-world"
+                                                width="30px">
+                                        </div>
+                                        <div className="flex flex-col">
+                                            <p
+                                                class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                                Travel The World
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div className=" flex flex-col">
-                                        <p class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
-                                            Free Akomodasi
+                                    <div class="flex">
+                                        <p class="text-gray-50 lg:text-heading-4 text-heading-5">
+                                            Kesempatan berkeliling dan menjelajah berbagai kota dan negara di dunia
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex">
-                                    <p class="text-gray-50 lg:text-heading-4 text-heading-5 ">
-                                        Tidak perlu lagi ongkos pulang dan pergi serta bayar biaya tinggal
-                                    </p>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Card -->
+                        <!-- End Card -->
 
-                    <!-- Card -->
-                    <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
-                            <div class="flex flex-col p-6">
-                                <div class="flex items-center mb-2">
-                                    <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                        <img src="/assets/svgs/travel.svg" class="items-center " alt="travel-world"
-                                            width="30px">
+                        <!-- Card -->
+                        <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                            <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
+                                <div class="flex flex-col p-6">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
+                                            <img src="/assets/svgs/study.svg" class="items-center" alt="study"
+                                                width="30px">
+                                        </div>
+                                        <div className="flex flex-col">
+                                            <p class="mb-1 font-bold text-gray-100 text-heading-4 font-label">
+                                                Minimum Pendidikan
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div className="flex flex-col">
-                                        <p class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
-                                            Travel The World
+                                    <div class="flex">
+                                        <p class="text-gray-50 lg:text-heading-4 text-heading-5">
+                                            Minimum SMA/SMK dapat bekerja dikapal pesiar
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex">
-                                    <p class="text-gray-50 lg:text-heading-4 text-heading-5">
-                                        Kesempatan berkeliling dan menjelajah berbagai kota dan negara di dunia
-                                    </p>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Card -->
+                        <!-- End Card -->
 
-                    <!-- Card -->
-                    <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
-                            <div class="flex flex-col p-6">
-                                <div class="flex items-center mb-2">
-                                    <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                        <img src="/assets/svgs/study.svg" class="items-center" alt="study"
-                                            width="30px">
+                        <!-- Card -->
+                        <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                            <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
+                                <div class="flex flex-col p-6">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
+                                            <img src="/assets/svgs/career.svg" class="items-center" alt="career"
+                                                width="30px">
+                                        </div>
+                                        <div className="flex flex-col">
+                                            <p
+                                                class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                                Peluang Karir Luas
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div className="flex flex-col">
-                                        <p class="mb-1 font-bold text-gray-100 text-heading-4 font-label">
-                                            Minimum Pendidikan
+                                    <div class="flex">
+                                        <p class="text-gray-50 lg:text-heading-4 text-heading-5">
+                                            Peluang karir Internasional meningkatkan bisa anda dapatkan
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex">
-                                    <p class="text-gray-50 lg:text-heading-4 text-heading-5">
-                                        Minimum SMA/SMK dapat bekerja dikapal pesiar
-                                    </p>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Card -->
+                        <!-- End Card -->
 
-                    <!-- Card -->
-                    <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
-                        <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
-                            <div class="flex flex-col p-6">
-                                <div class="flex items-center mb-2">
-                                    <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                        <img src="/assets/svgs/career.svg" class="items-center" alt="career"
-                                            width="30px">
-                                    </div>
-                                    <div className="flex flex-col">
-                                        <p class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
-                                            Peluang Karir Luas
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="flex">
-                                    <p class="text-gray-50 lg:text-heading-4 text-heading-5">
-                                        Peluang karir Internasional meningkatkan bisa anda dapatkan
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <!-- End Card -->
 
                 </div>
 
@@ -263,8 +277,7 @@
                             </div>
                             <div class="flex">
                                 <p class="text-gray-50 lg:text-heading-4 text-heading-5">
-                                    Konsultasikan impian karir anda dengan kami untuk dapat mewujudkan impian masa depan
-                                    anda
+                                    Konsultasikan impian karir dengan kami untuk dapat membantu mewujudkan impian masa depan
                                 </p>
                             </div>
                         </div>
@@ -290,7 +303,7 @@
                             <div class="flex">
                                 <p class="text-gray-50 lg:text-heading-4 text-heading-5">
                                     Ikuti dan selesaikan pelatihan di Sea Education dan dapatkan sertifikat setara
-                                    diploma 1
+                                    diploma yang dapat digunakan untuk melamar pekerjaan.
                                 </p>
                             </div>
                         </div>
@@ -387,7 +400,7 @@
             <div class="lg:text-left">
                 <h2 class="font-medium text-center text-primary-blue text-heading-3 lg:text-heading-4 text-heading-5">
                     Training Program</h2>
-                <h1 class="font-bold text-center text-heading-2 text-slate-700 lg:text-heading-3 text-heading-4">
+                <h1 class="font-bold text-center text-heading-2 text-slate-700 lg:text-heading-2 text-heading-4">
                     Program Pelatihan
                 </h1>
 
@@ -1331,6 +1344,9 @@
     <section id="frequently-asking-question"
         class="items-center w-full h-full px-6 py-2 pt-16 pb-16 bg-primary-blue lg:px-16 md:px-20">
         <div class="mx-auto max-w-6xl">
+            <p class="items-center font-bold text-center text-secondary-orange lg:text-heading-4 text-heading-6">
+                Frequently Asked Question
+            </p>
             <h1 class="mb-3 font-bold text-center text-white lg:text-heading-2 text-heading-4">
                 Pertanyaan Yang Sering Ditanyakan
             </h1>
