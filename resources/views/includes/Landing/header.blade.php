@@ -1,4 +1,4 @@
-<section class="w-full h-full transition-all duration-500 bg-white border-box linear md:px-20 px-8 py-4">
+<section class="w-full h-full transition-all duration-500 bg-white border-box linear md:px-20 px-8 py-4 shadow-md">
     <div class="navbar-1-1">
         <div class="flex flex-row flex-wrap items-center justify-between mx-auto px-4 space-x-0 space-y-0">
 

@@ -208,9 +208,9 @@
                         Pesiar
                     </h3>
 
-                    <div class="items-center justify-center w-full pt-8 lg:pb-4 pb-8 lg:justify-start">
+                    <div class="items-center justify-center w-full pt-4 lg:pb-4 pb-4 lg:justify-start">
                         <a href="{{ route('about-us') }}"
-                            class="w-full px-8 lg:px-4 lg:py-3 py-4 font-semibold text-white text-heading-5 lg:text-heading-3 rounded-full bg-primary-blue hover:shadow-lg hover:bg-primary-darkblue">
+                            class="w-full px-4 lg:px-2 lg:py-2 py-4 font-semibold text-white text-heading-5 lg:text-heading-3 rounded-lg bg-primary-blue hover:shadow-lg hover:bg-primary-darkblue">
                             Selengkapnya</a>
                     </div>
                 </div>
@@ -603,19 +603,19 @@
     <!-- partner-->
     <section id="why-cruise-ship" class="relative flex items-center justify-between py-8 bg-primary-blue">
 
-        <div class="items-center max-w-6xl px-6 py-2 mx-auto lg:px-4 md:px-20">
+        <div class="items-center max-w-6xl px-6 py-2 mx-auto lg:px-0 md:px-20">
 
-            <div class="flex flex-wrap justify-between">
+            <div class="flex items-center justify-between mx-auto">
 
                 <!-- left column -->
-                <div class="self-center w-full lg:w-1/2">
+                <div class="self-center w-full">
                     <h2
                         class="font-medium text-center text-secondary-yellow lg:text-heading-4 text-heading-5 lg:text-left">
                         Partnership
                     </h2>
 
                     <h1
-                        class="py-3 font-bold text-center text-white lg:text-heading-2 text-heading-3 lg:text-left lg:pr-4 mb-3">
+                        class="py-2 font-bold text-center text-white lg:text-heading-2 text-heading-3 lg:text-left lg:pr-4 mb-1">
                         Bekerjasama
                         dengan perusahaan
                         terbaik
@@ -628,7 +628,7 @@
                         impian.
                     </p>
 
-                    <div class="grid grid-cols-6 md:grid-flow-rows mt-1">
+                    <div class="grid grid-cols-6 md:grid-flow-rows mt-4">
                         {{-- <div class="w-1 h-12 rounded-lg bg-secondary-yellow"></div> --}}
                         <div class="col-span-11 ">
                             <p class="font-bold text-heading-2 text-secondary-yellow">50+</p>
@@ -650,7 +650,7 @@
                 </div>
 
                 <!-- right column -->
-                <div class="self-center w-full mt-8 lg:w-1/2 lg:mt-0 lg:pl-6">
+                <div class="self-center w-full mt-8 lg:mt-0 lg:pl-6">
                     <div class="grid justify-center grid-flow-row grid-cols-2 gap-4 mx-auto lg:grid-cols-2 lg:-mx-4">
 
                         <!-- Card -->
@@ -708,6 +708,7 @@
 
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

@@ -28,19 +28,19 @@
                                     class="static w-full h-40 bg-cover rounded-lg shadow-md">
                                 </iframe>
 
-                                <h3 class="mt-12 mb-4 text-3xl font-semibold text-left">
+                                <h3 class="lg:text-heading-2 text-heading-4 mt-12 mb-2 font-semibold text-left">
                                     Sea Education
                                 </h3>
 
-                                <div class="text-justify">
+                                <div class="text-justify lg:text-heading-4 text-heading-6">
 
-                                    <p class="pt-5 ">
+                                    <p class="pt-3">
                                         Sea Education adalah sebuah program pelatihan dan penyaluran kerja yang berfokus
                                         di bidang Perhotelan,
                                         Kapal Pesiar dan bidang IT serta Industri Manufaktur dan perkebunan.
                                     </p>
 
-                                    <p class="pt-5">
+                                    <p class="pt-3">
                                         Dengan komitmen untuk memberikan peluang berkarier yang sangat baik, Sea
                                         Education bekerja sama dengan
                                         banyak perusahaan global, yang membuat Anda tidak perlu khawatir tentang masa
@@ -55,13 +55,13 @@
                                 <div class="flex items-center justify-between">
 
                                     <div class="max-w-533px">
-                                        <h3 class="mt-20 mb-4 text-3xl font-semibold text-left">
+                                        <h3 class="mt-20 mb-2 lg:text-heading-2 text-heading-4 font-semibold text-left">
                                             Kenapa Harus Belajar di Sea Education ?
                                         </h3>
 
-                                        <ol class="pt-10 text-justify pr-4">
-                                            <li class="pb-4 ">
-                                                <h1 class="text-heading-4 font-semibold">Fokus pada Bidang Industri
+                                        <ol class="pt-3 text-justify pr-4 lg:text-heading-4 text-heading-6">
+                                            <li class="pb-4">
+                                                <h1 class="text-heading-4 font-semibold pb-2">Fokus pada Bidang Industri
                                                     Unggulan</h1>
                                                 <p>Pelatihan berorientasi pada industri yang memiliki peluang pekerjaan
                                                     yang baik.
@@ -75,7 +75,7 @@
 
 
                                             <li class="pb-4">
-                                                <h1 class="text-heading-4 font-semibold">Kolaborasi dengan Perusahaan
+                                                <h1 class="text-heading-4 font-semibold pb-2">Kolaborasi dengan Perusahaan
                                                     Global</h1>
                                                 <p>Sea Education memiliki kerja sama dengan banyak perusahaan global.
                                                     menjadi peluang bagi Anda
@@ -87,7 +87,7 @@
 
 
                                             <li class="pb-4">
-                                                <h1 class="text-heading-4 font-semibold">Sukses Terbukti</h1>
+                                                <h1 class="text-heading-4 font-semibold pb-2">Sukses Terbukti</h1>
                                                 <p>Banyak lulusan Sea Education telah mencapai kesuksesan dalam karier
                                                     mereka. Ini adalah bukti
                                                     nyata bahwa program ini efektif dalam membantu peserta mencapai

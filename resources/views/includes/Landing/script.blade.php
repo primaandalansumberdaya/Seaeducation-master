@@ -11,12 +11,12 @@
     crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/54a809af02.js" crossorigin="anonymous"></script>
 
-<script src="{{ asset('/javascripts/toggleModal.js') }}"></script>
+{{-- <script src="{{ asset('/javascripts/toggleModal.js') }}"></script> --}}
 <script src="/assets/javascripts/cust.js"></script>
 <script src="/assets/javascripts/script.js"></script>
 <script src="/assets/javascripts//spyProfile.js"></script>
 
-<script>
+{{-- <script>
     $(document).ready(function() {
         $(".modal").on('click', ':not(.relative)', function(e) {
             e.stopPropagation();
@@ -28,4 +28,4 @@
             toggleModal('registerModal');
         });
     });
-</script>
+</script> --}}
