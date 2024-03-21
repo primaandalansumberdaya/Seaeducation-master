@@ -7,7 +7,7 @@
     <!-- Why working in cruise ship -->
     <section id="why-cruise-ship" class="relative flex items-center justify-between transition-all duration-500">
 
-        <div class="relative lg:h-[45vh] w-full">
+        <div class="relative lg:h-[50vh] w-full">
             <img class="object-cover w-full h-[600px]" src="/assets/images/RCCL.jpg" alt="">
         </div>
 
@@ -16,14 +16,14 @@
 
             <div class="items-center max-w-6xl mx-auto lg:px-0 md:px-20">
 
-                <div class=" px-4 py-2 pt-8 pb-8">
+                <div class="px-4 py-4 pt-8 pb-8">
 
-                    <div class="flex flex-wrap justify-between lg:-mx-4">
+                    <div class="flex flex-wrap justify-between">
 
                         <!-- Card -->
                         <div class="w-full md:w-1/2 my-2 lg:px-4 lg:w-1/3">
                             <div class="overflow-hidden rounded-lg">
-                                <div class="flex flex-col p-4">
+                                <div class="flex flex-col py-4">
                                     <div class="flex mb-2">
                                         <div className="flex flex-col">
                                             <p
@@ -933,6 +933,7 @@
                 </div>
                 <!-- End Card -->
             </div>
+
         </div>
     </section>
     <!-- end Alumni Work Logo -->
@@ -1155,22 +1156,22 @@
                     <span class="text-heading-4"></span>
 
                     <div class="flex justify-between gap-4 group">
-                        <span
-                            class="flex items-center justify-center w-8 h-8 border rounded-full cursor-pointer border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white scroll-left">
+                        <button data-button="previus"
+                            class="btn-previus flex items-center justify-center w-8 h-8 border rounded-full cursor-pointer border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white scroll-left">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
                             </svg>
-                        </span>
-                        <span
-                            class="flex items-center justify-center w-8 h-8 border rounded-full cursor-pointer border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white scroll-right">
+                        </button>
+                        <button data-button="next"
+                            class="btn-next flex items-center justify-center w-8 h-8 border rounded-full cursor-pointer border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white scroll-right">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
-                        </span>
+                        </button>
                     </div>
                 </div>
 
@@ -1179,7 +1180,7 @@
 
             <div class="flex flex-wrap justify-between mx-auto lg:-mx-4">
                 <!-- Card -->
-                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4" data-slide>
                     <div class="overflow-hidden border border-gray-200 shadow-sm rounded-xl">
                         <div class="flex flex-col p-4 bg-white">
                             <div class="flex mb-4 items-center">
@@ -1218,7 +1219,7 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4" data-slide>
                     <div class="overflow-hidden border border-gray-200 shadow-sm rounded-xl ">
                         <div class="flex flex-col p-4 bg-white">
                             <div class="flex mb-4 items-center">
@@ -1258,7 +1259,7 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4" data-slide>
                     <div class="overflow-hidden border border-gray-200 shadow-sm rounded-xl">
                         <div class="flex flex-col p-4 bg-white">
                             <div class="flex mb-4 items-center">
@@ -1299,7 +1300,7 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4" data-slide>
                     <div class="overflow-hidden border border-gray-200 shadow-sm rounded-xl">
                         <div class="flex flex-col p-4 bg-white">
                             <div class="flex mb-4 items-center">
@@ -1336,6 +1337,7 @@
                     </div>
                 </div>
                 <!-- End Card -->
+
             </div>
         </div>
     </section>
@@ -1371,7 +1373,6 @@
                                     - Lulusan SMA / SMK atau Sederajat <br>
                                     - Memiliki surat keterangan sehat, tidak memiliki penyakit menular dan tidak buta
                                     warna <br>
-
                                 </p>
                             </div>
                         </div>
