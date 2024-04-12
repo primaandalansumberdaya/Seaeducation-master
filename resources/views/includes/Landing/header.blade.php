@@ -1,15 +1,15 @@
-<section class="w-full h-full transition-all duration-500 bg-white border-box linear md:px-20 px-8 py-4 shadow-md">
+<section
+    class="w-full h-full px-4 py-2 transition-all duration-500 bg-white shadow-md lg:py-4 border-box linear md:px-20">
     <div class="navbar-1-1">
-        <div class="flex flex-row flex-wrap items-center justify-between mx-auto px-4 space-x-0 space-y-0">
+        <div class="flex flex-row flex-wrap items-center justify-between mx-auto space-x-0 space-y-0 lg:px-16">
 
             {{-- <a href="{{ route('index') }}" class="flex items-center text-3xl font-bold"> --}}
-            <a href="{{ route('index') }}"
-                class="flex items-center lg:text-heading-3 text-heading-4 font-bold text-blue-100">
+            <a href="{{ route('index') }}" class="flex items-center font-bold text-primary-shineblue text-heading-3">
                 SEA EDUCATION
             </a>
 
             <label for="menu-toggle" class="block cursor-pointer lg:hidden">
-                <svg class="w-16 h-16" fill="none" stroke="#092A33" viewBox="0 0 24 24"
+                <svg class="w-8 h-8" fill="none" stroke="#092A33" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
                     </path>
@@ -18,26 +18,26 @@
 
             <input class="hidden" type="checkbox" id="menu-toggle" />
 
-            <div class="flex-wrap items-center justify-center hidden w-full text-base lg:flex lg:items-center lg:w-auto lg:ml-auto lg:mr-auto"
+            <div class="flex-wrap items-center justify-between hidden w-full text-base lg:flex lg:items-center lg:w-auto lg:ml-auto lg:mr-auto"
                 id="menu">
 
                 <nav
-                    class="items-center justify-between text-base lg:space-x-12 lg:flex lg:pt-0 pt-2 lg:space-y-0 space-y-2 lg:text-heading-4 text-heading-6">
+                    class="items-center justify-between pt-2 text-base lg:space-x-12 lg:flex lg:pt-0 lg:space-y-0 lg:text-heading-4 text-heading-6">
                     <a href="{{ route('index') }}"
-                        class="block {{ request()->is('/') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Home</a>
+                        class="block {{ request()->is('/') ? 'nav-link active font-bold text-primary-shineblue lg:bg-blue-5 px-3 py-4 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Home</a>
                     <a href="{{ route('programs') }}"
-                        class="block {{ request()->is('programs') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Program</a>
+                        class="block {{ request()->is('programs') ? 'nav-link active font-bold text-primary-shineblue lg:bg-blue-5 px-3 py-4 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Program</a>
                     <a href="{{ route('about-us') }}"
-                        class="{{ request()->is('about-us') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">About
+                        class="{{ request()->is('about-us') ? 'nav-link active font-bold text-primary-shineblue lg:bg-blue-5 px-3 py-4 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">About
                         Us</a>
                     <a href="#"
-                        class="block {{ request()->is('career') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Karir</a>
+                        class="block {{ request()->is('career') ? 'nav-link active font-bold text-primary-shineblue lg:bg-blue-5 px-3 py-4 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Karir</a>
                     <a href="{{ route('partnership') }}"
-                        class="block {{ request()->is('partnership') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Parnership</a>
+                        class="block {{ request()->is('partnership') ? 'nav-link active font-bold text-primary-shineblue lg:bg-blue-5 px-3 py-4 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Parnership</a>
                     <a href="{{ route('affiliate') }}"
-                        class="block {{ request()->is('affiliate') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Affiliate</a>
+                        class="block {{ request()->is('affiliate') ? 'nav-link active font-bold text-primary-shineblue lg:bg-blue-5 px-3 py-4 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Affiliate</a>
                     <a href="{{ route('blog') }}"
-                        class="block {{ request()->is('blog') ? 'nav-link active font-bold text-primary-shineblue bg-blue-5 px-3 py-2 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Blog</a>
+                        class="block {{ request()->is('blog') ? 'nav-link active font-bold text-primary-shineblue lg:bg-blue-5 px-3 py-4 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Blog</a>
 
                 </nav>
 
@@ -46,8 +46,8 @@
             @auth
                 <hr class="block lg:hidden">
                 <a href="{{ route('member.dashboard.index') }}"
-                    class="block lg:hidden nav-link text-blue-100">Dashboard</a>
-                <a href="{{ route('logout') }}" class="block lg:hidden nav-link text-blue-900"
+                    class="block text-blue-100 lg:hidden nav-link">Dashboard</a>
+                <a href="{{ route('logout') }}" class="block text-blue-900 lg:hidden nav-link"
                     onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">Logout
 
@@ -62,12 +62,12 @@
             @guest
                 <div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="menu">
                     <button
-                        class="items-center block font-medium border-0 lg:text-heading-4 text-heading-6 text-blue-100 lg:inline-block lg:py-3 py-4 lg:px-10 focus:outline-none lg:mt-0">
+                        class="items-center block py-4 font-medium text-blue-100 border-0 lg:text-heading-4 text-heading-6 lg:inline-block lg:py-3 lg:px-10 focus:outline-none lg:mt-0">
                         <a href="{{ route('auth/sign-in') }}">Sign In</a>
                     </button>
 
                     <button
-                        class="items-center block font-medium border-0 lg:text-heading-4 text-heading-6 lg:text-white text-blue-100 lg:bg-primary-shineblue hover:bg-primary-blue lg:inline-block lg:py-3 py-4 rounded-md lg:px-10 focus:outline-none lg:mt-0">
+                        class="items-center block py-4 font-medium text-blue-100 border-0 rounded-md lg:text-heading-4 text-heading-6 lg:text-white lg:bg-primary-shineblue hover:bg-primary-blue lg:inline-block lg:py-3 lg:px-10 focus:outline-none lg:mt-0">
                         <a href="{{ route('auth/sign-up') }}">Sign Up</a>
                     </button>
                 </div>
@@ -82,11 +82,11 @@
 
                         {{-- validation photo --}}
                         @if (auth()->user()->detail_user()->first()->photo != null)
-                            <img class="inline ml-3 h-12 w-12 rounded-full"
+                            <img class="inline w-12 h-12 ml-3 rounded-full"
                                 src="{{ url(Storage::url(auth()->user()->detail_user()->first()->photo)) }}" alt=""
                                 loading="lazy" />
                         @else
-                            <svg class="inline ml-3 h-12 w-12 rounded-full text-gray-300" fill="currentColor"
+                            <svg class="inline w-12 h-12 ml-3 text-gray-300 rounded-full" fill="currentColor"
                                 viewBox="0 0 24 24">
                                 <path
                                     d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />

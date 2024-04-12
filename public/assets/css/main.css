@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800&display=swap');
-@import 'swiper/css/bundle';
+/* @import 'swiper/css/bundle'; */
 
 @tailwind base;
 @tailwind components;
@@ -107,7 +107,7 @@
     }
 
     .side-dash-nav {
-        @apply flex p-3 w-full transition-all w-60 relative relative
+        @apply flex p-3 transition-all w-60 relative
     }
 
     .side-dash-nav.side-active {

@@ -19,17 +19,13 @@ export default {
                 label: 'Montserrat, sans-serif',
             },
             fontSize: {
+                'head': '28px',
                 'heading-1': '48px',
                 'heading-2': '36px',
                 'heading-3': '24px',
                 'heading-4': '18px',
                 'heading-5': '14px',
                 'heading-6': '12px',
-                'base': '1vw',
-                'sm-1': '0.8rem',
-                'sm-2': '0.6rem',
-                'sm-3': '0.4rem',
-                'sm-4': '0.2rem',
             },
             colors: {
                 primary: {
@@ -49,11 +45,13 @@ export default {
                 black: '#000000',
                 facebook: '#4267B2',
                 green: {
+                    5: '#D2F9D5',
                     10: '#BFF5C5',
                     30: '#ABF5B4',
                     50: '#8CF59C',
                     70: '#6FF581',
                     100: '#2ED16C',
+                    200: '#114232'
                 },
                 yellow: {
                     10: '#FDF5E8',

@@ -16,40 +16,35 @@
 
             <div class="items-center max-w-6xl mx-auto lg:px-0 md:px-20">
 
-                <div class="px-4 py-4 pt-8 pb-8">
+                <div class="">
 
-                    <div class="flex flex-wrap justify-between">
+                    <div class="flex flex-wrap justify-between px-4 py-4 pt-0 pb-8 lg:pt-16">
 
                         <!-- Card -->
-                        <div class="w-full md:w-1/2 my-2 lg:px-4 lg:w-1/3">
-                            <div class="overflow-hidden rounded-lg">
-                                <div class="flex flex-col py-4">
-                                    <div class="flex mb-2">
-                                        <div className="flex flex-col">
-                                            <p
-                                                class="font-bold items-center text-center text-white lg:text-heading-2 text-heading-4 lg:text-left font-label">
-                                                Kenapa kerja di kapal pesiar atau hotel Internasional?
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="w-full my-1 lg:my-8 lg:py-8 md:w-1/2 lg:w-1/3">
+                            <div class="items-center p-1 mr-3 overflow-hidden tracking-wide lg:p-4">
+                                <h1
+                                    class="w-full font-semibold text-center text-white lg:text-head text-heading-4 lg:text-left font-base">
+                                    Kenapa kerja di kapal pesiar atau hotel Internasional?
+                                </h1>
                             </div>
+
                         </div>
                         <!-- End Card -->
 
                         <!-- Card -->
-                        <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                        <div class="w-full my-1 lg:my-4 md:w-1/2 lg:px-4 lg:w-1/3">
                             <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
-                                <div class="flex flex-col p-6">
-                                    <div class="flex items-center mb-2">
+                                <div class="flex flex-col p-1 lg:p-6">
+                                    <div class="flex items-center lg:mb-2">
                                         <div
-                                            class="items-center p-4 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                            <img src="/assets/svgs/dollar.svg" class="items-center" alt="dollar"
-                                                width="30px">
+                                            class="items-center p-1 mr-3 overflow-hidden text-center rounded-md lg:p-4 bg-blue-10">
+                                            <img src="{{ asset('/assets/svgs/dollar.svg') }}" class="items-center"
+                                                alt="dollar" width="30px">
                                         </div>
                                         <div className="flex flex-col">
                                             <p
-                                                class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                                class="mb-1 font-bold text-primary-shineblue lg:text-heading-3 text-heading-4 font-label">
                                                 Bergaji Dollar
                                             </p>
                                         </div>
@@ -65,18 +60,18 @@
                         <!-- End Card -->
 
                         <!-- Card -->
-                        <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                        <div class="w-full my-1 lg:my-4 md:w-1/2 lg:px-4 lg:w-1/3">
                             <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
-                                <div class="flex flex-col p-6">
-                                    <div class="flex items-center mb-2">
+                                <div class="flex flex-col p-1 lg:p-6">
+                                    <div class="flex items-center lg:mb-2">
                                         <div
-                                            class="items-center p-4 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                            <img src="/assets/svgs/accomodation.svg" class="items-center" alt="accomodation"
-                                                width="30px">
+                                            class="items-center p-1 mr-3 overflow-hidden text-center rounded-md lg:p-4 bg-blue-10">
+                                            <img src="{{ asset('/assets/svgs/accomodation.svg') }}" class="items-center"
+                                                alt="accomodation" width="30px">
                                         </div>
                                         <div className=" flex flex-col">
                                             <p
-                                                class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                                class="mb-1 font-bold text-primary-shineblue lg:text-heading-3 text-heading-4 font-label">
                                                 Free Akomodasi
                                             </p>
                                         </div>
@@ -92,18 +87,18 @@
                         <!-- End Card -->
 
                         <!-- Card -->
-                        <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                        <div class="w-full my-1 lg:my-4 md:w-1/2 lg:px-4 lg:w-1/3">
                             <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
-                                <div class="flex flex-col p-6">
-                                    <div class="flex items-center mb-2">
+                                <div class="flex flex-col p-1 lg:p-6">
+                                    <div class="flex items-center lg:mb-2">
                                         <div
-                                            class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                            <img src="/assets/svgs/travel.svg" class="items-center " alt="travel-world"
-                                                width="30px">
+                                            class="items-center p-1 mr-3 overflow-hidden text-center rounded-md lg:p-4 bg-blue-10">
+                                            <img src="{{ asset('/assets/svgs/travel.svg') }}" class="items-center "
+                                                alt="travel-world" width="30px">
                                         </div>
                                         <div className="flex flex-col">
                                             <p
-                                                class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                                class="mb-1 font-bold text-primary-shineblue lg:text-heading-3 text-heading-4 font-label">
                                                 Travel The World
                                             </p>
                                         </div>
@@ -119,24 +114,25 @@
                         <!-- End Card -->
 
                         <!-- Card -->
-                        <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                        <div class="w-full my-1 lg:my-4 md:w-1/2 lg:px-4 lg:w-1/3">
                             <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
-                                <div class="flex flex-col p-6">
-                                    <div class="flex items-center mb-2">
+                                <div class="flex flex-col p-1 lg:p-6">
+                                    <div class="flex items-center lg:mb-2">
                                         <div
-                                            class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                            <img src="/assets/svgs/study.svg" class="items-center" alt="study"
-                                                width="30px">
+                                            class="items-center p-1 mr-3 overflow-hidden text-center rounded-md lg:p-4 bg-blue-10">
+                                            <img src="{{ asset('/assets/svgs/study.svg') }}" class="items-center"
+                                                alt="study" width="30px">
                                         </div>
                                         <div className="flex flex-col">
-                                            <p class="mb-1 font-bold text-gray-100 text-heading-4 font-label">
+                                            <p
+                                                class="mb-1 font-bold text-primary-shineblue lg:text-heading-3 text-heading-4 font-label">
                                                 Minimum Pendidikan
                                             </p>
                                         </div>
                                     </div>
                                     <div class="flex">
                                         <p class="text-gray-50 lg:text-heading-4 text-heading-5">
-                                            Minimum SMA/SMK dapat bekerja dikapal pesiar
+                                            Mulai dari lulusan SMA/SMK sederajat dapat bekerja dikapal pesiar
                                         </p>
                                     </div>
                                 </div>
@@ -145,25 +141,26 @@
                         <!-- End Card -->
 
                         <!-- Card -->
-                        <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                        <div class="w-full my-1 lg:my-4 md:w-1/2 lg:px-4 lg:w-1/3">
                             <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
-                                <div class="flex flex-col p-6">
-                                    <div class="flex items-center mb-2">
+                                <div class="flex flex-col p-1 lg:p-6">
+                                    <div class="flex items-center lg:mb-2">
                                         <div
-                                            class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                            <img src="/assets/svgs/career.svg" class="items-center" alt="career"
-                                                width="30px">
+                                            class="items-center p-1 mr-3 overflow-hidden text-center rounded-md lg:p-4 bg-blue-10">
+                                            <img src="{{ asset('/assets/svgs/career.svg') }}" class="items-center"
+                                                alt="career" width="30px">
                                         </div>
                                         <div className="flex flex-col">
                                             <p
-                                                class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                                class="mb-1 font-bold text-primary-shineblue lg:text-heading-3 text-heading-4 font-label">
                                                 Peluang Karir Luas
                                             </p>
                                         </div>
                                     </div>
                                     <div class="flex">
                                         <p class="text-gray-50 lg:text-heading-4 text-heading-5">
-                                            Peluang karir Internasional meningkatkan bisa anda dapatkan
+                                            Peluang karir Internasional & peluang promosi karir di masa depan dapat anda
+                                            raih
                                         </p>
                                     </div>
                                 </div>
@@ -176,8 +173,6 @@
                 </div>
 
             </div>
-
-        </div>
 
     </section>
     <!-- End why working in cruise ship -->
@@ -190,27 +185,26 @@
                 <!-- right column -->
                 <div class="self-center w-full px-4 lg:w-1/2">
                     <div class="relative mt-10 ml-2">
-                        <img src="/assets/images/banner2.png" class="max-w-full mx-auto" width="400px" alt="hero-banner"
-                            srcset="">
+                        <img src="{{ asset('/assets/images/banner2.png') }}" class="max-w-full mx-auto" width="400px"
+                            alt="hero-banner" srcset="">
                     </div>
                 </div>
 
                 <!-- left column -->
                 <div class="self-center w-full px-4 text-center lg:w-1/2 lg:text-left ">
 
-                    <h2 class="lg:mb-4 mb-3 font-bold text-primary-blue text-heading-3 lg:text-heading-2">
+                    <h2 class="mb-3 font-bold lg:mb-4 text-primary-shineblue text-heading-3 lg:text-heading-2">
                         Apa itu Sea Education?
                     </h2>
-                    <h3
-                        class="mb-7 text-slate-700 lg:text-heading-4 text-heading-5g:text-heading-3 text-heading-4 lg:text-heading-3 pr-4">
+                    <h3 class="pr-4 mb-7 text-slate-700 lg:text-heading-4 text-heading-5 ">
                         Sea Eduation merupakan training center yang menyediakan program pelatihan berbasis
                         industri yang berfokus pada penempatan karir profesional di bidang Hotel Internasional dan Kapal
                         Pesiar
                     </h3>
 
-                    <div class="items-center justify-center w-full pt-4 lg:pb-4 pb-4 lg:justify-start">
+                    <div class="items-center justify-center w-full pt-4 pb-4 lg:pb-4 lg:justify-start">
                         <a href="{{ route('about-us') }}"
-                            class="w-full px-4 lg:px-2 lg:py-2 py-4 font-semibold text-white text-heading-5 lg:text-heading-3 rounded-lg bg-primary-blue hover:shadow-lg hover:bg-primary-darkblue">
+                            class="w-full p-2 font-semibold text-white rounded-lg text-heading-5 lg:text-heading-4 bg-primary-shineblue hover:bg-primary-darkblue">
                             Selengkapnya</a>
                     </div>
                 </div>
@@ -220,64 +214,72 @@
     <!-- End About Us-->
 
     <!-- why choose sea education-->
-    <section id="why-sea-education" class="relative flex items-center justify-between pt-12 pb-12 bg-primary-blue">
+    <section id="why-sea-education" class="relative flex items-center justify-between pt-8 pb-8 bg-primary-shineblue">
 
-        <div class="items-center max-w-6xl mx-auto lg:p-8 p-4">
+        <div class="items-center max-w-6xl p-4 mx-auto lg:p-8">
 
-            <h2 class="font-medium text-center text-secondary-yellow lg:text-heading-4 text-heading-5 lg:text-left">Why
-                Choose
-                Us?
+            <h2 class="font-medium text-center text-secondary-yellow lg:text-heading-4 text-heading-5 lg:text-left">
+                Why Choose Us?
             </h2>
 
-            <h1 class="mb-3 font-bold text-center text-white lg:text-heading-2 text-heading-4 lg:text-left">
+            <h1 class="mb-2 font-bold text-center text-white lg:py-3 lg:text-heading-2 text-heading-4 lg:text-left">
                 Kenapa harus Sea Education?
             </h1>
 
             <div class="flex flex-wrap justify-between lg:-mx-4">
                 <!-- Card -->
-                <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                <div class="w-full my-2 lg:my-4 md:w-1/2 lg:px-4 lg:w-1/3">
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                         <div class="flex flex-col p-6">
+
                             <div class="flex items-center mb-2">
+
                                 <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                    <img src="/assets/svgs/mentor.svg" class="items-center" width="30px"
+                                    <img src="{{ asset('/assets/svgs/mentor.svg') }}" class="items-center" width="30px"
                                         alt="mentor" />
                                 </div>
+
                                 <div className="flex flex-col">
-                                    <p class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                    <p
+                                        class="mb-1 font-bold text-primary-shineblue lg:text-heading-3 text-heading-4 font-label">
                                         Mentor Berkualitas
                                     </p>
                                 </div>
+
                             </div>
+
                             <div class="flex">
                                 <p class="text-gray-50 lg:text-heading-4 text-heading-5">
                                     Mentor kami adalah profesional dan expert yang memiliki pengalaman
-                                    Internasional dibidang hopitality
+                                    Internasional dibidang hopitality dan kapal pesiar
                                 </p>
                             </div>
+
                         </div>
                     </div>
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                <div class="w-full my-2 lg:my-4 md:w-1/2 lg:px-4 lg:w-1/3">
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                         <div class="flex flex-col p-6">
                             <div class="flex items-center mb-2">
                                 <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                    <img src="/assets/svgs/consultancy.svg" class="items-center" width="30px"
-                                        alt="consultancy" />
+                                    <img src="{{ asset('/assets/svgs/consultancy.svg') }}" class="items-center"
+                                        width="30px" alt="consultancy" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="mb-1 font-bold text-gray-100 text-heading-4 font-label">
-                                        Free Konsultansi Karir
+                                    <p
+                                        class="mb-1 font-bold text-primary-shineblue lg:text-heading-3 text-heading-4 font-label">
+                                        Konsultansi Karir
                                     </p>
                                 </div>
                             </div>
                             <div class="flex">
                                 <p class="text-gray-50 lg:text-heading-4 text-heading-5">
                                     Konsultasikan impian karir dengan kami untuk dapat membantu mewujudkan impian masa depan
+                                    anda
                                 </p>
                             </div>
                         </div>
@@ -286,24 +288,26 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                <div class="w-full my-2 lg:my-4 md:w-1/2 lg:px-4 lg:w-1/3">
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                         <div class="flex flex-col p-6">
                             <div class="flex items-center mb-2">
                                 <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                    <img src="/assets/svgs/certificate.svg" class="items-center" width="30px"
-                                        alt="certificate" />
+                                    <img src="{{ asset('/assets/svgs/certificate.svg') }}" class="items-center"
+                                        width="30px" alt="certificate" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                    <p
+                                        class="mb-1 font-bold text-primary-shineblue lg:text-heading-3 text-heading-4 font-label">
                                         Sertifikat
                                     </p>
                                 </div>
                             </div>
                             <div class="flex">
                                 <p class="text-gray-50 lg:text-heading-4 text-heading-5">
-                                    Ikuti dan selesaikan pelatihan di Sea Education dan dapatkan sertifikat setara
-                                    diploma yang dapat digunakan untuk melamar pekerjaan.
+                                    Ikut dan elesaikan pelatihan anda di Sea Education dan dapatkan sertifikat setara yang
+                                    dapat digunakan untuk karir anda
+                                    diploma
                                 </p>
                             </div>
                         </div>
@@ -312,16 +316,17 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                <div class="w-full my-2 lg:my-4 md:w-1/2 lg:px-4 lg:w-1/3">
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                         <div class="flex flex-col p-6">
                             <div class="flex items-center mb-2">
                                 <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                    <img src="/assets/svgs/training.svg" class="items-center" width="30px"
-                                        alt="career" />
+                                    <img src="{{ asset('/assets/svgs/training.svg') }}" class="items-center"
+                                        width="30px" alt="career" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                    <p
+                                        class="mb-1 font-bold text-primary-shineblue lg:text-heading-3 text-heading-4 font-label">
                                         On The Job Training
                                     </p>
                                 </div>
@@ -338,23 +343,26 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                <div class="w-full my-2 lg:my-4 md:w-1/2 lg:px-4 lg:w-1/3">
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                         <div class="flex flex-col p-6">
                             <div class="flex items-center mb-2">
                                 <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                    <img src="/assets/svgs/lowest.svg" class="items-center" width="30px"
-                                        alt="affordable" />
+                                    <img src="{{ asset('/assets/svgs/lowest.svg') }}" class="items-center"
+                                        width="30px" alt="affordable" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                    <p
+                                        class="mb-1 font-bold text-primary-shineblue lg:text-heading-3 text-heading-4 font-label">
                                         Biaya Terjangkau
                                     </p>
                                 </div>
                             </div>
                             <div class="flex">
                                 <p class="text-gray-50 lg:text-heading-4 text-heading-5">
-                                    Biaya pelatihan yang terjangkau dan memberikan kemudahan untuk menggapai tujuan ada
+                                    Biaya pelatihan yang terjangkau dan sesuai memberikan kemudahan untuk menggapai tujuan
+                                    dan
+                                    karir yang anda impikan
                                 </p>
                             </div>
                         </div>
@@ -363,16 +371,17 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="w-full md:w-1/2 my-4 lg:px-4 lg:w-1/3">
+                <div class="w-full my-2 lg:my-4 md:w-1/2 lg:px-4 lg:w-1/3">
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                         <div class="flex flex-col p-6">
                             <div class="flex items-center mb-2">
                                 <div class="items-center p-3 mr-3 overflow-hidden text-center rounded-md bg-blue-10">
-                                    <img src="/assets/svgs/support.svg" class="items-center" width="30px"
-                                        alt="support" />
+                                    <img src="{{ asset('/assets/svgs/support.svg') }}" class="items-center"
+                                        width="30px" alt="support" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="mb-1 font-bold text-gray-100 lg:text-heading-3 text-heading-4 font-label">
+                                    <p
+                                        class="mb-1 font-bold text-primary-shineblue lg:text-heading-3 text-heading-4 font-label">
                                         Get Hired
                                     </p>
                                 </div>
@@ -396,52 +405,29 @@
 
     <!-- Bootcamp section-->
     <section id="why-cruise-ship" class="relative flex items-center justify-between pt-8 pb-8 bg-blue-10">
-        <div class="items-center max-w-6xl px-6 py-2 mx-auto lg:px-4 md:px-20">
-            <div class="lg:text-left">
-                <h2 class="font-medium text-center text-primary-blue text-heading-3 lg:text-heading-4 text-heading-5">
-                    Training Program</h2>
-                <h1 class="font-bold text-center text-heading-2 text-slate-700 lg:text-heading-2 text-heading-4">
-                    Program Pelatihan
-                </h1>
+        <div class="items-center max-w-6xl p-4 mx-auto lg:p-8">
 
-                <div class="flex items-center justify-between gap-4 text-left group px-4">
-                    <span class="text-heading-4"></span>
+            <h2 class="font-medium text-center text-secondary-yellow lg:text-heading-4 text-heading-5 lg:text-left">
+                Training Program</h2>
+            <h1 class="mb-2 font-bold text-center lg:py-3 text-primary-blue lg:text-heading-2 text-heading-4 lg:text-left">
+                Program Pelatihan
+            </h1>
 
-                    <div class="flex justify-between gap-4 group">
-                        <span
-                            class="flex items-center justify-center w-8 h-8 border rounded-full cursor-pointer border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white scroll-left">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-                            </svg>
-                        </span>
-                        <span
-                            class="flex items-center justify-center w-8 h-8 border rounded-full cursor-pointer border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white scroll-right">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                            </svg>
-                        </span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="flex flex-wrap justify-between mx-auto lg:-mx-4 px-4">
+            <div class="flex flex-col flex-wrap justify-between mx-auto lg:flex-row lg:-mx-4">
                 <!-- Card -->
-                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+                <div class="w-full px-1 my-2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                         <a href="detail.html">
-                            <div class=" overflow-hidden rounded-md">
-                                <img alt="Placeholder" class="block w-full h-auto" src="/assets/images/program1.jpg" />
+                            <div class="overflow-hidden rounded-md ">
+                                <img alt="Placeholder" class="block w-full h-auto"
+                                    src="{{ asset('/assets/images/program1.jpg') }}" />
                             </div>
                         </a>
 
                         <div class="px-4 mb-4 leading-tight">
                             <div class="flex">
-                                <span
-                                    class="block p-2 my-2 font-semibold text-green-100 text-heading-6 bg-green-10 rounded-lg">
+                                <span class="block py-1 mt-3 font-semibold text-green-100 rounded-lg text-heading-5">
                                     Pendaftaran dibuka
                                 </span>
                             </div>
@@ -452,32 +438,23 @@
                                 </a>
                             </h1>
 
-                            <div class="flex flex-row mb-2 items-center">
-                                <p class="flex mr-6 text-gray-50 lg:text-heading-5 text-heading-6">
-                                    <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
-                                        xmlns="http://www.w3.org/2000/svg" class="mr-2">
-                                        <path
-                                            d="M6 0C9.31371 0 12 2.68629 12 6C12 8.86724 10.065 11.5058 6.26844 13.9218C6.10465 14.0261 5.89535 14.0261 5.73156 13.9218C1.93495 11.5058 0 8.86724 0 6C0 2.68629 2.68629 0 6 0ZM6 4C4.89543 4 4 4.89543 4 6C4 7.10457 4.89543 8 6 8C7.10457 8 8 7.10457 8 6C8 4.89543 7.10457 4 6 4Z"
-                                            fill="#9E9E9E"></path>
-                                    </svg>
-                                    Online
-                                </p>
-                                <p class="flex text-gray-50 lg:text-heading-5 text-heading-6">
-                                    <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
-                                        xmlns="http://www.w3.org/2000/svg" class="mr-2">
-                                        <path
-                                            d="M6.49579 6C7.32421 6 7.99579 6.67157 7.99579 7.5L7.995 8.24837C8.09788 10.0849 6.68334 11.0008 4.06019 11.0008C1.44552 11.0008 0 10.0969 0 8.27457V7.5C0 6.67157 0.671573 6 1.5 6H6.49579ZM10.4964 6C11.3248 6 11.9964 6.67157 11.9964 7.5L11.9956 8.02657C12.0861 9.67404 10.8362 10.5 8.55159 10.5C8.24147 10.5 7.94993 10.4849 7.67766 10.4547C8.21436 9.95904 8.50147 9.28646 8.50049 8.43657L8.49422 8.2204L8.49579 7.5C8.49579 6.90243 8.23371 6.36607 7.81823 5.99959L10.4964 6ZM4 0C5.38094 0 6.50041 1.11947 6.50041 2.5004C6.50041 3.88134 5.38094 5.00081 4 5.00081C2.61906 5.00081 1.49959 3.88134 1.49959 2.5004C1.49959 1.11947 2.61906 0 4 0ZM9 1C10.1046 1 11 1.89543 11 3C11 4.10457 10.1046 5 9 5C7.89543 5 7 4.10457 7 3C7 1.89543 7.89543 1 9 1Z"
-                                            fill="#9E9E9E"></path>
-                                    </svg>
-                                    Batch 11
+                            <div class="flex">
+                                <p class="items-center py-1 font-semibold rounded-lg text-secondary-orange text-heading-6">
+                                    Deadline Pendaftaran : 4 Desember 2022
                                 </p>
                             </div>
 
-                            <div class="flex">
-                                <p
-                                    class="items-center p-2 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
-                                    Deadline Pendaftaran : 4 Desember 2022
-                                </p>
+                            <div class="flex gap-2 py-4">
+                                <button
+                                    class="items-center w-full p-2 font-semibold text-center text-white rounded-lg text-heading-6 bg-primary-shineblue hover:bg-primary-blue">
+                                    Daftar
+                                </button>
+
+                                <button
+                                    class="items-center w-full p-2 font-semibold text-center rounded-lg bg-blue-5 text-primary-shineblue hover:text-primary-blue text-heading-6 hover:bg-blue-30 hover:border-primary-blue">
+                                    Selengkapnya
+                                </button>
+
                             </div>
                         </div>
                     </div>
@@ -485,18 +462,18 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+                <div class="w-full px-1 my-2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                         <a href="detail.html">
-                            <div class=" overflow-hidden rounded-md">
-                                <img alt="Placeholder" class="block w-full h-auto" src="/assets/images/program1.jpg" />
+                            <div class="overflow-hidden rounded-md ">
+                                <img alt="Placeholder" class="block w-full h-auto"
+                                    src="{{ asset('/assets/images/program1.jpg') }}" />
                             </div>
                         </a>
 
                         <div class="px-4 mb-4 leading-tight">
                             <div class="flex">
-                                <span
-                                    class="block p-2 my-2 font-semibold text-green-100 text-heading-6 bg-green-10 rounded-lg">
+                                <span class="block py-1 mt-3 font-semibold text-green-100 rounded-lg text-heading-5">
                                     Pendaftaran dibuka
                                 </span>
                             </div>
@@ -507,32 +484,23 @@
                                 </a>
                             </h1>
 
-                            <div class="flex flex-row mb-2 items-center">
-                                <p class="flex mr-6 text-gray-50 lg:text-heading-5 text-heading-6">
-                                    <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
-                                        xmlns="http://www.w3.org/2000/svg" class="mr-2">
-                                        <path
-                                            d="M6 0C9.31371 0 12 2.68629 12 6C12 8.86724 10.065 11.5058 6.26844 13.9218C6.10465 14.0261 5.89535 14.0261 5.73156 13.9218C1.93495 11.5058 0 8.86724 0 6C0 2.68629 2.68629 0 6 0ZM6 4C4.89543 4 4 4.89543 4 6C4 7.10457 4.89543 8 6 8C7.10457 8 8 7.10457 8 6C8 4.89543 7.10457 4 6 4Z"
-                                            fill="#9E9E9E"></path>
-                                    </svg>
-                                    Online
-                                </p>
-                                <p class="flex text-gray-50 lg:text-heading-5 text-heading-6">
-                                    <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
-                                        xmlns="http://www.w3.org/2000/svg" class="mr-2">
-                                        <path
-                                            d="M6.49579 6C7.32421 6 7.99579 6.67157 7.99579 7.5L7.995 8.24837C8.09788 10.0849 6.68334 11.0008 4.06019 11.0008C1.44552 11.0008 0 10.0969 0 8.27457V7.5C0 6.67157 0.671573 6 1.5 6H6.49579ZM10.4964 6C11.3248 6 11.9964 6.67157 11.9964 7.5L11.9956 8.02657C12.0861 9.67404 10.8362 10.5 8.55159 10.5C8.24147 10.5 7.94993 10.4849 7.67766 10.4547C8.21436 9.95904 8.50147 9.28646 8.50049 8.43657L8.49422 8.2204L8.49579 7.5C8.49579 6.90243 8.23371 6.36607 7.81823 5.99959L10.4964 6ZM4 0C5.38094 0 6.50041 1.11947 6.50041 2.5004C6.50041 3.88134 5.38094 5.00081 4 5.00081C2.61906 5.00081 1.49959 3.88134 1.49959 2.5004C1.49959 1.11947 2.61906 0 4 0ZM9 1C10.1046 1 11 1.89543 11 3C11 4.10457 10.1046 5 9 5C7.89543 5 7 4.10457 7 3C7 1.89543 7.89543 1 9 1Z"
-                                            fill="#9E9E9E"></path>
-                                    </svg>
-                                    Batch 11
+                            <div class="flex">
+                                <p class="items-center py-1 font-semibold rounded-lg text-secondary-orange text-heading-6">
+                                    Deadline Pendaftaran : 4 Desember 2022
                                 </p>
                             </div>
 
-                            <div class="flex">
-                                <p
-                                    class="items-center p-2 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
-                                    Deadline Pendaftaran : 4 Desember 2022
-                                </p>
+                            <div class="flex gap-2 py-4">
+                                <button
+                                    class="items-center w-full p-2 font-semibold text-center text-white rounded-lg text-heading-6 bg-primary-shineblue hover:bg-primary-blue">
+                                    Daftar
+                                </button>
+
+                                <button
+                                    class="items-center w-full p-2 font-semibold text-center rounded-lg bg-blue-5 text-primary-shineblue hover:text-primary-blue text-heading-6 hover:bg-blue-30 hover:border-primary-blue">
+                                    Selengkapnya
+                                </button>
+
                             </div>
                         </div>
                     </div>
@@ -540,18 +508,18 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+                <div class="w-full px-1 my-2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
                     <div class="overflow-hidden bg-white border border-gray-200 rounded-lg">
                         <a href="detail.html">
-                            <div class=" overflow-hidden rounded-md">
-                                <img alt="Placeholder" class="block w-full h-auto" src="/assets/images/program1.jpg" />
+                            <div class="overflow-hidden rounded-md ">
+                                <img alt="Placeholder" class="block w-full h-auto"
+                                    src="{{ asset('/assets/images/program1.jpg') }}" />
                             </div>
                         </a>
 
                         <div class="px-4 mb-4 leading-tight">
                             <div class="flex">
-                                <span
-                                    class="block p-2 my-2 font-semibold text-green-100 text-heading-6 bg-green-10 rounded-lg">
+                                <span class="block py-1 mt-3 font-semibold text-green-100 rounded-lg text-heading-5">
                                     Pendaftaran dibuka
                                 </span>
                             </div>
@@ -562,368 +530,280 @@
                                 </a>
                             </h1>
 
-                            <div class="flex flex-row mb-2 items-center">
-                                <p class="flex mr-6 text-gray-50 lg:text-heading-5 text-heading-6">
-                                    <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
-                                        xmlns="http://www.w3.org/2000/svg" class="mr-2">
-                                        <path
-                                            d="M6 0C9.31371 0 12 2.68629 12 6C12 8.86724 10.065 11.5058 6.26844 13.9218C6.10465 14.0261 5.89535 14.0261 5.73156 13.9218C1.93495 11.5058 0 8.86724 0 6C0 2.68629 2.68629 0 6 0ZM6 4C4.89543 4 4 4.89543 4 6C4 7.10457 4.89543 8 6 8C7.10457 8 8 7.10457 8 6C8 4.89543 7.10457 4 6 4Z"
-                                            fill="#9E9E9E"></path>
-                                    </svg>
-                                    Online
-                                </p>
-                                <p class="flex text-gray-50 lg:text-heading-5 text-heading-6">
-                                    <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
-                                        xmlns="http://www.w3.org/2000/svg" class="mr-2">
-                                        <path
-                                            d="M6.49579 6C7.32421 6 7.99579 6.67157 7.99579 7.5L7.995 8.24837C8.09788 10.0849 6.68334 11.0008 4.06019 11.0008C1.44552 11.0008 0 10.0969 0 8.27457V7.5C0 6.67157 0.671573 6 1.5 6H6.49579ZM10.4964 6C11.3248 6 11.9964 6.67157 11.9964 7.5L11.9956 8.02657C12.0861 9.67404 10.8362 10.5 8.55159 10.5C8.24147 10.5 7.94993 10.4849 7.67766 10.4547C8.21436 9.95904 8.50147 9.28646 8.50049 8.43657L8.49422 8.2204L8.49579 7.5C8.49579 6.90243 8.23371 6.36607 7.81823 5.99959L10.4964 6ZM4 0C5.38094 0 6.50041 1.11947 6.50041 2.5004C6.50041 3.88134 5.38094 5.00081 4 5.00081C2.61906 5.00081 1.49959 3.88134 1.49959 2.5004C1.49959 1.11947 2.61906 0 4 0ZM9 1C10.1046 1 11 1.89543 11 3C11 4.10457 10.1046 5 9 5C7.89543 5 7 4.10457 7 3C7 1.89543 7.89543 1 9 1Z"
-                                            fill="#9E9E9E"></path>
-                                    </svg>
-                                    Batch 11
+                            <div class="flex">
+                                <p class="items-center py-1 font-semibold rounded-lg text-secondary-orange text-heading-6">
+                                    Deadline Pendaftaran : 4 Desember 2022
                                 </p>
                             </div>
 
-                            <div class="flex">
-                                <p
-                                    class="items-center p-2 font-semibold text-secondary-orange text-heading-6 bg-yellow-10 rounded-lg">
-                                    Deadline Pendaftaran : 4 Desember 2022
-                                </p>
+                            <div class="flex gap-2 py-4">
+                                <button
+                                    class="items-center w-full p-2 font-semibold text-center text-white rounded-lg text-heading-6 bg-primary-shineblue hover:bg-primary-blue">
+                                    Daftar
+                                </button>
+
+                                <button
+                                    class="items-center w-full p-2 font-semibold text-center rounded-lg bg-blue-5 text-primary-shineblue hover:text-primary-blue text-heading-6 hover:bg-blue-30 hover:border-primary-blue">
+                                    Selengkapnya
+                                </button>
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- End Card -->
-
-
             </div>
         </div>
     </section>
     <!-- End bootcamp section -->
 
     <!-- partner-->
-    <section id="why-cruise-ship" class="relative flex items-center justify-between py-8 bg-primary-blue">
+    <section id="why-cruise-ship" class="relative flex items-center justify-between pt-8 pb-8 bg-primary-shineblue">
+        <div class="items-center max-w-6xl p-4 mx-auto lg:p-8">
 
-        <div class="items-center max-w-6xl px-6 py-2 mx-auto lg:px-0 md:px-20">
+            <h2 class="font-medium text-center text-secondary-yellow lg:text-heading-4 text-heading-5 lg:text-left">
+                Partnership
+            </h2>
 
-            <div class="flex items-center justify-between mx-auto">
+            <h1 class="py-3 mb-2 font-bold text-center text-white lg:text-heading-2 text-heading-3 lg:text-left">
+                Bekerjasama
+                dengan perusahaan
+                terbaik
+            </h1>
 
-                <!-- left column -->
-                <div class="self-center w-full">
-                    <h2
-                        class="font-medium text-center text-secondary-yellow lg:text-heading-4 text-heading-5 lg:text-left">
-                        Partnership
-                    </h2>
+            <div class="flex flex-wrap items-center justify-between mx-auto">
 
-                    <h1
-                        class="py-2 font-bold text-center text-white lg:text-heading-2 text-heading-3 lg:text-left lg:pr-4 mb-1">
-                        Bekerjasama
-                        dengan perusahaan
-                        terbaik
-                    </h1>
+                <!-- right column -->
+                <div class="self-center w-full px-4 py-8">
 
-                    <p class="lg:pr-8 text-center lg:text-left text-white lg:text-heading-4 text-heading-5">
+                    <p class="text-white lg:text-left lg:text-heading-4 text-heading-5">
                         kami berkolaborasi dengan hiring partner terpercaya untuk membantu kamu membangun
                         karir di
                         tempat
                         impian.
                     </p>
 
-                    <div class="grid grid-cols-6 md:grid-flow-rows mt-4">
-                        {{-- <div class="w-1 h-12 rounded-lg bg-secondary-yellow"></div> --}}
-                        <div class="col-span-11 ">
-                            <p class="font-bold text-heading-2 text-secondary-yellow">50+</p>
-                            <p class="mt-1 font-semibold text-white lg:text-heading-3 text-heading-4">Perusahaan Rekanan
-                            </p>
-                            <p class="pr-8 mt-1 text-white lg:text-heading-4 text-heading-5 pb-6">Kamu berkesempatan
-                                bekerja di
-                                perusahaan terbaik di Dunia</p>
-                        </div>
-
-                        {{-- <div class="w-1 h-12 rounded-full bg-secondary-yellow"></div> --}}
-                        <div class="col-span-11 ">
-                            <p class="font-bold text-heading-2 text-secondary-yellow">360+</p>
-                            <p class="mt-1 font-semibold text-white lg:text-heading-3 text-heading-4">Lulusan Terbaik</p>
-                            <p class="pr-8 mt-1 text-white lg:text-heading-4 text-heading-5">Dengan kemampuan
-                                yang mumpuni dan sudah bekerja di berbagai negara</p>
-                        </div>
-                    </div>
                 </div>
 
-                <!-- right column -->
-                <div class="self-center w-full mt-8 lg:mt-0 lg:pl-6">
-                    <div class="grid justify-center grid-flow-row grid-cols-2 gap-4 mx-auto lg:grid-cols-2 lg:-mx-4">
-
-                        <!-- Card -->
-                        <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/Job Wanted.svg" class="items-center" alt="logo-partner"
-                                layout="fill" />
-                        </div>
-                        <!-- End Card -->
-
-                        <!-- Card -->
-                        <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/genting-resort.svg" class="items-center" alt="logo-partner"
-                                layout="fill" />
-                        </div>
-                        <!-- End Card -->
-
-                        <!-- Card -->
-                        <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/Speedy.svg" class="items-center" alt="logo-partner" layout="fill" />
-                        </div>
-                        <!-- End Card -->
-
-                        <!-- Card -->
-                        <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/Milenium.svg" class="items-center" alt="logo-partner"
-                                layout="fill" />
-                        </div>
-                        <!-- End Card -->
-
-                        <!-- Card -->
-                        <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/Blue-mountain.svg" class="items-center" alt="logo-partner"
-                                layout="fill" />
-                        </div>
-                        <!-- End Card -->
-
-                        <!-- Card -->
-                        <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/dpbiz.svg" class="items-center" alt="logo-partner" layout="fill" />
-                        </div>
-                        <!-- End Card -->
-
-                        <!-- Card -->
-                        <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/grsm.svg" class="items-center" alt="logo-partner" layout="fill" />
-                        </div>
-                        <!-- End Card -->
-
-
-                        <!-- Card -->
-                        <div class="w-full my-1 bg-white rounded-md lg:my-4 lg:px-4">
-                            <img src="/assets/logo/rhmc.svg" class="items-center" alt="logo-partner" layout="fill" />
-                        </div>
-                        <!-- End Card -->
-
-                    </div>
+                <!-- left column -->
+                <div class="self-center w-full px-4 text-center lg:text-left ">
                 </div>
-
             </div>
         </div>
     </section>
     <!-- End partner-->
 
     <!-- Alumni Work Logo -->
-    <section id="why-cruise-ship" class="items-center w-full h-full px-6 py-2 pt-8 bg-blue-10 lg:px-16 md:px-20">
-        <div class="mx-auto max-w-7xl">
-            <p class="items-center mt-4 font-bold text-center text-secondary-orange lg:text-heading-4 text-heading-6">
+    <section id="why-cruise-ship" class="items-center w-full h-full pt-8 pb-8 bg-blue-10">
+        <div class="items-center max-w-6xl p-4 mx-auto lg:p-8">
+            <h2 class="font-medium text-center text-secondary-yellow lg:text-heading-4 text-heading-5 lg:text-left">
                 The following brands are where our alumni mostly work.
-            </p>
-            <h1 class="items-center mb-8 font-bold text-center text-slate-700 lg:text-heading-2 text-heading-4">
+            </h2>
+            <h1 class="mb-3 font-bold text-center lg:py-3 text-primary-blue lg:text-heading-2 text-heading-4 lg:text-left">
                 300+ lulusan bekerja di perusahaan ini
             </h1>
 
             <div class="grid items-center justify-between grid-flow-row grid-cols-3 gap-4 mx-auto lg:grid-cols-5 lg:-mx-4">
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4 ">
-                    <img src="/assets/logo/royal-caribbean.svg" class="items-center lg" alt="Profile" layout="fill" />
+                    <img src="{{ asset('/assets/logo/royal-caribbean.svg') }}" class="items-center lg" alt="Profile"
+                        layout="fill" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4 before:">
-                    <img src="/assets/logo/celebrity-cruise.svg" class="items-center" alt="Profile" layout="fill"
+                    <img src="{{ asset('/assets/logo/celebrity-cruise.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
+                    <img src="{{ asset('/assets/logo/carnival-cruise.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
+                    <img src="{{ asset('/assets/logo/msc-cruise.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
+                    <img src="{{ asset('/assets/logo/aida-cruise.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
+                    <img src="{{ asset('/assets/logo/costa.svg') }}" class="items-center" alt="Profile" layout="fill"
                         objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/carnival-cruise.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/cunard-cruise.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/msc-cruise.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/p-o-cruise.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/aida-cruise.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/princess-cruise.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/costa.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/crystal-cruise.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/cunard-cruise.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/dream-crusie.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/p-o-cruise.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/star-cruise.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/princess-cruise.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/virgin-voyages.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/crystal-cruise.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/viking-cruise.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/dream-crusie.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/genting-resort.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/star-cruise.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/grand-lexis.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/virgin-voyages.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/all-sedayu.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/viking-cruise.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/kempinski-jakarta.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/genting-resort.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/holiday-inn.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/grand-lexis.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/le-meridien-jkt.sv') }}g" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/all-sedayu.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/jambuluwuk.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/kempinski-jakarta.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/ritz-carlton.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/holiday-inn.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/grand-city-hall.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/le-meridien-jkt.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/sheraton-hotel.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/jambuluwuk.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/shangri-la.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/ritz-carlton.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/trans-luxury.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/grand-city-hall.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/double-tree.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/sheraton-hotel.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/hilton-kl.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/shangri-la.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
-                </div>
-                <!-- End Card -->
-
-                <!-- Card -->
-                <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/trans-luxury.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
-                </div>
-                <!-- End Card -->
-
-                <!-- Card -->
-                <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/double-tree.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
-                </div>
-                <!-- End Card -->
-
-                <!-- Card -->
-                <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/hilton-kl.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
-                </div>
-                <!-- End Card -->
-
-                <!-- Card -->
-                <div class="w-full px-1 my-1 lg:my-4 lg:px-4">
-                    <img src="/assets/logo/Qasr Al Sarab.svg" class="items-center" alt="Profile" layout="fill"
-                        objectFit="cover" objectPosition="center" />
+                    <img src="{{ asset('/assets/logo/Qasr Al Sarab.svg') }}" class="items-center" alt="Profile"
+                        layout="fill" objectFit="cover" objectPosition="center" />
                 </div>
                 <!-- End Card -->
 
@@ -939,34 +819,46 @@
     <!-- end Alumni Work Logo -->
 
     <!-- Student Activity-->
-    <section id="student-activity"
-        class="items-center w-full h-full px-6 py-2 pt-16 pb-16 bg-primary-blue lg:px-16 md:px-20">
-        <div class="max-w-6xl mx-auto">
-            <h1 class="mt-4 mb-8 font-bold text-center text-white lg:text-heading-2 text-heading-4 ">
-                Activity Gallery
+    <section id="student-activity" class="items-center w-full h-full pt-8 pb-8 bg-primary-shineblue">
+        <div class="items-center max-w-6xl p-4 mx-auto lg:p-8">
+            <h2 class="font-medium text-center text-secondary-yellow lg:text-heading-4 text-heading-5 lg:text-left">
+                Student Activity
+            </h2>
+
+            <h1 class="mb-3 font-bold text-center text-white lg:py-3 lg:text-heading-2 text-heading-4 lg:text-left">
+                Aktifitas Siswa
             </h1>
 
-            <div class="flex flex-wrap items-center justify-center mx-auto lg:-mx-4">
-                <div class="grid grid-cols-3 gap-5 md:grid-cols-2 lg:grid-cols-4 items-center justify-center">
+            <div class="flex flex-wrap items-center justify-center mx-auto lg:p-4 lg:-mx-4">
+
+                <div class="grid items-center justify-center grid-cols-3 gap-2 lg:gap-5 md:grid-cols-3 lg:grid-cols-4">
+
                     <div
                         class="relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30">
+
                         <div class="h-96 w-72">
                             <img class="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                src="/assets/images/class.jpeg" alt="" />
+                                src="{{ asset('/assets/images/class.jpeg') }}" alt="sea-activity-image" />
                         </div>
+
                         <div
                             class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                         </div>
+
                         <div
-                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                            <h1 class="text-3xl font-bold text-white font-dmserif">Class Training</h1>
+                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center
+                            justify-center lg:px-9 px-4 text-center transition-all duration-500 group-hover:translate-y-0">
+                            <h1 class="mb-2 font-bold text-white lg:mb-8 lg:text-heading-3 text-leading-4 font-label">Class
+                                Training
+                            </h1>
                             <p
-                                class="mb-3 text-lg italic text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                class="mb-3 italic text-white transition-opacity duration-300 opacity-0 text-heading-6 group-hover:opacity-100">
                                 Siswa belajar dikelas selama 3 bulan dan akan mempelajari basic perhotelan sesuai
                                 jurusan yang dipilih, bahasa inggris dan pegembangan soft skill
                             </p>
                             <button
-                                class="rounded-full bg-primary-blue py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                                class="rounded-lg bg-primary-shineblue py-2 px-3.5 font-com text-sm
+                                capitalize text-white shadow shadow-black/60 hidden lg:block">See
                                 More</button>
                         </div>
                     </div>
@@ -975,21 +867,24 @@
                         class="relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30">
                         <div class="h-96 w-72">
                             <img class="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                src="/assets/images/hotel-training2.jpg" alt="" />
+                                src="{{ asset('/assets/images/hotel-training2.jpg') }}" alt="sea-activity-image" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                         </div>
                         <div
-                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                            <h1 class="text-3xl font-bold text-white font-dmserif">Practice</h1>
+                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center
+                            justify-center lg:px-9 px-4 text-center transition-all duration-500 group-hover:translate-y-0">
+                            <h1 class="mb-2 font-bold text-white lg:mb-8 lg:text-heading-3 text-leading-4 font-label">
+                                Practice</h1>
                             <p
-                                class="mb-3 text-lg italic text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                class="mb-3 italic text-white transition-opacity duration-300 opacity-0 text-heading-6 group-hover:opacity-100">
                                 Selama pelatihan siswa Sea Education tidak hanya belajar secara teori tetapi juga akan
                                 diberikan pelatihan dalam bentuk praktik langsung
                             </p>
                             <button
-                                class="rounded-full bg-primary-blue py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                                class="rounded-lg bg-primary-shineblue py-2 px-3.5 font-com
+                                text-sm capitalize text-white shadow shadow-black/60 hidden lg:block">See
                                 More</button>
                         </div>
                     </div>
@@ -998,21 +893,25 @@
                         class="relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30">
                         <div class="h-96 w-72">
                             <img class="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                src="/assets/images/internship-genting.jpg" alt="" />
+                                src="{{ asset('/assets/images/internship-genting.jpg') }}" alt="sea-activity-image" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                         </div>
                         <div
-                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                            <h1 class="text-3xl font-bold text-white font-dmserif">On The Job Training</h1>
+                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center
+                            px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                            <h1 class="mb-2 font-bold text-white lg:mb-8 lg:text-heading-3 text-leading-4 font-label">On
+                                The Job
+                                Training</h1>
                             <p
-                                class="mb-3 text-lg italic text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                class="mb-3 italic text-white transition-opacity duration-300 opacity-0 text-heading-6 group-hover:opacity-100">
                                 On The Job Training merupakan bagian dari program Sea Education, siswa akan training
                                 selama 6 bulan di hotel berbintang 4-5 di Indonesia / Luar Negri
                             </p>
                             <button
-                                class="rounded-full bg-primary-blue py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                                class="rounded-lg bg-primary-shineblue py-2 px-3.5 font-com text-sm
+                                capitalize text-white shadow shadow-black/60 hidden lg:block">See
                                 More</button>
                         </div>
                     </div>
@@ -1021,21 +920,26 @@
                         class="relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30">
                         <div class="h-96 w-72">
                             <img class="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                src="/assets/images/safety-training.jpg" alt="" />
+                                src="{{ asset('/assets/images/safety-training.jpg') }}" alt="sea-activity-image" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                         </div>
                         <div
-                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                            <h1 class="text-3xl font-bold text-white font-dmserif">Safety Training</h1>
+                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center
+                            justify-center lg:px-9 px-4 text-center transition-all duration-500 group-hover:translate-y-0">
+                            <h1 class="mb-2 font-bold text-white lg:mb-8 lg:text-heading-3 text-leading-4 font-label">
+                                Safety
+                                Training
+                            </h1>
                             <p
-                                class="mb-3 text-lg italic text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                class="mb-3 italic text-white transition-opacity duration-300 opacity-0 text-heading-6 group-hover:opacity-100">
                                 Siswa Sea Education mengikuti pelatihan dan sertifikasi dokumen pelaut sebagai syarat
                                 untuk bekerja dikapal pesiar
                             </p>
                             <button
-                                class="rounded-full bg-primary-blue py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                                class="rounded-lg bg-primary-shineblue py-2 px-3.5 font-com
+                                text-sm capitalize text-white shadow shadow-black/60 hidden lg:block">See
                                 More</button>
                         </div>
                     </div>
@@ -1044,21 +948,27 @@
                         class="relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30">
                         <div class="h-96 w-72">
                             <img class="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                src="/assets/images/deployment.jpg" alt="" />
+                                src="{{ asset('/assets/images/deployment.jpg') }}" alt="sea-activity-image" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                         </div>
                         <div
-                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                            <h1 class="text-3xl font-bold text-white font-dmserif">Explore The World</h1>
+                            class="absolute inset-0 flex translate-y-[60%] flex-col
+                            items-center justify-center lg:px-9 px-4 text-center
+                            transition-all duration-500 group-hover:translate-y-0">
+                            <h1 class="mb-2 font-bold text-white lg:mb-8 lg:text-heading-3 text-leading-4 font-label">
+                                Explore The
+                                World
+                            </h1>
                             <p
-                                class="mb-3 text-lg italic text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                class="mb-3 italic text-white transition-opacity duration-300 opacity-0 text-heading-6 group-hover:opacity-100">
                                 Siswa Sea Education berangkat menuju kapal pesiar setelah mengikuti pelatihan dan
                                 mengikuti interview dengan user
                             </p>
                             <button
-                                class="rounded-full bg-primary-blue py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                                class="rounded-lg bg-primary-shineblue py-2 px-3.5
+                                font-com text-sm capitalize text-white shadow shadow-black/60 hidden lg:block">See
                                 More</button>
                         </div>
                     </div>
@@ -1067,22 +977,27 @@
                         class="relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30">
                         <div class="h-96 w-72">
                             <img class="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                src="/assets/images/partnership-genting.jpg" alt="" />
+                                src="{{ asset('/assets/images/partnership-genting.jpg') }}" alt="sea-activity-image" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                         </div>
                         <div
-                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                            <h1 class="text-3xl font-bold text-white font-dmserif">Parnership With Resort Genting
+                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center
+                            justify-center lg:px-9 px-4 text-center transition-all duration-500 group-hover:translate-y-0">
+                            <h1 class="mb-2 font-bold text-white lg:mb-8 lg:text-heading-3 text-leading-4 font-label">
+                                Parnership
+                                With
+                                Resort Genting
                             </h1>
                             <p
-                                class="mb-3 text-lg italic text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                class="mb-3 italic text-white transition-opacity duration-300 opacity-0 text-heading-6 group-hover:opacity-100">
                                 Bekerja sama dengan Hotel dan Agency terpercaya untuk membangun peluang bagi siswa Sea
                                 Education
                             </p>
                             <button
-                                class="rounded-full bg-primary-blue py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                                class="rounded-lg bg-primary-shineblue py-2 px-3.5 font-com text-sm
+                                capitalize text-white shadow shadow-black/60 hidden lg:block">See
                                 More</button>
                         </div>
                     </div>
@@ -1091,23 +1006,29 @@
                         class="relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30">
                         <div class="h-96 w-72">
                             <img class="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                src="/assets/images/internship-grandlexis2.jpg" alt="" />
+                                src="{{ asset('/assets/images/internship-grandlexis2.jpg') }}"
+                                alt="sea-activity-image" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                         </div>
                         <div
-                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                            <h1 class="text-3xl font-bold text-white font-dmserif">Parnership With Grand Lexis Port
+                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center
+                            justify-center lg:px-9 px-4 text-center transition-all duration-500 group-hover:translate-y-0">
+                            <h1 class="mb-2 font-bold text-white lg:mb-8 lg:text-heading-3 text-leading-4 font-label">
+                                Parnership
+                                With
+                                Grand Lexis Port
                                 Dickson
                             </h1>
                             <p
-                                class="mb-3 text-lg italic text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                class="mb-3 italic text-white transition-opacity duration-300 opacity-0 text-heading-6 group-hover:opacity-100">
                                 Bekerja sama dengan Hotel dan Agency terpercaya untuk membangun peluang bagi siswa Sea
                                 Education
                             </p>
                             <button
-                                class="rounded-full bg-primary-blue py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                                class="rounded-lg bg-primary-shineblue py-2 px-3.5 font-com
+                                text-sm capitalize text-white shadow shadow-black/60 hidden lg:block">See
                                 More</button>
                         </div>
                     </div>
@@ -1116,26 +1037,34 @@
                         class="relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30">
                         <div class="h-96 w-72">
                             <img class="object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                src="/assets/images/partnership-w-millenium.jpg" alt="" />
+                                src="{{ asset('/assets/images/partnership-w-millenium.jpg') }}"
+                                alt="sea-activity-image" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                         </div>
                         <div
-                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                            <h1 class="text-3xl font-bold text-white font-dmserif">Partnership With PT Millenium</h1>
+                            class="absolute inset-0 flex translate-y-[60%] flex-col items-center
+                            justify-center lg:px-9 px-4 text-center transition-all duration-500 group-hover:translate-y-0">
+                            <h1 class="mb-2 font-bold text-white lg:mb-8 lg:text-heading-3 text-leading-4 font-label">
+                                Partnership
+                                With
+                                PT Millenium</h1>
                             <p
-                                class="mb-3 text-lg italic text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                class="mb-3 italic text-white transition-opacity duration-300 opacity-0 text-heading-6 group-hover:opacity-100">
                                 Bekerja sama dengan Hotel dan Agency terpercaya untuk membangun peluang bagi siswa Sea
                                 Education
                             </p>
                             <button
-                                class="rounded-full bg-primary-blue py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
-                                More</button>
+                                class="rounded-lg bg-primary-shineblue py-2 px-3.5 font-com
+                                text-sm capitalize text-white shadow shadow-black/60 hidden lg:block">
+                                See More
+                            </button>
                         </div>
                     </div>
 
                 </div>
+
             </div>
         </div>
 
@@ -1143,52 +1072,29 @@
     <!-- end Student Activity -->
 
     <!-- Testimonial-->
-    <section id="testimonials" class="items-center w-full h-full px-6 py-2 pt-6 pb-16 bg-blue-10 lg:px-16 md:px-20">
-        <div class="max-w-6xl mx-auto">
-            <Span class="font-medium text-secondary-yellow lg:text-heading-4 text-heading-5">Testimoni</Span>
+    <section id="testimonials" class="items-center w-full h-full pt-8 pb-8 bg-blue-10">
+        <div class="items-center max-w-6xl p-4 mx-auto lg:p-8">
+            <h2 class="font-medium text-center text-secondary-yellow lg:text-heading-4 text-heading-5 lg:text-left">
+                Testimonial
+            </h2>
 
-            <div class="inset-0 flex justify-between gap-4 my-auto flex-end">
-                <h1 class="mb-5 font-bold text-slate-700 lg:text-heading-2 text-heading-4">
-                    Pengalaman alumnus kami yang sudah bekerja
-                </h1>
-
-                <div class="flex items-center justify-between gap-4 text-left group px-4">
-                    <span class="text-heading-4"></span>
-
-                    <div class="flex justify-between gap-4 group">
-                        <button data-button="previus"
-                            class="btn-previus flex items-center justify-center w-8 h-8 border rounded-full cursor-pointer border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white scroll-left">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-                            </svg>
-                        </button>
-                        <button data-button="next"
-                            class="btn-next flex items-center justify-center w-8 h-8 border rounded-full cursor-pointer border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white scroll-right">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-
+            <h1 class="mb-3 font-bold text-center lg:py-3 text-primary-blue lg:text-heading-2 text-heading-4 lg:text-left">
+                Pengalaman Siswa
+            </h1>
 
             <div class="flex flex-wrap justify-between mx-auto lg:-mx-4">
                 <!-- Card -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4" data-slide>
-                    <div class="overflow-hidden border border-gray-200 shadow-sm rounded-xl">
+                    <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
                         <div class="flex flex-col p-4 bg-white">
-                            <div class="flex mb-4 items-center">
-                                <div class="relative mr-3 w-16 h-16 overflow-hidden rounded-full">
-                                    <img src="/assets/images/class.jpeg" alt="Profile" class="w-16 h-16">
+                            <div class="flex items-center mb-4">
+                                <div class="relative w-16 h-16 mr-3 overflow-hidden rounded-full">
+                                    <img src="{{ asset('/assets/images/class.jpeg') }}" alt="Profile"
+                                        class="w-16 h-16">
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="mb-1 font-bold text-gray-100 lg:text-heading-4 text-heading-5 font-label">
+                                    <p
+                                        class="mb-1 font-bold text-primary-shineblue lg:text-heading-4 text-heading-5 font-label">
                                         Ester Fitcia
                                     </p>
                                     <p class="font-bold text-heading-6 text-gray-50">
@@ -1212,7 +1118,8 @@
                                     <span class="font-normal text-black">at</span>
                                 </p>
                             </div>
-                            <img class="block w-full h-full" src="/assets/logo/dream-crusie.svg" alt="logo-work">
+                            <img class="block w-full h-full" src="{{ asset('/assets/logo/dream-crusie.svg') }}"
+                                alt="logo-work">
                         </div>
                     </div>
                 </div>
@@ -1220,15 +1127,16 @@
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4" data-slide>
-                    <div class="overflow-hidden border border-gray-200 shadow-sm rounded-xl ">
+                    <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm ">
                         <div class="flex flex-col p-4 bg-white">
-                            <div class="flex mb-4 items-center">
+                            <div class="flex items-center mb-4">
                                 <div class="relative w-16 h-16 mr-3 overflow-hidden rounded-full">
-                                    <img src="/public/images/bayu.jpeg" class="object-cover w-full" alt="Profile"
-                                        layout="fill" objectFit="cover" objectPosition="center" />
+                                    <img src="{{ asset('/public/images/bayu.jpeg') }}" class="object-cover w-full"
+                                        alt="Profile" layout="fill" objectFit="cover" objectPosition="center" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="mb-1 font-bold text-gray-100 lg:text-heading-4 text-heading-5 font-label">
+                                    <p
+                                        class="mb-1 font-bold text-primary-shineblue lg:text-heading-4 text-heading-5 font-label">
                                         Bayu Prasetya
                                     </p>
                                     <p class="font-bold text-heading-6 text-gray-50">
@@ -1252,7 +1160,8 @@
                                     <span class="font-normal text-black">at</span>
                                 </p>
                             </div>
-                            <img class="block w-full h-full" src="/assets/logo/royal-caribbean.svg" alt="logo-work">
+                            <img class="block w-full h-full" src="{{ asset('/assets/logo/royal-caribbean.svg') }}"
+                                alt="logo-work">
                         </div>
                     </div>
                 </div>
@@ -1260,15 +1169,16 @@
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4" data-slide>
-                    <div class="overflow-hidden border border-gray-200 shadow-sm rounded-xl">
+                    <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
                         <div class="flex flex-col p-4 bg-white">
-                            <div class="flex mb-4 items-center">
+                            <div class="flex items-center mb-4">
                                 <div class="relative w-16 h-16 mr-3 overflow-hidden rounded-full">
-                                    <img src="/public/images/muhajir.jpeg" alt="Profile" layout="fill"
+                                    <img src="{{ asset('/public/images/muhajir.jpeg') }}" alt="Profile" layout="fill"
                                         objectFit="cover" objectPosition="center" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="mb-1 font-bold text-gray-100 lg:text-heading-4 text-heading-5 font-label">
+                                    <p
+                                        class="mb-1 font-bold text-primary-shineblue lg:text-heading-4 text-heading-5 font-label">
                                         Muhajir
                                     </p>
                                     <p class="font-bold text-heading-6 text-gray-50">
@@ -1301,15 +1211,16 @@
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4" data-slide>
-                    <div class="overflow-hidden border border-gray-200 shadow-sm rounded-xl">
+                    <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
                         <div class="flex flex-col p-4 bg-white">
-                            <div class="flex mb-4 items-center">
+                            <div class="flex items-center mb-4">
                                 <div class="relative w-16 h-16 mr-3 overflow-hidden rounded-full">
-                                    <img src="/public/images/sugianto.jpg" alt="Profile" layout="fill"
+                                    <img src="{{ asset('/public/images/sugianto.jpg') }}" alt="Profile" layout="fill"
                                         objectFit="cover" class="items-center" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="mb-1 font-bold text-gray-100 lg:text-heading-4 text-heading-5 font-label">
+                                    <p
+                                        class="mb-1 font-bold text-primary-shineblue lg:text-heading-4 text-heading-5 font-label">
                                         Sugianto
                                     </p>
                                     <p class="font-bold text-heading-6 text-gray-50">
@@ -1345,12 +1256,13 @@
 
     <!-- Frequently Asked Question -->
     <section id="frequently-asking-question"
-        class="items-center w-full h-full px-6 py-2 pt-16 pb-16 bg-primary-blue lg:px-16 md:px-20">
-        <div class="mx-auto max-w-6xl">
-            <p class="items-center font-bold text-center text-secondary-orange lg:text-heading-4 text-heading-6">
+        class="items-center w-full h-full px-6 py-2 pt-16 pb-16 bg-primary-shineblue lg:px-16 md:px-20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-medium text-center text-secondary-yellow lg:text-heading-4 text-heading-5 lg:text-left">
                 Frequently Asked Question
-            </p>
-            <h1 class="mb-3 font-bold text-center text-white lg:text-heading-2 text-heading-4">
+            </h2>
+            <h1
+                class="mb-2 text-center text-white fo11111111111111111111nt-bold lg:py-3 lg:text-heading-2 text-heading-4 lg:text-left">
                 Pertanyaan Yang Sering Ditanyakan
             </h1>
 
@@ -1361,7 +1273,7 @@
                         <div class="flex items-center justify-between accordion-header">
                             <!-- FAQ -->
                             <span class="font-semibold text-slate-700 lg:text-heading-4 text-heading-5">
-                                Apa syarat untuk mendaftar program pelatihan dari Sea Education?
+                                Apa syarat untuk mendaftar program pelatihan?
                             </span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
@@ -1373,6 +1285,7 @@
                                     - Lulusan SMA / SMK atau Sederajat <br>
                                     - Memiliki surat keterangan sehat, tidak memiliki penyakit menular dan tidak buta
                                     warna <br>
+                                    - Tidak memiliki tatto di bagian tubuh yang biasa terlihat (tangan, kaki & leher)
                                 </p>
                             </div>
                         </div>
@@ -1441,7 +1354,8 @@
                     <div class="bg-white border-2 rounded-lg">
                         <div class="flex items-center justify-between accordion-header">
                             <!-- FAQ -->
-                            <span class="font-semibold text-slate-700 lg:text-heading-4 text-heading-5"> Apakah harus mampu
+                            <span class="font-semibold text-slate-700 lg:text-heading-4 text-heading-5">
+                                Apakah harus mampu
                                 berbahasa inggris secara expert? </span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
@@ -1527,7 +1441,7 @@
                         <div class="flex items-center justify-between accordion-header">
                             <!-- FAQ -->
                             <span class="font-semibold text-slate-700 lg:text-heading-4 text-heading-5">
-                                Apakah saya dapat mengulang kelas jika saya masih belum mampu?
+                                Apakah dapat mengulang jika saya masih belum mampu?
                             </span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
