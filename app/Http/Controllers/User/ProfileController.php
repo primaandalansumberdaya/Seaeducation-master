@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Dashboard;
+namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Models\profile\DetailUser;
@@ -35,32 +35,32 @@ class ProfileController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(DetailUser $detailUser)
-    {
-        //
-    }
+    // public function show(DetailModel $detailModel)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
      */
     public function edit(DetailUser $detailUser)
     {
-        return view('pages.profile.edit-profile');
+        return view('pages.profile.index');
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, DetailUser $detailUser)
-    {
-        //
-    }
+    // /**
+    //  * Update the specified resource in storage.
+    //  */
+    // public function update(Request $request, DetailModel $detailModel)
+    // {
+    //     //
+    // }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(DetailUser $detailUser)
-    {
-        //
-    }
+    // /**
+    //  * Remove the specified resource from storage.
+    //  */
+    // public function destroy(DetailModel $detailModel)
+    // {
+    //     //
+    // }
 }

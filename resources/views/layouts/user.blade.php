@@ -3,7 +3,7 @@
 
 <head>
 
-    @include('includes.dashboard.meta')
+    @include('includes.meta')
 
     <title>@yield('title') | Seaeducation</title>
 
@@ -18,6 +18,7 @@
 <body class="antialiased">
     <div class="relative">
 
+        
         @include('includes.dashboard.sidebar')
 
         @include('sweetalert::alert')

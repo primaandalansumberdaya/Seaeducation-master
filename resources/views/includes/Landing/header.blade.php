@@ -33,7 +33,7 @@
                     <a href="#"
                         class="block {{ request()->is('career') ? 'nav-link active font-bold text-primary-shineblue lg:bg-blue-5 px-3 py-4 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Karir</a>
                     <a href="{{ route('partnership') }}"
-                        class="block {{ request()->is('partnership') ? 'nav-link active font-bold text-primary-shineblue lg:bg-blue-5 px-3 py-4 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Parnership</a>
+                        class="block {{ request()->is('partnership') ? 'nav-link active font-bold text-primary-shineblue lg:bg-blue-5 px-3 py-4 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Partnership</a>
                     <a href="{{ route('affiliate') }}"
                         class="block {{ request()->is('affiliate') ? 'nav-link active font-bold text-primary-shineblue lg:bg-blue-5 px-3 py-4 no-underline transition-all duration-300 rounded-lg' : 'rounded-lg px-3 py-4 nav-link text-blue-900' }}">Affiliate</a>
                     <a href="{{ route('blog') }}"

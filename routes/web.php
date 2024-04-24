@@ -1,12 +1,14 @@
 <?php
 
+use App\Http\Controllers\admin\department\DepartmentController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 // front
 use App\Http\Controllers\Landing\LandingController;
 
 //dashboard
-use App\Http\Controllers\Dashboard\ProfileController;
+use App\Http\Controllers\User\ProfileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,14 +34,15 @@ Route::get('sign-in', [LandingController::class, 'signin'])->name('auth/sign-in'
 Route::get('sign-up', [LandingController::class, 'signup'])->name('auth/sign-up');
 
 // Profile Controller
-
 Route::Group(
-    ['prefix' => 'profile', 'as' => 'profile.'],
+    ['prefix' => 'member', 'as' => 'profile.'],
     function () {
-        Route::resource('about', ProfileController::class);
-        // Route::get('edit-profile', [ProfileController::class, 'edit'])->name('edit-profile');
+        Route::resource('profile', ProfileController::class);
     }
 );
+
+Route::get('dashboard', [HomeController::class, 'dashboard']);
+
 // Route::middleware([
 //     'auth:sanctum',
 //     config('jetstream.auth_session'),

@@ -9,7 +9,7 @@
 
     @stack('before-style')
 
-    @include('includes.landing.style')
+    @include('includes.dashboard.style')
 
     @stack('after-style')
 
@@ -18,24 +18,19 @@
 <body class="antialiased">
     <div class="relative">
 
-        @include('includes.landing.header')
+
+        @include('includes.dashboard.sidebarAdmin')
 
         @include('sweetalert::alert')
 
         @yield('content')
 
-        @include('includes.landing.footer')
 
         @stack('before-script')
 
-        @include('includes.landing.script')
+        @include('includes.dashboard.script')
 
         @stack('after-script')
-
-        {{-- modals --}}
-        {{-- @include('components.modal.login')
-        @include('components.modal.register')
-        @include('components.modal.register-success') --}}
 
     </div>
 </body>

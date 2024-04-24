@@ -3,7 +3,7 @@
 
 <head>
 
-    @include('includes.landing.meta')
+    @include('includes.meta')
 
     <title>@yield('title') | Seaeducation</title>
 
