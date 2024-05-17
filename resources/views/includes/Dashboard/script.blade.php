@@ -1,5 +1,5 @@
 <script src="{{ url('https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js') }}" defer></script>
-<script src="/assets/javascripts/dashboard/init-alpine.js"></script>
+<script src="{{ asset('assets/javascripts/dashboard/init-alpine.js') }}"></script>
 
 <script src="/assets/javascripts/cust.js"></script>
 <script src="/assets/javascripts/script.js"></script>

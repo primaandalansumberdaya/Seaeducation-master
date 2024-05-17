@@ -1,4 +1,4 @@
-@extends('layouts.user')
+@extends('layouts.user2')
 
 @section('title', ' Profile')
 

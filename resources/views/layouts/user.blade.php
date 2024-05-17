@@ -18,7 +18,7 @@
 <body class="antialiased">
     <div class="relative">
 
-        
+
         @include('includes.dashboard.sidebar')
 
         @include('sweetalert::alert')
